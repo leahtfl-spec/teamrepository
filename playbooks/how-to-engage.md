@@ -1,6 +1,9 @@
 # How to Engage
 
-How we interact with our audience. Owned day-to-day by **Clint**, trained and reviewed by **Michelle**.
+How we interact with our audience.
+
+- **Social accounts** (Instagram, TikTok, YouTube): **Clint**.
+- **Rep of the Day group and members**: **Michelle**. See [Rep of the Day](community-rep-of-the-day.md).
 
 ## Response times
 
@@ -30,6 +33,8 @@ How we interact with our audience. Owned day-to-day by **Clint**, trained and re
 
 - **"How do I join?"** → "So glad you asked! 💛 Everything's here: <link>. Let me know if you have any questions."
 - **"When's the next masterclass?"** → "Next one is <date>! Save your spot here: <link>."
+- **"Where can I get the hat?"** → "Join for the year and it's yours, free: <link> 🧢"
+- **"Where do I start?"** → "Join our free Rep of the Day group: one small rep a day. <link>"
 - **"I can't find the replay / workbook"** → "Sorry about that! I'm looping in our team now — we'll get you sorted today." → tag Michelle (and Logan if it's an app issue).
 
 ## Escalate to Michelle

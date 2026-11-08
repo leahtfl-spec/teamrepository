@@ -11,10 +11,10 @@ assignees: ''
 **Pillar:** Masterclass clip / Education / Community & wins / Behind the scenes / Promo
 **Hook / idea:**
 **Source footage:**
-**Approver:** Michelle (Abra for launches/offers)
+**Sign-off needed:** none for routine posts; Abra for offer/pricing posts
 
 - [ ] Edited (captions, branding, hook in first 2 sec)
 - [ ] Caption + hashtags written
-- [ ] Sent for approval
-- [ ] Approved
+- [ ] One call to action included
+- [ ] (Offer/pricing only) Abra signed off
 - [ ] Scheduled / posted — link:

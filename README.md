@@ -1,41 +1,46 @@
-# Team Operations Hub
+# Inner Board — Team Hub
 
-One place for **who does what, when** — the posting schedule, how we engage online, and how every masterclass becomes content and membership assets.
+How a lean team takes the practice to **1,000 members**: who owns what, what we do every week, and how we measure it.
 
-## The team at a glance
+> Every number in here is a **starting assumption** until we replace it with real data.
+
+## Start here
+
+1. [**Roles & Titles**](team/roles.md): who owns what, and what each person is invited to step into
+2. [**Road to 1,000**](strategy/road-to-1000.md): the goal, the funnel math, and the 10 things we need
+3. [**Rollout Plan**](strategy/rollout-plan.md): phases from now through gift season, New Year and beyond
+4. [**Scorecard**](strategy/scorecard.csv): the weekly numbers (Abra updates it every Friday)
+
+## The team
 
 ```
-                 Abra — Oversight
-          (keeps everyone on task, final say)
-                        │
-                Michelle — COO
-      (runs operations, trains & leads the team)
-          ┌─────────────┴─────────────┐
-   Clint — Marketing           Logan — App
- (films, clips, edits,     (uploads recordings &
-  makes content pretty)     member assets to the app)
+                    Founder — Voice of Inner Board
+                                 │
+              Abra — Chief of Staff & Head of Growth
+                    ┌────────────┴────────────┐
+   Michelle — COO & Head of             Clint — Creative Director
+     Member Experience
+           │
+     Logan — App Lead
 ```
 
-| Person   | Role                  | Owns                                                                 |
-|----------|-----------------------|----------------------------------------------------------------------|
-| Abra     | Oversight / Lead      | Accountability, weekly review, approvals, priorities                 |
-| Michelle | COO                   | Masterclass operations, asset handoff to Logan, training & leading Clint |
-| Clint    | Marketing / Video     | Recording capture, clipping, editing, social posts                   |
-| Logan    | App                   | Uploading recordings & membership assets, app accuracy               |
+| Person | Title | Owns |
+|--------|-------|------|
+| Founder | Founder & Voice of Inner Board | The teaching, podcast, videos, masterclasses |
+| Abra | Chief of Staff & Head of Growth | The 1,000 number, scorecard, offers, podcast growth, partnerships |
+| Michelle | COO & Head of Member Experience | Masterclass delivery, app assets, onboarding, community, merch fulfillment |
+| Clint | Creative Director | Brand, content, podcast production, Rep of the Day, merch design |
+| Logan | App Lead | App uploads, gift codes, app numbers |
 
-Full details: [`team/roles.md`](team/roles.md)
+## Everything in here
 
-## What's in here
-
-| Folder | What it's for |
-|--------|---------------|
-| [`team/roles.md`](team/roles.md) | Roles, responsibilities, and who approves what |
-| [`schedule/weekly-cadence.md`](schedule/weekly-cadence.md) | The recurring week: who does what each day |
-| [`schedule/content-calendar.csv`](schedule/content-calendar.csv) | The posting calendar (open in Excel / Google Sheets) |
-| [`workflows/masterclass-pipeline.md`](workflows/masterclass-pipeline.md) | Step-by-step: masterclass → clips → app → membership |
-| [`workflows/membership-assets.md`](workflows/membership-assets.md) | Every asset members get, who makes it, where it lives |
-| [`playbooks/what-to-post.md`](playbooks/what-to-post.md) | Content pillars and post ideas |
-| [`playbooks/how-to-engage.md`](playbooks/how-to-engage.md) | How we respond to comments, DMs, and the community |
+| Section | Pages |
+|---------|-------|
+| Strategy | [Road to 1,000](strategy/road-to-1000.md) · [Rollout Plan](strategy/rollout-plan.md) · [Scorecard](strategy/scorecard.csv) · [Critique of v1](strategy/critique.md) |
+| Team | [Roles & Titles](team/roles.md) · [Weekly Cadence](schedule/weekly-cadence.md) |
+| Growth & community | [Becoming You podcast](playbooks/podcast.md) · [Rep of the Day group](playbooks/community-rep-of-the-day.md) · [Gift the Practice (merch)](playbooks/gift-the-practice.md) |
+| Content | [Content Calendar](schedule/content-calendar.csv) · [What to Post](playbooks/what-to-post.md) · [How to Engage](playbooks/how-to-engage.md) |
+| Delivery | [Masterclass Pipeline](workflows/masterclass-pipeline.md) · [Membership Assets](workflows/membership-assets.md) |
 
 ## How we track tasks
 
@@ -44,11 +49,11 @@ Click **Issues → New issue** and pick a template:
 
 - **Masterclass** — creates the full checklist for one masterclass (recording through app upload)
 - **Content task** — a single post, clip, or piece of content
-- **Weekly review** — Abra's weekly check-in on where everyone stands
+- **Weekly leadership meeting**: Abra's Monday meeting, run from the scorecard
 
 Use the labels `michelle`, `clint`, `logan`, `abra` (or assign the person) so anyone can filter "what's on my plate."
 
-**Rule of thumb:** if it isn't in an issue, it isn't on the schedule.
+**Be honest about this:** if the team won't open GitHub every day, run tasks in the tool they already use daily. Use this site to read the plan and the scorecard to track the numbers.
 
 ## Website (Vercel)
 
@@ -57,3 +62,4 @@ This repo builds into a simple website so the team can read everything in a brow
 - **Edit** the Markdown files or `schedule/content-calendar.csv`, commit, push — Vercel rebuilds the site automatically.
 - **Preview locally:** `npm install` then `npm run dev`.
 - Build settings live in `vercel.json` (build command `npm run build`, output folder `dist`).
+- **Turn on Deployment Protection in Vercel.** This site describes internal roles and plans; it shouldn't be public.

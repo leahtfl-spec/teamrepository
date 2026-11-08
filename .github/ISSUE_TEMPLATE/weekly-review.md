@@ -1,27 +1,31 @@
 ---
-name: Weekly review
-about: Abra & Michelle's Monday check-in
-title: "Weekly review — week of <date>"
+name: Weekly leadership meeting
+about: Abra's Monday meeting, run from the scorecard
+title: "Leadership meeting — week of <date>"
 labels: weekly-review, abra
 assignees: ''
 ---
 
-### Last week
-- **Shipped:**
-- **Late / missed (and why):**
-- **Social results (Clint):** followers, top post, engagement
-- **App (Logan):** uploads completed, any issues
+### Scorecard (from strategy/scorecard.csv)
+| Number | This week | Target | On track? |
+|--------|-----------|--------|-----------|
+| New paid members | | ~20 | |
+| Annual signups | | | |
+| New group members | | ~250 | |
+| Avg. Rep comments | | | |
+| Podcast downloads | | | |
+| Hats owed / shipped | | | |
 
-### Blockers
+### Off track → what we change this week
 - 
 
-### This week's priorities
-1. 
-2. 
-3. 
+### This week
+- [ ] Founder Recording Block booked (Tue)
+- [ ] Reps scheduled 2 weeks out (Clint)
+- [ ] Podcast episode + call to action ready (Clint/Abra)
+- [ ] Group welcome + wins thread (Michelle)
+- [ ] Hats shipped (Michelle)
+- [ ] Next masterclass on track (Michelle)
 
-### Check-ins
-- [ ] Michelle — calendar filled 2 weeks out
-- [ ] Clint — on schedule with posts & engagement
-- [ ] Logan — all assets from last masterclass live
-- [ ] Next masterclass issue created and on track
+### Decisions needed from the Founder
+- 

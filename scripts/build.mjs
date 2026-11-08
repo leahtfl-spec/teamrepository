@@ -10,13 +10,20 @@ const out = path.join(root, "dist");
 // Page list = site navigation, in order. [source file, nav label]
 const pages = [
   ["README.md", "Home"],
-  ["team/roles.md", "Roles"],
+  ["team/roles.md", "Roles & Titles"],
+  ["strategy/road-to-1000.md", "Road to 1,000"],
+  ["strategy/rollout-plan.md", "Rollout Plan"],
+  ["strategy/scorecard.csv", "Scorecard", "Abra updates <code>strategy/scorecard.csv</code> every Friday. Targets: ~20 new paid members and ~250 new group members a week."],
   ["schedule/weekly-cadence.md", "Weekly Cadence"],
-  ["schedule/content-calendar.csv", "Content Calendar"],
-  ["workflows/masterclass-pipeline.md", "Masterclass Pipeline"],
-  ["workflows/membership-assets.md", "Membership Assets"],
+  ["playbooks/podcast.md", "Podcast"],
+  ["playbooks/community-rep-of-the-day.md", "Rep of the Day"],
+  ["playbooks/gift-the-practice.md", "Gift the Practice"],
+  ["schedule/content-calendar.csv", "Content Calendar", "Edit <code>schedule/content-calendar.csv</code> (Excel or Google Sheets) and push — this page updates automatically."],
+  ["workflows/masterclass-pipeline.md", "Masterclass"],
+  ["workflows/membership-assets.md", "Member Assets"],
   ["playbooks/what-to-post.md", "What to Post"],
   ["playbooks/how-to-engage.md", "How to Engage"],
+  ["strategy/critique.md", "Critique"],
 ];
 
 const outPath = (src) => (src === "README.md" ? "index.html" : src.replace(/\.(md|csv)$/, ".html"));
@@ -48,7 +55,7 @@ function parseCsv(text) {
   return rows;
 }
 
-function csvToHtml(text) {
+function csvToHtml(text, title, intro) {
   const [header, ...rows] = parseCsv(text);
   const label = (h) => h.replace(/_/g, " ").replace(/\b\w/g, (m) => m.toUpperCase());
   const statusCol = header.indexOf("status");
@@ -58,8 +65,8 @@ function csvToHtml(text) {
     if (i === linkCol && /^https?:\/\//.test(v)) return `<td><a href="${escape(v)}">View</a></td>`;
     return `<td>${escape(v)}</td>`;
   };
-  return `<h1>Content Calendar</h1>
-<p>Edit <code>schedule/content-calendar.csv</code> (Excel or Google Sheets) and push — this page updates automatically.</p>
+  return `<h1>${escape(title)}</h1>
+<p>${intro ?? ""}</p>
 <div class="table-wrap"><table>
 <thead><tr>${header.map((h) => `<th>${escape(label(h))}</th>`).join("")}</tr></thead>
 <tbody>${rows.map((r) => `<tr>${header.map((_, i) => cell(r[i] ?? "", i)).join("")}</tr>`).join("\n")}</tbody>
@@ -91,20 +98,20 @@ function layout(title, body, src) {
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>${escape(title)} · Team Hub</title>
+<title>${escape(title)} · Inner Board Team Hub</title>
 <link rel="stylesheet" href="${base}style.css">
 </head>
 <body>
-<header><div class="brand">Team Hub</div><nav>${nav}</nav></header>
+<header><div class="brand">Inner Board · Team Hub</div><nav>${nav}</nav></header>
 <main>${body}</main>
 </body>
 </html>`;
 }
 
 await rm(out, { recursive: true, force: true });
-for (const [src, label] of pages) {
+for (const [src, label, intro] of pages) {
   const text = await readFile(path.join(root, src), "utf8");
-  const body = src.endsWith(".csv") ? csvToHtml(text) : rewriteLinks(marked.parse(text), src)
+  const body = src.endsWith(".csv") ? csvToHtml(text, label, intro) : rewriteLinks(marked.parse(text), src)
         .replace(/<table>/g, '<div class="table-wrap"><table>').replace(/<\/table>/g, "</table></div>");
   const dest = path.join(out, outPath(src));
   await mkdir(path.dirname(dest), { recursive: true });
