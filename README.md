@@ -49,3 +49,11 @@ Click **Issues → New issue** and pick a template:
 Use the labels `michelle`, `clint`, `logan`, `abra` (or assign the person) so anyone can filter "what's on my plate."
 
 **Rule of thumb:** if it isn't in an issue, it isn't on the schedule.
+
+## Website (Vercel)
+
+This repo builds into a simple website so the team can read everything in a browser.
+
+- **Edit** the Markdown files or `schedule/content-calendar.csv`, commit, push — Vercel rebuilds the site automatically.
+- **Preview locally:** `npm install` then `npm run dev`.
+- Build settings live in `vercel.json` (build command `npm run build`, output folder `dist`).
