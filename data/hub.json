@@ -1,0 +1,848 @@
+{
+  "version": 1,
+  "updatedAt": "2026-11-09T09:00:00.000Z",
+  "brand": {
+    "name": "Inner Board",
+    "tagline": "The practice of becoming you."
+  },
+  "goal": {
+    "label": "Paying members",
+    "target": 1000,
+    "current": 0,
+    "deadline": "2027-11-30"
+  },
+  "people": [
+    {
+      "id": "founder",
+      "name": "Founder",
+      "title": "Founder & Voice of Inner Board",
+      "email": "",
+      "mission": "Teach. Be the voice. Everything else is someone else's job.",
+      "number": "Hours recorded per week (protected)",
+      "owns": [
+        "The teaching: the practice, the masterclasses and the podcast's point of view",
+        "One weekly Recording Block (about half a day, directed by Clint): 1–2 Becoming You episodes, 7 Rep of the Day videos (30–60 sec each), and any promo or offer videos",
+        "One monthly masterclass",
+        "One short live session a week in the community group (optional but powerful)"
+      ],
+      "invitation": "Protect the teaching. Give the team one focused Recording Block a week, and trust them with everything that happens after it.",
+      "stop": [
+        "Editing",
+        "Posting",
+        "Chasing files",
+        "Answering logistics questions",
+        "Approving routine content"
+      ],
+      "remind": false
+    },
+    {
+      "id": "abra",
+      "name": "Abra",
+      "title": "Chief of Staff & Head of Growth",
+      "email": "",
+      "mission": "Own the number. Get Inner Board to 1,000 members and protect the founder's time while doing it.",
+      "number": "New paid members per week",
+      "owns": [
+        "The scorecard: updates it every Friday and runs the Monday leadership meeting from it",
+        "Offers and promotions: Founding 1,000 (annual + free hat), Gift the Practice and referrals. Sets the terms, budget and dates",
+        "Podcast growth: books Becoming You guests and pitches the founder to other podcasts (our biggest reach lever)",
+        "The email list: we don't own a Facebook group's audience, but we own our email list",
+        "Partnerships: collaborations, affiliates, and anyone who can bring the practice to a group at once",
+        "The founder's calendar: guards the Recording Block"
+      ],
+      "invitation": "Run the business of Inner Board so the founder can stay focused on teaching. Be the public face for partners and podcast hosts. The job moves from checking that people are on task to owning the growth number.",
+      "stop": [
+        "General check-ins. The scorecard shows who's on track."
+      ],
+      "remind": true
+    },
+    {
+      "id": "michelle",
+      "name": "Michelle",
+      "title": "COO & Head of Member Experience",
+      "email": "",
+      "mission": "Everyone who joins gets everything they paid for, builds a daily rep habit, and stays.",
+      "number": "30-day active rate",
+      "owns": [
+        "Masterclass production: runs the pipeline and gets the recording and every asset to Logan",
+        "Membership assets: replay, workbook, audio drops and slides, complete and live in the app",
+        "Onboarding: a new member's first 7 days (welcome, first rep, how to use the app, an invitation to the group)",
+        "The community: the Rep of the Day group. Welcomes, keeps the conversation going, moderates, spotlights members",
+        "Merch fulfillment: collects addresses, ships the hats, handles issues",
+        "Member support: questions about access, billing or content",
+        "Logan: sets his priorities and checks his work"
+      ],
+      "invitation": "Become the member-facing voice next to the founder. Host the monthly New Member Welcome call and a monthly Member Spotlight on the podcast. Be the person members know by name. Mentor Clint rather than approving his work.",
+      "stop": [
+        "Approving routine posts",
+        "Writing status reports. The scorecard replaces both."
+      ],
+      "remind": true
+    },
+    {
+      "id": "clint",
+      "name": "Clint",
+      "title": "Creative Director",
+      "email": "",
+      "mission": "Make Inner Board look and sound unmistakable everywhere, and turn the founder's weekly recording into a week of content.",
+      "number": "Content shipped per week → group joins",
+      "owns": [
+        "Brand guidelines: one page on colors, fonts, logo use, caption style and voice. Once it exists, routine content goes out without approval",
+        "The Recording Block: plans the shot list, sets up, and directs the founder",
+        "Podcast production: edits, publishes, cuts 3–5 clips per episode, uploads to YouTube",
+        "Rep of the Day: produces and schedules the daily posts 2 weeks ahead",
+        "Social: clips, carousels, posting and engagement on our pages",
+        "Merch: designs the hat and sweatshirt, runs photo and video shoots in the gear"
+      ],
+      "invitation": "Own the creative calls: what gets clipped, how it looks, what we try next. Host a short behind-the-scenes series (\"how we make Inner Board\"). A director, not an editor.",
+      "stop": [
+        "Waiting for approval on routine posts"
+      ],
+      "remind": true
+    },
+    {
+      "id": "logan",
+      "name": "Logan",
+      "title": "App Lead",
+      "email": "",
+      "mission": "The app is where the practice lives. It works, and everything is in it on time.",
+      "number": "Assets live on time; app issues open",
+      "owns": [
+        "Uploads of replays, audio drops, workbooks and Rep of the Day videos",
+        "App onboarding screens and the first-7-days flow, built with Michelle",
+        "Gift codes and annual plans: the app can sell a gifted year and flags annual sign-ups for the free hat",
+        "App numbers for the scorecard each week: active members, sign-ups, annual vs. monthly"
+      ],
+      "invitation": "Be the person who knows the app inside out, so every asset is live and checked on phone and desktop before anyone has to ask.",
+      "stop": [],
+      "remind": true
+    }
+  ],
+  "tasks": [
+    {
+      "id": "t-p0-01",
+      "title": "Announce the new titles and roles to the team",
+      "owner": "founder",
+      "due": "2026-11-12",
+      "status": "todo",
+      "phase": "Phase 0 · Decide",
+      "notes": "Everyone reads their card on the Team page and pushes back on anything that feels wrong.",
+      "createdAt": "2026-11-09T09:00:00.000Z",
+      "createdBy": "routine",
+      "doneAt": null,
+      "lastRemindedAt": null
+    },
+    {
+      "id": "t-p0-02",
+      "title": "Set the target date for 1,000 members",
+      "owner": "founder",
+      "due": "2026-11-12",
+      "status": "todo",
+      "phase": "Phase 0 · Decide",
+      "notes": "With Abra. The plan assumes 12 months (Nov 30, 2027): about 84 new members a month, or 20 a week. A shorter deadline means a bigger weekly number.",
+      "createdAt": "2026-11-09T09:00:00.000Z",
+      "createdBy": "routine",
+      "doneAt": null,
+      "lastRemindedAt": null
+    },
+    {
+      "id": "t-p0-03",
+      "title": "Decide: is the Rep of the Day group free or members-only?",
+      "owner": "founder",
+      "due": "2026-11-12",
+      "status": "todo",
+      "phase": "Phase 0 · Decide",
+      "notes": "With Abra. Recommendation: free. The group is the front door; the app is where people go deeper.",
+      "createdAt": "2026-11-09T09:00:00.000Z",
+      "createdBy": "routine",
+      "doneAt": null,
+      "lastRemindedAt": null
+    },
+    {
+      "id": "t-p0-04",
+      "title": "Record our baseline numbers in the scorecard",
+      "owner": "abra",
+      "due": "2026-11-13",
+      "status": "todo",
+      "phase": "Phase 0 · Decide",
+      "notes": "With Logan. Paid members, annual vs. monthly, email list size, podcast downloads per episode, social followers.",
+      "createdAt": "2026-11-09T09:00:00.000Z",
+      "createdBy": "routine",
+      "doneAt": null,
+      "lastRemindedAt": null
+    },
+    {
+      "id": "t-p0-05",
+      "title": "Confirm the annual price and check the hat economics",
+      "owner": "abra",
+      "due": "2026-11-13",
+      "status": "todo",
+      "phase": "Phase 0 · Decide",
+      "notes": "Total cost per hat should be under about 15% of the annual price. See Gift the Practice in the Library.",
+      "createdAt": "2026-11-09T09:00:00.000Z",
+      "createdBy": "routine",
+      "doneAt": null,
+      "lastRemindedAt": null
+    },
+    {
+      "id": "t-p0-06",
+      "title": "Confirm the app can sell annual plans and gift codes",
+      "owner": "logan",
+      "due": "2026-11-13",
+      "status": "todo",
+      "phase": "Phase 0 · Decide",
+      "notes": "It also needs to flag annual sign-ups so we know who gets a hat.",
+      "createdAt": "2026-11-09T09:00:00.000Z",
+      "createdBy": "routine",
+      "doneAt": null,
+      "lastRemindedAt": null
+    },
+    {
+      "id": "t-p0-07",
+      "title": "Order hat samples from 2–3 vendors",
+      "owner": "clint",
+      "due": "2026-11-13",
+      "status": "todo",
+      "phase": "Phase 0 · Decide",
+      "notes": "With Michelle. Clint owns the design, Michelle the vendors. Samples needed now to order in bulk by Nov 20.",
+      "createdAt": "2026-11-09T09:00:00.000Z",
+      "createdBy": "routine",
+      "doneAt": null,
+      "lastRemindedAt": null
+    },
+    {
+      "id": "t-p0-08",
+      "title": "Book a protected weekly Recording Block",
+      "owner": "founder",
+      "due": "2026-11-14",
+      "status": "todo",
+      "phase": "Phase 0 · Decide",
+      "notes": "With Clint. Tuesdays, about half a day. Abra guards it on the calendar.",
+      "createdAt": "2026-11-09T09:00:00.000Z",
+      "createdBy": "routine",
+      "doneAt": null,
+      "lastRemindedAt": null
+    },
+    {
+      "id": "t-p1-01",
+      "title": "First Recording Block: 2 podcast episodes and 14 Rep of the Day videos",
+      "owner": "founder",
+      "due": "2026-11-17",
+      "status": "todo",
+      "phase": "Phase 1 · Foundation",
+      "notes": "With Clint. Clint plans the shot list and directs. Wear the gear if samples have arrived.",
+      "createdAt": "2026-11-09T09:00:00.000Z",
+      "createdBy": "routine",
+      "doneAt": null,
+      "lastRemindedAt": null
+    },
+    {
+      "id": "t-p1-02",
+      "title": "Create the Rep of the Day Facebook group",
+      "owner": "michelle",
+      "due": "2026-11-19",
+      "status": "todo",
+      "phase": "Phase 1 · Foundation",
+      "notes": "Rules, entry questions (including email) and a welcome post. See Rep of the Day in the Library.",
+      "createdAt": "2026-11-09T09:00:00.000Z",
+      "createdBy": "routine",
+      "doneAt": null,
+      "lastRemindedAt": null
+    },
+    {
+      "id": "t-p1-03",
+      "title": "Write the one-page brand guidelines",
+      "owner": "clint",
+      "due": "2026-11-20",
+      "status": "todo",
+      "phase": "Phase 1 · Foundation",
+      "notes": "Colors, fonts, logo use, caption style and voice. Once it exists, routine posts go out without approval.",
+      "createdAt": "2026-11-09T09:00:00.000Z",
+      "createdBy": "routine",
+      "doneAt": null,
+      "lastRemindedAt": null
+    },
+    {
+      "id": "t-p1-04",
+      "title": "Place the bulk hat order (team gets hats and sweatshirts first)",
+      "owner": "michelle",
+      "due": "2026-11-20",
+      "status": "todo",
+      "phase": "Phase 1 · Foundation",
+      "notes": "Hard deadline: hats take 2–4 weeks. Start with about 100–150. If we miss it, run Gift the Practice as \"hat ships in January\" and say so up front.",
+      "createdAt": "2026-11-09T09:00:00.000Z",
+      "createdBy": "routine",
+      "doneAt": null,
+      "lastRemindedAt": null
+    },
+    {
+      "id": "t-p1-05",
+      "title": "Add one call to action to every podcast episode",
+      "owner": "clint",
+      "due": "2026-11-20",
+      "status": "todo",
+      "phase": "Phase 1 · Foundation",
+      "notes": "With Abra. Default: \"Join the free Rep of the Day group.\"",
+      "createdAt": "2026-11-09T09:00:00.000Z",
+      "createdBy": "routine",
+      "doneAt": null,
+      "lastRemindedAt": null
+    },
+    {
+      "id": "t-p1-06",
+      "title": "Soft-launch the group to current members and podcast listeners",
+      "owner": "michelle",
+      "due": "2026-11-23",
+      "status": "todo",
+      "phase": "Phase 1 · Foundation",
+      "notes": "With Clint.",
+      "createdAt": "2026-11-09T09:00:00.000Z",
+      "createdBy": "routine",
+      "doneAt": null,
+      "lastRemindedAt": null
+    },
+    {
+      "id": "t-p1-07",
+      "title": "Pitch the founder to 10 podcasts for January and February",
+      "owner": "abra",
+      "due": "2026-11-24",
+      "status": "todo",
+      "phase": "Phase 1 · Foundation",
+      "notes": "Guest spots are the highest-leverage reach for a lean team. Aim for 2–4 a month.",
+      "createdAt": "2026-11-09T09:00:00.000Z",
+      "createdBy": "routine",
+      "doneAt": null,
+      "lastRemindedAt": null
+    },
+    {
+      "id": "t-p1-08",
+      "title": "Create a free lead magnet for email capture",
+      "owner": "abra",
+      "due": "2026-11-24",
+      "status": "todo",
+      "phase": "Phase 1 · Foundation",
+      "notes": "Promised in the group entry questions along with the 30-Day Rep Challenge. The email list is the audience we own.",
+      "createdAt": "2026-11-09T09:00:00.000Z",
+      "createdBy": "routine",
+      "doneAt": null,
+      "lastRemindedAt": null
+    },
+    {
+      "id": "t-p1-09",
+      "title": "Team photo and video shoot in the gear",
+      "owner": "clint",
+      "due": "2026-11-25",
+      "status": "todo",
+      "phase": "Phase 1 · Foundation",
+      "notes": "This content feeds December and January. Use the samples if the bulk order has not arrived.",
+      "createdAt": "2026-11-09T09:00:00.000Z",
+      "createdBy": "routine",
+      "doneAt": null,
+      "lastRemindedAt": null
+    },
+    {
+      "id": "t-p1-10",
+      "title": "Build 7-day onboarding for new members (in the app and by email)",
+      "owner": "michelle",
+      "due": "2026-11-30",
+      "status": "todo",
+      "phase": "Phase 1 · Foundation",
+      "notes": "With Logan. Welcome, first rep, how to use the app, invitation to the group.",
+      "createdAt": "2026-11-09T09:00:00.000Z",
+      "createdBy": "routine",
+      "doneAt": null,
+      "lastRemindedAt": null
+    },
+    {
+      "id": "t-p2-01",
+      "title": "Launch Gift a Year: buy the practice for someone, they get a welcome hat",
+      "owner": "abra",
+      "due": "2026-12-01",
+      "status": "todo",
+      "phase": "Phase 2 · Gift the Practice",
+      "notes": "With Logan (gift codes) and Clint (creative). Podcast call to action for December: \"Gift the practice to someone you love.\"",
+      "createdAt": "2026-11-09T09:00:00.000Z",
+      "createdBy": "routine",
+      "doneAt": null,
+      "lastRemindedAt": null
+    },
+    {
+      "id": "t-p2-02",
+      "title": "Team wears the gear in every video, live session and podcast clip",
+      "owner": "clint",
+      "due": "2026-12-01",
+      "status": "todo",
+      "phase": "Phase 2 · Gift the Practice",
+      "notes": "Everyone. Clint checks it in every shoot.",
+      "createdAt": "2026-11-09T09:00:00.000Z",
+      "createdBy": "routine",
+      "doneAt": null,
+      "lastRemindedAt": null
+    },
+    {
+      "id": "t-p2-03",
+      "title": "Ship hats in one weekly batch",
+      "owner": "michelle",
+      "due": "2026-12-03",
+      "status": "todo",
+      "phase": "Phase 2 · Gift the Practice",
+      "notes": "Every Thursday through December. Update hats owed and shipped on Numbers.",
+      "createdAt": "2026-11-09T09:00:00.000Z",
+      "createdBy": "routine",
+      "doneAt": null,
+      "lastRemindedAt": null
+    },
+    {
+      "id": "t-p2-04",
+      "title": "Start the weekly founder live session in the group (15–20 min)",
+      "owner": "founder",
+      "due": "2026-12-04",
+      "status": "todo",
+      "phase": "Phase 2 · Gift the Practice",
+      "notes": "With Clint and Michelle. Fridays. Daily Rep of the Day continues.",
+      "createdAt": "2026-11-09T09:00:00.000Z",
+      "createdBy": "routine",
+      "doneAt": null,
+      "lastRemindedAt": null
+    },
+    {
+      "id": "t-p2-05",
+      "title": "December masterclass: \"Becoming You in the New Year\"",
+      "owner": "michelle",
+      "due": "2026-12-15",
+      "status": "todo",
+      "phase": "Phase 2 · Gift the Practice",
+      "notes": "Michelle runs production. Follow the masterclass pipeline; kick off at Day −7 (Dec 8).",
+      "createdAt": "2026-11-09T09:00:00.000Z",
+      "createdBy": "routine",
+      "doneAt": null,
+      "lastRemindedAt": null
+    },
+    {
+      "id": "t-p3-01",
+      "title": "Launch the Founding 1,000 offer: join annually, get a free hat",
+      "owner": "abra",
+      "due": "2026-12-26",
+      "status": "todo",
+      "phase": "Phase 3 · Founding 1,000",
+      "notes": "Limited to the first 1,000 annual members. Fine print: one per member, shipping region, ship time. Podcast call to action for January.",
+      "createdAt": "2026-11-09T09:00:00.000Z",
+      "createdBy": "routine",
+      "doneAt": null,
+      "lastRemindedAt": null
+    },
+    {
+      "id": "t-p3-02",
+      "title": "Start the 30-Day Rep Challenge in the free group",
+      "owner": "michelle",
+      "due": "2027-01-01",
+      "status": "todo",
+      "phase": "Phase 3 · Founding 1,000",
+      "notes": "With Clint (daily content). The big front-door push for the year.",
+      "createdAt": "2026-11-09T09:00:00.000Z",
+      "createdBy": "routine",
+      "doneAt": null,
+      "lastRemindedAt": null
+    },
+    {
+      "id": "t-p3-03",
+      "title": "Invite everyone in the challenge to the January masterclass",
+      "owner": "abra",
+      "due": "2027-01-08",
+      "status": "todo",
+      "phase": "Phase 3 · Founding 1,000",
+      "notes": "With Michelle.",
+      "createdAt": "2026-11-09T09:00:00.000Z",
+      "createdBy": "routine",
+      "doneAt": null,
+      "lastRemindedAt": null
+    },
+    {
+      "id": "t-p3-04",
+      "title": "Founder guest podcast appearances begin",
+      "owner": "abra",
+      "due": "2027-01-11",
+      "status": "todo",
+      "phase": "Phase 3 · Founding 1,000",
+      "notes": "From the pitches sent in November. Target 2–4 a month.",
+      "createdAt": "2026-11-09T09:00:00.000Z",
+      "createdBy": "routine",
+      "doneAt": null,
+      "lastRemindedAt": null
+    },
+    {
+      "id": "t-p3-05",
+      "title": "Repost member photos in their hats",
+      "owner": "clint",
+      "due": "2027-01-15",
+      "status": "todo",
+      "phase": "Phase 3 · Founding 1,000",
+      "notes": "Ongoing through January. Members in the gear are walking invitations.",
+      "createdAt": "2026-11-09T09:00:00.000Z",
+      "createdBy": "routine",
+      "doneAt": null,
+      "lastRemindedAt": null
+    },
+    {
+      "id": "t-p4-01",
+      "title": "Launch the \"bring a friend\" referral program",
+      "owner": "abra",
+      "due": "2027-02-12",
+      "status": "todo",
+      "phase": "Phase 4 · Scale",
+      "notes": "",
+      "createdAt": "2026-11-09T09:00:00.000Z",
+      "createdBy": "routine",
+      "doneAt": null,
+      "lastRemindedAt": null
+    },
+    {
+      "id": "t-p4-02",
+      "title": "Start streak rewards: 100 reps earns a sweatshirt",
+      "owner": "michelle",
+      "due": "2027-02-19",
+      "status": "todo",
+      "phase": "Phase 4 · Scale",
+      "notes": "Tracked by hand at first (members post \"Day 100\"). Shout-outs at 7, 30 and 100.",
+      "createdAt": "2026-11-09T09:00:00.000Z",
+      "createdBy": "routine",
+      "doneAt": null,
+      "lastRemindedAt": null
+    },
+    {
+      "id": "t-p4-03",
+      "title": "Make the monthly masterclass engine run on its own",
+      "owner": "michelle",
+      "due": "2027-02-26",
+      "status": "todo",
+      "phase": "Phase 4 · Scale",
+      "notes": "Every step of the pipeline has a date and a name, with no reminders needed.",
+      "createdAt": "2026-11-09T09:00:00.000Z",
+      "createdBy": "routine",
+      "doneAt": null,
+      "lastRemindedAt": null
+    },
+    {
+      "id": "t-p4-04",
+      "title": "Launch the monthly Member Spotlight podcast segment",
+      "owner": "michelle",
+      "due": "2027-03-05",
+      "status": "todo",
+      "phase": "Phase 4 · Scale",
+      "notes": "A member's story of becoming. Michelle hosts or co-hosts.",
+      "createdAt": "2026-11-09T09:00:00.000Z",
+      "createdBy": "routine",
+      "doneAt": null,
+      "lastRemindedAt": null
+    },
+    {
+      "id": "t-p4-05",
+      "title": "Run the 30- and 90-day retention check and fix the biggest drop-off",
+      "owner": "michelle",
+      "due": "2027-03-12",
+      "status": "todo",
+      "phase": "Phase 4 · Scale",
+      "notes": "With Logan.",
+      "createdAt": "2026-11-09T09:00:00.000Z",
+      "createdBy": "routine",
+      "doneAt": null,
+      "lastRemindedAt": null
+    },
+    {
+      "id": "t-p4-06",
+      "title": "Quarterly review: are we on pace for 1,000?",
+      "owner": "abra",
+      "due": "2027-03-31",
+      "status": "todo",
+      "phase": "Phase 4 · Scale",
+      "notes": "Compare the scorecard with the 20-a-week pace and adjust the plan.",
+      "createdAt": "2026-11-09T09:00:00.000Z",
+      "createdBy": "routine",
+      "doneAt": null,
+      "lastRemindedAt": null
+    }
+  ],
+  "content": [
+    {
+      "id": "c-001",
+      "date": "2026-11-09",
+      "channel": "Instagram",
+      "pillar": "Education",
+      "format": "Carousel",
+      "title": "3 mistakes people make with [topic]",
+      "owner": "clint",
+      "status": "planned",
+      "link": ""
+    },
+    {
+      "id": "c-002",
+      "date": "2026-11-10",
+      "channel": "Instagram/TikTok",
+      "pillar": "Masterclass clip",
+      "format": "Reel",
+      "title": "Best 30 sec from last masterclass",
+      "owner": "clint",
+      "status": "planned",
+      "link": ""
+    },
+    {
+      "id": "c-003",
+      "date": "2026-11-11",
+      "channel": "Instagram",
+      "pillar": "Community",
+      "format": "Story poll",
+      "title": "What do you want the next masterclass to cover?",
+      "owner": "clint",
+      "status": "planned",
+      "link": ""
+    },
+    {
+      "id": "c-004",
+      "date": "2026-11-12",
+      "channel": "Instagram/TikTok",
+      "pillar": "Behind the scenes",
+      "format": "Reel",
+      "title": "Prepping for the masterclass",
+      "owner": "clint",
+      "status": "planned",
+      "link": ""
+    },
+    {
+      "id": "c-005",
+      "date": "2026-11-13",
+      "channel": "Instagram",
+      "pillar": "Testimonial",
+      "format": "Graphic",
+      "title": "Member win of the week",
+      "owner": "clint",
+      "status": "planned",
+      "link": ""
+    },
+    {
+      "id": "c-006",
+      "date": "2026-11-14",
+      "channel": "Instagram/TikTok",
+      "pillar": "Masterclass promo",
+      "format": "Reel",
+      "title": "Masterclass is tomorrow — save your spot",
+      "owner": "clint",
+      "status": "planned",
+      "link": ""
+    },
+    {
+      "id": "c-007",
+      "date": "2026-11-15",
+      "channel": "Instagram",
+      "pillar": "Masterclass promo",
+      "format": "Story",
+      "title": "We're live today",
+      "owner": "clint",
+      "status": "planned",
+      "link": ""
+    }
+  ],
+  "metrics": [
+    {
+      "key": "paidMembers",
+      "label": "Paid members",
+      "owner": "logan",
+      "target": null
+    },
+    {
+      "key": "newPaid",
+      "label": "New paid members",
+      "owner": "logan",
+      "target": 20
+    },
+    {
+      "key": "annualSignups",
+      "label": "Annual sign-ups",
+      "owner": "logan",
+      "target": null
+    },
+    {
+      "key": "groupMembers",
+      "label": "Free group members",
+      "owner": "michelle",
+      "target": null
+    },
+    {
+      "key": "newGroupMembers",
+      "label": "New group members",
+      "owner": "michelle",
+      "target": 250
+    },
+    {
+      "key": "avgRepComments",
+      "label": "Avg. Rep of the Day comments",
+      "owner": "michelle",
+      "target": null
+    },
+    {
+      "key": "podcastDownloads",
+      "label": "Podcast downloads (last episode)",
+      "owner": "clint",
+      "target": null
+    },
+    {
+      "key": "emailList",
+      "label": "Email list",
+      "owner": "abra",
+      "target": null
+    },
+    {
+      "key": "hatsOwed",
+      "label": "Hats owed",
+      "owner": "michelle",
+      "target": null
+    },
+    {
+      "key": "hatsShipped",
+      "label": "Hats shipped",
+      "owner": "michelle",
+      "target": null
+    }
+  ],
+  "scorecard": [
+    {
+      "id": "2026-11-09",
+      "week": "2026-11-09",
+      "values": {
+        "paidMembers": null,
+        "newPaid": null,
+        "annualSignups": null,
+        "groupMembers": null,
+        "newGroupMembers": null,
+        "avgRepComments": null,
+        "podcastDownloads": null,
+        "emailList": null,
+        "hatsOwed": null,
+        "hatsShipped": null
+      },
+      "note": "Baseline week: fill in where we are today"
+    },
+    {
+      "id": "2026-11-16",
+      "week": "2026-11-16",
+      "values": {
+        "paidMembers": null,
+        "newPaid": null,
+        "annualSignups": null,
+        "groupMembers": null,
+        "newGroupMembers": null,
+        "avgRepComments": null,
+        "podcastDownloads": null,
+        "emailList": null,
+        "hatsOwed": null,
+        "hatsShipped": null
+      },
+      "note": ""
+    },
+    {
+      "id": "2026-11-23",
+      "week": "2026-11-23",
+      "values": {
+        "paidMembers": null,
+        "newPaid": null,
+        "annualSignups": null,
+        "groupMembers": null,
+        "newGroupMembers": null,
+        "avgRepComments": null,
+        "podcastDownloads": null,
+        "emailList": null,
+        "hatsOwed": null,
+        "hatsShipped": null
+      },
+      "note": ""
+    },
+    {
+      "id": "2026-11-30",
+      "week": "2026-11-30",
+      "values": {
+        "paidMembers": null,
+        "newPaid": null,
+        "annualSignups": null,
+        "groupMembers": null,
+        "newGroupMembers": null,
+        "avgRepComments": null,
+        "podcastDownloads": null,
+        "emailList": null,
+        "hatsOwed": null,
+        "hatsShipped": null
+      },
+      "note": ""
+    }
+  ],
+  "docs": [
+    {
+      "slug": "road-to-1000",
+      "title": "Road to 1,000",
+      "group": "Strategy"
+    },
+    {
+      "slug": "critique",
+      "title": "Why we rebuilt this",
+      "group": "Strategy"
+    },
+    {
+      "slug": "weekly-rhythm",
+      "title": "Weekly rhythm",
+      "group": "How we work"
+    },
+    {
+      "slug": "rep-of-the-day",
+      "title": "Rep of the Day",
+      "group": "Growth"
+    },
+    {
+      "slug": "podcast",
+      "title": "The Becoming You podcast",
+      "group": "Growth"
+    },
+    {
+      "slug": "gift-the-practice",
+      "title": "Gift the Practice",
+      "group": "Growth"
+    },
+    {
+      "slug": "masterclass-pipeline",
+      "title": "Masterclass pipeline",
+      "group": "Delivery"
+    },
+    {
+      "slug": "membership-assets",
+      "title": "Membership assets",
+      "group": "Delivery"
+    },
+    {
+      "slug": "what-to-post",
+      "title": "What to post",
+      "group": "Content"
+    },
+    {
+      "slug": "how-to-engage",
+      "title": "How to engage",
+      "group": "Content"
+    }
+  ],
+  "briefings": [
+    {
+      "id": "b-2026-11-09",
+      "date": "2026-11-09",
+      "summary": "Welcome to the Inner Board command center: one place for our tasks, content, numbers and playbooks, and everything here can be edited. This week is Phase 0 · Decide. We confirm roles, set the target date for 1,000, decide the Rep of the Day group is free, record our baseline numbers, confirm the annual price and gift codes, and order hat samples. Pick who you are and start with your tasks.",
+      "done": [],
+      "overdue": [],
+      "added": [],
+      "reminded": []
+    }
+  ],
+  "settings": {
+    "reminders": {
+      "enabled": true,
+      "mode": "draft",
+      "minDaysBetween": 2,
+      "signature": "With care,\nThe Inner Board Hub"
+    },
+    "dataBranch": "claude/relaxed-maxwell-uy6zn5"
+  }
+}

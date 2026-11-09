@@ -1,65 +1,39 @@
-# Inner Board — Team Hub
+# Inner Board Command Center
 
-How a lean team takes the practice to **1,000 members**: who owns what, what we do every week, and how we measure it.
+One calm place for the Inner Board team to run the road to **1,000 paying members**: today's work, every task, the content calendar, the weekly numbers, the team, and our playbooks. Everything is editable in the browser, and every change is saved back to this repository.
 
-> Every number in here is a **starting assumption** until we replace it with real data.
+## For the team
 
-## Start here
+Open the site and pick who you are from the **I am…** menu. **Today** shows your work first. Tap a task to mark it done, click any text to change it, and use the Library for how we work.
 
-1. [**Roles & Titles**](team/roles.md): who owns what, and what each person is invited to step into
-2. [**Road to 1,000**](strategy/road-to-1000.md): the goal, the funnel math, and the 10 things we need
-3. [**Rollout Plan**](strategy/rollout-plan.md): phases from now through gift season, New Year and beyond
-4. [**Scorecard**](strategy/scorecard.csv): the weekly numbers (Abra updates it every Friday)
+## Deploy on Vercel
 
-## The team
+1. In Vercel, **Add New → Project** and import `leahtfl-spec/teamrepository`. The build settings come from `vercel.json`.
+2. Under **Settings → Environment Variables**, add:
+
+   | Name | Value |
+   |------|-------|
+   | `GITHUB_TOKEN` | A fine-grained GitHub token with **Contents: read and write** on `leahtfl-spec/teamrepository` only |
+   | `GITHUB_REPO` | `leahtfl-spec/teamrepository` |
+   | `GITHUB_BRANCH` | Optional. The branch that holds `data/`; defaults to the repo's default branch |
+   | `TEAM_PASSCODE` | Optional. If set, the site asks for it once before saving edits |
+
+3. Turn on **Settings → Deployment Protection** so only the team can open the site.
+4. Redeploy. Without `GITHUB_TOKEN` and `GITHUB_REPO` the site still opens in preview mode, with changes saved on that device only.
+
+## Local development
 
 ```
-                    Founder — Voice of Inner Board
-                                 │
-              Abra — Chief of Staff & Head of Growth
-                    ┌────────────┴────────────┐
-   Michelle — COO & Head of             Clint — Creative Director
-     Member Experience
-           │
-     Logan — App Lead
+npm install
+npm run dev
 ```
 
-| Person | Title | Owns |
-|--------|-------|------|
-| Founder | Founder & Voice of Inner Board | The teaching, podcast, videos, masterclasses |
-| Abra | Chief of Staff & Head of Growth | The 1,000 number, scorecard, offers, podcast growth, partnerships |
-| Michelle | COO & Head of Member Experience | Masterclass delivery, app assets, onboarding, community, merch fulfillment |
-| Clint | Creative Director | Brand, content, podcast production, Rep of the Day, merch design |
-| Logan | App Lead | App uploads, gift codes, app numbers |
+The dev server reads and writes the files in `data/` directly.
 
-## Everything in here
+## The daily routine
 
-| Section | Pages |
-|---------|-------|
-| Strategy | [Road to 1,000](strategy/road-to-1000.md) · [Rollout Plan](strategy/rollout-plan.md) · [Scorecard](strategy/scorecard.csv) · [Critique of v1](strategy/critique.md) |
-| Team | [Roles & Titles](team/roles.md) · [Weekly Cadence](schedule/weekly-cadence.md) |
-| Growth & community | [Becoming You podcast](playbooks/podcast.md) · [Rep of the Day group](playbooks/community-rep-of-the-day.md) · [Gift the Practice (merch)](playbooks/gift-the-practice.md) |
-| Content | [Content Calendar](schedule/content-calendar.csv) · [What to Post](playbooks/what-to-post.md) · [How to Engage](playbooks/how-to-engage.md) |
-| Delivery | [Masterclass Pipeline](workflows/masterclass-pipeline.md) · [Membership Assets](workflows/membership-assets.md) |
+A scheduled Claude routine reads the same data every morning, writes a short briefing, and nudges owners about overdue work. See [ROUTINE.md](ROUTINE.md).
 
-## How we track tasks
+## How it's built
 
-Every piece of work is a **GitHub Issue**, assigned to one person, with a due date.
-Click **Issues → New issue** and pick a template:
-
-- **Masterclass** — creates the full checklist for one masterclass (recording through app upload)
-- **Content task** — a single post, clip, or piece of content
-- **Weekly leadership meeting**: Abra's Monday meeting, run from the scorecard
-
-Use the labels `michelle`, `clint`, `logan`, `abra` (or assign the person) so anyone can filter "what's on my plate."
-
-**Be honest about this:** if the team won't open GitHub every day, run tasks in the tool they already use daily. Use this site to read the plan and the scorecard to track the numbers.
-
-## Website (Vercel)
-
-This repo builds into a simple website so the team can read everything in a browser.
-
-- **Edit** the Markdown files or `schedule/content-calendar.csv`, commit, push — Vercel rebuilds the site automatically.
-- **Preview locally:** `npm install` then `npm run dev`.
-- Build settings live in `vercel.json` (build command `npm run build`, output folder `dist`).
-- **Turn on Deployment Protection in Vercel.** This site describes internal roles and plans; it shouldn't be public.
+All shared state lives in `data/hub.json` and `data/docs/`. The front end is plain HTML, CSS and JavaScript, with two small Vercel functions for reading and saving. See [ARCHITECTURE.md](ARCHITECTURE.md).

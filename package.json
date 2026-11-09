@@ -4,10 +4,12 @@
   "type": "module",
   "scripts": {
     "build": "node scripts/build.mjs",
-    "dev": "node scripts/build.mjs && npx --yes serve dist"
+    "dev": "node scripts/build.mjs && node scripts/dev.mjs",
+    "test": "node --test test/*.test.js test/*.test.mjs",
+    "hub": "node scripts/hub.mjs"
   },
   "engines": {
-    "node": ">=18"
+    "node": ">=20"
   },
   "dependencies": {
     "marked": "15.0.12"
