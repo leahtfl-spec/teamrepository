@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-10T04:00:00.000Z",
+  "updatedAt": "2026-11-10T04:37:00.837Z",
   "brand": {
     "name": "InnerBoard",
     "tagline": "The practice of becoming you."
@@ -297,7 +297,7 @@
       "due": "2026-11-20",
       "status": "todo",
       "phase": "Phase 1 · Foundation",
-      "notes": "Hard deadline: hats take 2–4 weeks. Start with about 100–150. If we miss it, run Gift the Practice as \"hat ships in January\" and say so up front.",
+      "notes": "Hard deadline: hats take 2–4 weeks. Start with about 100–150. If we miss it, run Gift the Practice as \"hat ships in January\" and say so up front.\nDon't place the bulk order without the annual price and hat cost (t-p0-05). If they aren't in by Nov 20, run \"hat ships in January\".",
       "createdAt": "2026-11-09T09:00:00.000Z",
       "createdBy": "routine",
       "doneAt": null,
@@ -684,10 +684,10 @@
       "id": "t-ms-01",
       "title": "Write the role for the first person who joins my team",
       "owner": "michelle",
-      "due": "",
+      "due": "2026-11-25",
       "status": "todo",
       "phase": "Michelle · Stretch",
-      "notes": "Then help hire them and mentor them into the tasks I hold today.",
+      "notes": "Then help hire them and mentor them into the tasks I hold today.\nSuggested date Nov 25 (going-big report): support and fulfillment first, so December doesn't land on you alone.",
       "createdAt": "2026-11-10T02:00:00.000Z",
       "createdBy": "routine",
       "doneAt": null,
@@ -814,10 +814,10 @@
       "id": "t-ab-01",
       "title": "Draft the signature talk",
       "owner": "abra",
-      "due": "",
+      "due": "2027-01-29",
       "status": "todo",
       "phase": "Abra · Brand & Mission",
-      "notes": "What InnerBoard is, why it matters, and the invitation into the Practice.",
+      "notes": "What InnerBoard is, why it matters, and the invitation into the Practice.\nSuggested date from the going-big report; change it if it doesn't fit. Record v1 for a speaker reel and make a one-sheet.",
       "createdAt": "2026-11-10T02:00:00.000Z",
       "createdBy": "routine",
       "doneAt": null,
@@ -827,10 +827,10 @@
       "id": "t-ab-02",
       "title": "List the rooms to step into this quarter",
       "owner": "abra",
-      "due": "",
+      "due": "2027-01-29",
       "status": "todo",
       "phase": "Abra · Brand & Mission",
-      "notes": "Groups, organizations, conferences, coaches, schools and communities.",
+      "notes": "Groups, organizations, conferences, coaches, schools and communities.\nSuggested date from the going-big report. Set a monthly target for rooms; TEDx applications are a common first step toward TED.",
       "createdAt": "2026-11-10T02:00:00.000Z",
       "createdBy": "routine",
       "doneAt": null,
@@ -1103,7 +1103,7 @@
       "due": "2026-11-30",
       "status": "todo",
       "phase": "Go-to-market",
-      "notes": "Short link or QR to a Start Practice page, a GHL tag per room, a 3-message follow-up. With Michelle.",
+      "notes": "Short link or QR to a Start Practice page, a GHL tag per room, a 3-message follow-up. With Michelle.\nExtend it to coaches and IOS leaders: a Start Practice link with its own tag for each, so their people count toward the 1,000 this year.",
       "doneAt": null,
       "lastRemindedAt": null,
       "createdAt": "2026-11-10T04:00:00.000Z",
@@ -1120,6 +1120,110 @@
       "doneAt": null,
       "lastRemindedAt": null,
       "createdAt": "2026-11-10T04:00:00.000Z",
+      "createdBy": "routine"
+    },
+    {
+      "id": "t-gb-01",
+      "title": "Approve Michelle's first teammate (support and fulfillment)",
+      "owner": "founder",
+      "due": "2026-11-16",
+      "status": "todo",
+      "phase": "Going big",
+      "notes": "Support, small refunds, hat shipping and Skool legwork, so Michelle can own retention and the 1,000. Decide alongside a budget line. From Library → What it takes to go big.",
+      "doneAt": null,
+      "lastRemindedAt": null,
+      "createdAt": "2026-11-10T04:30:00.000Z",
+      "createdBy": "routine"
+    },
+    {
+      "id": "t-gb-02",
+      "title": "Write down where Abra's chief-of-staff scope ends and Michelle's COO scope begins",
+      "owner": "founder",
+      "due": "2026-11-16",
+      "status": "todo",
+      "phase": "Going big",
+      "notes": "Start with the two \"best guess\" tasks: the welcome-back brief and the Skool move plan. From Library → What it takes to go big.",
+      "doneAt": null,
+      "lastRemindedAt": null,
+      "createdAt": "2026-11-10T04:30:00.000Z",
+      "createdBy": "routine"
+    },
+    {
+      "id": "t-gb-03",
+      "title": "Decide whether to move the Skool cutover off Dec 31",
+      "owner": "founder",
+      "due": "2026-11-16",
+      "status": "todo",
+      "phase": "Going big",
+      "notes": "It lands between Founding 1,000 (Dec 26) and the 30-Day Challenge (Jan 1), in Michelle's busiest month. From Library → What it takes to go big.",
+      "doneAt": null,
+      "lastRemindedAt": null,
+      "createdAt": "2026-11-10T04:30:00.000Z",
+      "createdBy": "routine"
+    },
+    {
+      "id": "t-gb-04",
+      "title": "Propose one countable definition of \"practicing this week\"",
+      "owner": "michelle",
+      "due": "2026-11-13",
+      "status": "todo",
+      "phase": "Going big",
+      "notes": "With Logan, for Leah to confirm Nov 16. Example: at least one rep in the Practice app that week. Also: does practice through INQ coaches and InnerBoard OS organizations count toward the 1,000? From Library → What it takes to go big.",
+      "doneAt": null,
+      "lastRemindedAt": null,
+      "createdAt": "2026-11-10T04:30:00.000Z",
+      "createdBy": "routine"
+    },
+    {
+      "id": "t-gb-05",
+      "title": "List what the app can and can't do for the plan",
+      "owner": "logan",
+      "due": "2026-11-24",
+      "status": "todo",
+      "phase": "Going big",
+      "notes": "For each feature the plan assumes (premium, annual billing, gift codes, the hat marker, welcome-back trigger to GHL, streaks, notifications, \"How did you hear about Practice?\", usage export): works / GHL workaround / needs a developer / not possible. Add an upload checklist so someone can cover you. From Library → What it takes to go big.",
+      "doneAt": null,
+      "lastRemindedAt": null,
+      "createdAt": "2026-11-10T04:30:00.000Z",
+      "createdBy": "routine"
+    },
+    {
+      "id": "t-gb-06",
+      "title": "List every account and who holds the login",
+      "owner": "logan",
+      "due": "2026-12-01",
+      "status": "todo",
+      "phase": "Going big",
+      "notes": "App, GHL, website, socials, YouTube, Skool, email. Plan to move to company-owned logins. Keep passwords in a password manager, never in the command center. From Library → What it takes to go big.",
+      "doneAt": null,
+      "lastRemindedAt": null,
+      "createdAt": "2026-11-10T04:30:00.000Z",
+      "createdBy": "routine"
+    },
+    {
+      "id": "t-gb-07",
+      "title": "Set a money target and name who keeps the books",
+      "owner": "founder",
+      "due": "2026-11-30",
+      "status": "todo",
+      "phase": "Going big",
+      "notes": "Suggested: a fractional bookkeeper before Founding 1,000 (Dec 26), and one attorney session before Gift a Year (Dec 1) for offer terms, privacy, and protecting the names InnerBoard, INQ and InnerBoard OS. From Library → What it takes to go big.",
+      "doneAt": null,
+      "lastRemindedAt": null,
+      "createdAt": "2026-11-10T04:30:00.000Z",
+      "createdBy": "routine"
+    },
+    {
+      "id": "t-gb-08",
+      "title": "Write one-page specs for INQ and InnerBoard OS",
+      "owner": "abra",
+      "due": "2027-01-15",
+      "status": "todo",
+      "phase": "Going big",
+      "notes": "For each: who it's for, the promise, the steps, the price, what comes next, and one number for the scorecard. Settle IOS Certification vs InnerBoard OS. Comes after the offer ladder (t-gtm-04). From Library → What it takes to go big.",
+      "doneAt": null,
+      "lastRemindedAt": null,
+      "createdAt": "2026-11-10T04:30:00.000Z",
       "createdBy": "routine"
     }
   ],
@@ -1444,6 +1548,16 @@
       "baseline": "To establish",
       "label": "New people starting Practice each week",
       "owner": "founder"
+    },
+    {
+      "key": "recordingHours",
+      "label": "Leah's protected recording hours",
+      "owner": "founder",
+      "unit": "",
+      "target": null,
+      "targetNote": "Set with Leah",
+      "why": "Leah is the only voice; protect and track her time",
+      "baseline": "To establish"
     }
   ],
   "scorecard": [
@@ -1472,7 +1586,8 @@
         "youtubeWatchTime": null,
         "publishingConsistency": null,
         "groupMembers": null,
-        "newStarters": null
+        "newStarters": null,
+        "recordingHours": null
       },
       "note": "Baseline week: fill in where we are today"
     },
@@ -1501,7 +1616,8 @@
         "youtubeWatchTime": null,
         "publishingConsistency": null,
         "groupMembers": null,
-        "newStarters": null
+        "newStarters": null,
+        "recordingHours": null
       },
       "note": ""
     },
@@ -1530,7 +1646,8 @@
         "youtubeWatchTime": null,
         "publishingConsistency": null,
         "groupMembers": null,
-        "newStarters": null
+        "newStarters": null,
+        "recordingHours": null
       },
       "note": ""
     },
@@ -1559,7 +1676,8 @@
         "youtubeWatchTime": null,
         "publishingConsistency": null,
         "groupMembers": null,
-        "newStarters": null
+        "newStarters": null,
+        "recordingHours": null
       },
       "note": ""
     }
@@ -1638,6 +1756,11 @@
     {
       "slug": "go-to-market-gaps",
       "title": "Go-to-market gaps",
+      "group": "Strategy"
+    },
+    {
+      "slug": "going-big",
+      "title": "What it takes to go big",
       "group": "Strategy"
     }
   ],
