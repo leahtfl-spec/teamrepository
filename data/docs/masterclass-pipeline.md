@@ -12,6 +12,7 @@ Day 0 is the day of the masterclass.
 |------|------|-------|-----------|
 | Day −7 | Confirm date, topic, title and promo plan | Michelle | Founder + Abra (approve), Clint |
 | Day −7 | Draft the workbook outline | Michelle | — |
+| Day −7 to −1 | Masterclass invites by email (GHL) and in the Practice app | Michelle | — |
 | Day −5 to −1 | Promo posts go out: announcement, reminder, "tomorrow," "today" | Clint | — |
 | Day −1 | Tech check: recording software, audio, backup recording | Michelle + Clint | — |
 | **Day 0** | **Run the masterclass and record it (with a backup)** | Michelle | — |
@@ -21,7 +22,7 @@ Day 0 is the day of the masterclass.
 | Day +2 | Audio drop exported | Clint | Logan |
 | Day +3 | Workbook finalized | Michelle | Logan |
 | Day +3 | Replay, audio drop, workbook and slides **live in the app** | Logan | Michelle |
-| Day +3 | Check the app on phone and desktop, sign off, announce to members and the group | Michelle | Abra |
+| Day +3 | Check the app on phone and desktop, sign off, announce to members (Practice app + GHL) | Michelle | The team |
 | Day +3 to +14 | Clips posted; each one sends people to the group or the app | Clint | — |
 
 Adjust the days to what works. The point is that **every step has a date and a name**.

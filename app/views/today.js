@@ -1,6 +1,6 @@
-import { report, addDays } from "../ops.js";
+import { report, addDays, nextMilestone } from "../ops.js";
 import { state, setMe } from "../store.js";
-import { h, icon, avatar, people, person, today, fmtLong, fmtDay, fmtFull, daysBetween, quickAdd, plural, nf, empty, toast } from "../ui.js";
+import { h, icon, avatar, people, person, today, fmtLong, fmtDay, fmtFull, daysBetween, quickAdd, plural, nf, empty, toast, RHYTHM_LABEL } from "../ui.js";
 import { taskRow, addTask, justDone, taskById } from "./task-parts.js";
 
 let briefOpen = false;
@@ -18,13 +18,33 @@ function briefText(summary) {
 
 const greeting = () => { const hr = new Date().getHours(); return hr < 5 ? "Good evening" : hr < 12 ? "Good morning" : hr < 17 ? "Good afternoon" : "Good evening"; };
 
-export function goalStats(goal = {}) {
+// Where the goal stands, and the weekly pace to the deadline and to the next milestone.
+export function goalStats(goal = {}, t0 = today()) {
   const target = Number(goal.target) || 0;
   const current = Number(goal.current) || 0;
   const left = Math.max(0, target - current);
-  const weeks = goal.deadline ? Math.max(0, daysBetween(today(), goal.deadline) / 7) : 0;
+  const weeks = goal.deadline ? Math.max(0, daysBetween(t0, goal.deadline) / 7) : 0;
   const pace = weeks > 0 ? Math.ceil(left / weeks) : null;
-  return { target, current, left, weeks: Math.ceil(weeks), pace, pct: target ? Math.min(1, current / target) : 0 };
+  const next = nextMilestone(goal, t0);
+  const nextLeft = next ? Math.max(0, next.target - current) : 0;
+  const nextWeeks = next ? Math.max(0, daysBetween(t0, next.date) / 7) : 0;
+  const nextPace = next && nextWeeks > 0 ? Math.ceil(nextLeft / nextWeeks) : null;
+  return { target, current, left, weeks: Math.ceil(weeks), pace, pct: target ? Math.min(1, current / target) : 0, next, nextLeft, nextWeeks: Math.ceil(nextWeeks), nextPace };
+}
+
+// The scorecard row that counts the goal itself: this week's value is also goal.current (see Numbers).
+export const NORTH_STAR = "practicingWeekly";
+
+// Until the first count is in (goal still 0, no week filled), show "—" rather than a 0 that reads as "nobody".
+export const awaitingBaseline = (hub) =>
+  !Number(hub?.goal?.current) && !(hub?.scorecard || []).some((r) => r?.values?.[NORTH_STAR] != null);
+
+// "Grow 13 a week for 21 weeks": the pace from where we are to the next milestone.
+export function nextPaceText(g) {
+  if (!g.next) return "";
+  if (!g.nextLeft) return "Reached. On to the next one.";
+  if (g.nextPace == null) return `${nf(g.nextLeft)} to go, due today`;
+  return `Grow ${nf(g.nextPace)} a week for ${plural(g.nextWeeks, "week")}`;
 }
 
 function ring(pct) {
@@ -43,12 +63,20 @@ export function render() {
   const tasks = hub.tasks || [];
 
   // ---- goal ----
-  const goalCard = h("a", { class: "card goal-card", href: "#/numbers", "aria-label": `${nf(g.current)} of ${nf(g.target)} ${hub.goal?.label || "members"}. Open Numbers` },
-    h("div", { class: "ring-wrap" }, ring(g.pct), h("div", { class: "ring-center" }, h("span", { class: "ring-num" }, nf(g.current)), h("span", { class: "ring-of" }, `of ${nf(g.target)}`))),
+  const goalName = hub.goal?.label || "Our goal";
+  const waiting = awaitingBaseline(hub);
+  const deadline = hub.goal?.deadline || "";
+  const goalLines = g.next
+    ? [`Next: ${nf(g.next.target)} by ${fmtFull(g.next.date).replace(/ /g, "\u00a0")}`, waiting ? "Baseline due Friday" : nextPaceText(g)]
+    : !deadline ? ["Set a deadline on Numbers", waiting ? "Baseline due Friday" : ""]
+    : deadline < t0 ? [`${nf(g.current)} of ${nf(g.target)} · deadline passed`, ""]
+    : [g.pace != null ? `${nf(g.pace)} a week gets us there` : `${nf(g.left)} to go, due today`, waiting ? "Baseline due Friday" : `by ${fmtFull(deadline)} · ${plural(g.weeks, "week")} left`];
+  const goalCard = h("a", { class: "card goal-card", href: "#/numbers", "aria-label": `${goalName}: ${waiting ? "baseline due Friday" : nf(g.current)} of ${nf(g.target)}.${g.next ? ` Next milestone ${nf(g.next.target)} by ${fmtFull(g.next.date)}.` : ""} Open Numbers` },
+    h("div", { class: "ring-wrap" }, ring(g.pct), h("div", { class: "ring-center" }, h("span", { class: `ring-num${waiting ? " is-waiting" : ""}` }, waiting ? "—" : nf(g.current)), h("span", { class: "ring-of" }, `of ${nf(g.target)}`))),
     h("div", { class: "goal-text" },
-      h("span", { class: "eyebrow" }, hub.goal?.label || "Goal"),
-      h("p", { class: "goal-line" }, g.pace != null ? `${nf(g.pace)} a week gets us there` : "Set a deadline on Numbers"),
-      hub.goal?.deadline && h("p", { class: "goal-sub" }, `by ${fmtFull(hub.goal.deadline)} · ${plural(g.weeks, "week")} left`),
+      h("span", { class: "eyebrow goal-eyebrow" }, goalName),
+      h("p", { class: "goal-line" }, goalLines[0]),
+      goalLines[1] ? h("p", { class: "goal-sub" }, goalLines[1]) : null,
       rep.missingScorecardWeek
         ? h("span", { class: "goal-nudge" }, h("span", { class: "dot" }), "This week's numbers aren't in yet")
         : null));
@@ -94,6 +122,19 @@ export function render() {
       later ? h("a", { class: "more-link", href: `#/tasks?owner=${me.id}` }, `${plural(later, "more task")} later on your list`, icon("chevron", 16)) : null);
   }
 
+  // ---- my rhythm today (every-day items, then today's weekday) ----
+  // Weekly items have no fixed day yet, so they never land on "today": name them once underneath instead.
+  const myRhythm = me ? rep.rhythmToday.filter((r) => r.owner === me.id) : [];
+  const weekHref = me ? `#/team?who=${encodeURIComponent(me.id)}` : "#/team";
+  const myWeekly = me ? (hub.rhythm || []).filter((r) => r && r.owner === me.id && r.when === "weekly" && r.title).map((r) => r.title.split(":")[0].trim()) : [];
+  const rhythm = myRhythm.length || myWeekly.length ? h("section", { class: "section today-rhythm" },
+    h("div", { class: "section-head" }, h("h2", { class: "section-title" }, "Your rhythm today"), h("a", { class: "section-link", href: weekHref }, "Full week")),
+    myRhythm.length ? h("ul", { class: "card rhythm-list" }, myRhythm.map((r) => h("li", { class: "rhythm-item" },
+      h("span", { class: "rhythm-mark", "aria-hidden": "true" }),
+      h("span", { class: "rhythm-text" }, h("span", { class: "rhythm-title" }, r.title || "Untitled"), r.note ? h("span", { class: "rhythm-note" }, r.note) : null),
+      r.when === "daily" ? null : h("span", { class: "rhythm-when" }, `${RHYTHM_LABEL[r.when]}s`)))) : null,
+    myWeekly.length ? h("a", { class: "rhythm-also", href: weekHref }, h("span", { class: "rhythm-also-label" }, "Also this week: "), myWeekly.join(" · ")) : null) : null;
+
   // ---- team at a glance ----
   const glance = h("div", { class: "glance" }, people().map((p) => {
     const open = tasks.filter((t) => t.owner === p.id && t.status !== "done").length;
@@ -110,10 +151,11 @@ export function render() {
         h("span", { class: "eyebrow date-eyebrow" }, fmtLong(t0)),
         h("h1", { class: "page-title", tabindex: "-1" }, me ? `${greeting()}, ${me.name.split(" ")[0]}.` : `${greeting()}.`))),
     h("div", { class: "today-top" }, goalCard, briefCard),
-    h("section", { class: "section" },
+    rhythm,
+    h("section", { class: "section today-tasks" },
       h("div", { class: "section-head" }, h("h2", { class: "section-title" }, "Your tasks"), me && h("a", { class: "section-link", href: "#/tasks" }, "All tasks")),
       mine),
-    h("section", { class: "section" },
+    h("section", { class: "section today-glance" },
       h("div", { class: "section-head" }, h("h2", { class: "section-title" }, "Team at a glance"), h("a", { class: "section-link", href: "#/team" }, "Team")),
       glance),
   );

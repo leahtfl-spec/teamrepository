@@ -47,9 +47,9 @@ const cutoff = addDays(today, -(rem.minDaysBetween ?? 2));
 const weekly = [
   ["record", "founder", 1, "Recording Block: podcast, 7 Reps, promo videos", "About half a day. Clint directs and shoots."],
   ["reps", "clint", 3, "Schedule Rep of the Day 2 weeks out", ""],
-  ["scorecard", "abra", 4, "Update the scorecard", "Fill this week's row on Numbers before Monday's meeting."],
-  ["wins", "michelle", 4, "Wins thread + member spotlight", "Then send the group numbers to Abra."],
-  ["app", "logan", 4, "Weekly app check", "Upload new Reps and audio, fix open issues, send app numbers to Abra."],
+  ["scorecard", "michelle", 4, "Update the numbers on the scorecard", "Fill this week's row on Numbers before Monday's team meeting."],
+  ["community", "michelle", 4, "Practice app and Labs check-in + member spotlight", "Spotlight one member in the app or the Labs."],
+  ["app", "logan", 4, "Weekly app check", "Upload new Reps and audio, fix open issues, send app numbers to Michelle."],
 ];
 const weeklyStep = today === wk || !r.lastBriefingDate || r.lastBriefingDate < wk;
 const autoOps = [];
@@ -62,7 +62,7 @@ if (weeklyStep)
   }
 const slot = { 1: ["Education", "Carousel", "Instagram"], 2: ["Behind the scenes", "Reel", "Instagram/TikTok"], 3: ["Masterclass clips", "Reel", "Instagram/TikTok"], 4: ["Masterclass clips", "Reel", "Instagram/TikTok"], 5: ["Community & wins", "Graphic", "Instagram"], 6: ["Education", "Carousel", "Instagram"], 0: ["Promo & offers", "Story", "Instagram"] };
 const phases = {};
-for (const t of hub.tasks.filter((t) => t.phase && t.phase !== "Weekly")) {
+for (const t of hub.tasks.filter((t) => t.phase?.startsWith("Phase "))) {
   const p = (phases[t.phase] ??= { done: 0, total: 0 });
   p.total++;
   if (t.status === "done") p.done++;
@@ -80,7 +80,7 @@ console.log(JSON.stringify({
     .filter((p) => p.remind === true && p.email && (r.overdueByOwner[p.id] ?? []).some((t) => !t.lastRemindedAt || t.lastRemindedAt <= cutoff))
     .map((p) => ({ id: p.id, name: p.name, email: p.email, tasks: r.overdueByOwner[p.id].map(brief) })),
   phaseProgress: phases,
-  openRoutineOneOffs: hub.tasks.filter((t) => t.createdBy === "routine" && t.phase !== "Weekly" && t.status !== "done").length,
+  openRoutineOneOffs: hub.tasks.filter((t) => t.id.startsWith("t-r-") && t.status !== "done").length,
   contentSlots: r.contentGapsNext14.filter((d) => !ids.has(`c-r-${d}`)).slice(0, 7).map((date) => {
     const [pillar, format, channel] = slot[new Date(`${date}T12:00:00Z`).getUTCDay()];
     return { id: `c-r-${date}`, date, pillar, format, channel };
@@ -97,7 +97,7 @@ Read `lastBriefing.summary` so today's briefing continues the story instead of r
 1. `doneSinceLastBriefing` is what teammates finished in the app. Those ids go into the briefing's `done` list.
 2. **Email check.** Do this only if Gmail tools (`mcp__Gmail__*`) exist. If they show only as deferred names, load them with ToolSearch `select:mcp__Gmail__search_threads,mcp__Gmail__get_thread,mcp__Gmail__send_message,mcp__Gmail__create_draft`. If there are none, skip this part and step 5.
 
-   For each person in `people` with a non-empty email, run `search_threads` with the query `from:<email> subject:"Inner Board" newer_than:3d`. Open each thread with `get_thread` and read only the messages that person sent. Match them against **that person's own open tasks**:
+   For each person in `people` with a non-empty email, run `search_threads` with the query `from:<email> subject:"InnerBoard" newer_than:3d`. Open each thread with `get_thread` and read only the messages that person sent. Match them against **that person's own open tasks**:
 
    | They clearly say… | Op (send only these fields) |
    |---|---|
@@ -117,7 +117,7 @@ Read `lastBriefing.summary` so today's briefing continues the story instead of r
    - Phase 4: bring a friend
 
    For an offer or pricing post, end the title with "(Abra signs off)". Do not plan Rep of the Day posts, because they run separately.
-3. **New one-off tasks (rare).** Take the earliest phase in `phaseProgress` that still has open tasks. Add tasks only if at least 75% of that phase is done and `openRoutineOneOffs` is under 5. Read the next phase's row in `road-to-1000.md` and the playbook it points to. Add at most 5 tasks today, and only for work those docs name that no existing task already covers.
+3. **New one-off tasks (rare).** `phaseProgress` covers only the rollout phases (Phase 0 to Phase 4); role phases such as `Michelle · Wins` belong to their owners. Take the earliest phase in `phaseProgress` that still has open tasks. Add tasks only if at least 75% of that phase is done and `openRoutineOneOffs` (the open `t-r-…` tasks this routine added) is under 5. Read the next phase's row in `road-to-1000.md` and the playbook it points to. Add at most 5 tasks today, and only for work those docs name that no existing task already covers.
    - `id`: `t-r-<TODAY>-1`, `-2`, and so on
    - `phase`: the next phase's exact label, for example `Phase 2 · Gift the Practice`
    - `owner`: the owner the doc names
@@ -127,13 +127,15 @@ Read `lastBriefing.summary` so today's briefing continues the story instead of r
 
    If nothing is clearly missing, add nothing. That is the normal case.
 
+**Fit the role.** Every task you add must fit its owner's role on the Team page and their role doc in the Library (the slug in `people[].doc`, when there is one). Clint's role is still pending, so don't invent new responsibilities for him: give him only work the docs already name as his. Don't create a task that duplicates a rhythm item (`rhythm` in `hub.json`, shown on Team → Our week); the 5 weekly tasks in `autoOps` are the only exception.
+
 ## 5. Kind reminders
 
 Skip this step if Gmail is unavailable or `remindCandidates` is empty. `remindCandidates` already checks that reminders are on, `remind: true`, a non-empty email, overdue tasks, and `minDaysBetween`. For each candidate, send one email at most:
 
 1. **Sent recently?** Run `search_threads` with `in:sent to:<email> subject:"gentle check-in" newer_than:<minDaysBetween>d`. If anything comes back, skip this person. This also covers a run that sent mail but failed to save.
 2. **Earlier thread?** Run `search_threads` with `to:<email> subject:"gentle check-in"`. If a thread is found, `get_thread` it to get the thread id and the id of its latest message.
-3. **Write the email** in plain text, with no Markdown. Make it warm and brief: list each overdue task with its due date, offer help, and ask for a one-line reply. End with `settings.reminders.signature`. Subject: `Inner Board · gentle check-in`.
+3. **Write the email** in plain text, with no Markdown. Make it warm and brief: list each overdue task with its due date, offer help, and ask for a one-line reply. End with `settings.reminders.signature`. Subject: `InnerBoard · gentle check-in`.
 4. **Send or draft:**
    - mode `send`: `send_message` with `{to:[email], subject, body}`, adding `replyThreadId` if an earlier thread exists
    - mode `draft` (or anything else): `create_draft` with `{to:[email], subject, body}`, adding `replyToMessageId` if an earlier thread exists
@@ -142,20 +144,20 @@ Skip this step if Gmail is unavailable or `remindCandidates` is empty. `remindCa
 Example:
 
 ```
-Subject: Inner Board · gentle check-in
+Subject: InnerBoard · gentle check-in
 
 Hi Abra,
 
 Hope your week is off to a good start. Two things on the hub have slipped past their date:
 
-- Record our baseline numbers in the scorecard (due Fri Nov 13)
 - Confirm the annual price and check the hat economics (due Fri Nov 13)
+- Give Michelle access to Facebook, Instagram and TikTok (due Fri Nov 13)
 
 No pressure. If something is in the way, reply and tell us what would help.
 A one-line reply is perfect: "done", or a new date that works for each.
 
 With care,
-The Inner Board Hub
+The InnerBoard Hub
 ```
 
 ## 6. Write the briefing and apply everything
@@ -180,14 +182,15 @@ The briefing is `{id:"b-<TODAY>", date:"<TODAY>", summary, done, overdue, added,
 
 ```json
 [
-  {"op":"upsert","coll":"tasks","item":{"id":"t-p0-04","status":"done","notes":"With Logan. Paid members, annual vs. monthly, email list size, podcast downloads per episode, social followers.\nMarked done from Abra's email on 2026-11-15."}},
+  {"op":"upsert","coll":"tasks","item":{"id":"t-p0-04","status":"done","notes":"With Logan. Michelle owns the member numbers now; pull baselines for the new scorecard.\nMarked done from Michelle's email on 2026-11-15."}},
   {"op":"upsert","coll":"tasks","item":{"id":"t-p0-07","due":"2026-11-18","notes":"With Michelle. Clint owns the design, Michelle the vendors. Samples needed now to order in bulk by Nov 20.\nDue moved to 2026-11-18 per Clint's email on 2026-11-15."}},
-  {"op":"upsert","coll":"scorecard","item":{"id":"2026-11-16","week":"2026-11-16","values":{"newPaid":null},"note":""}},
+  {"op":"upsert","coll":"scorecard","item":{"id":"2026-11-16","week":"2026-11-16","values":{"practicingWeekly":null},"note":""}},
   {"op":"upsert","coll":"tasks","item":{"id":"t-wk-2026-11-16-reps","title":"Schedule Rep of the Day 2 weeks out","owner":"clint","due":"2026-11-19","phase":"Weekly","notes":"","createdBy":"routine"}},
   {"op":"upsert","coll":"content","item":{"id":"c-r-2026-11-22","date":"2026-11-22","pillar":"Promo & offers","format":"Story","channel":"Instagram","title":"Join the free Rep of the Day group (link in bio)","owner":"clint","status":"idea"}},
   {"op":"upsert","coll":"tasks","item":{"id":"t-r-2026-11-16-1","title":"Draft the Gift a Year sales page","owner":"abra","due":"2026-12-01","phase":"Phase 2 · Gift the Practice","notes":"Added by the daily routine from gift-the-practice.","createdBy":"routine"}},
   {"op":"upsert","coll":"tasks","item":{"id":"t-p0-05","lastRemindedAt":"2026-11-16"}},
-  {"op":"upsert","coll":"briefings","item":{"id":"b-2026-11-16","date":"2026-11-16","summary":"Phase 1 starts this week and Abra closed the baseline numbers. Six Phase 0 decisions are still open: the Founder has 4, and Abra and Logan have 1 each. Clint moved the hat samples to Wednesday. I added this week's 5 recurring tasks and 7 post ideas for Nov 16–22, and sent Abra a gentle check-in.","done":["t-p0-04"],"overdue":["t-p0-01","t-p0-02","t-p0-03","t-p0-05","t-p0-06","t-p0-08"],"added":["t-wk-2026-11-16-reps","c-r-2026-11-22","t-r-2026-11-16-1"],"reminded":["abra"]}}
+  {"op":"upsert","coll":"tasks","item":{"id":"t-sp-01","lastRemindedAt":"2026-11-16"}},
+  {"op":"upsert","coll":"briefings","item":{"id":"b-2026-11-16","date":"2026-11-16","summary":"Phase 1 starts this week: Michelle closed the baseline numbers, and Clint moved the hat samples to Wednesday. Still overdue: the Founder has 3 Phase 0 decisions, Michelle has 2 (the social handoff and her calendar), Abra has 2 and Logan has 1. I added this week's 5 recurring tasks and 7 post ideas for Nov 16–22, and sent Abra a gentle check-in.","done":["t-p0-04"],"overdue":["t-p0-01","t-p0-03","t-p0-05","t-p0-06","t-p0-08","t-mw-01","t-mw-02","t-sp-01"],"added":["t-wk-2026-11-16-reps","c-r-2026-11-22","t-r-2026-11-16-1"],"reminded":["abra"]}}
 ]
 ```
 
@@ -217,14 +220,14 @@ done
 git fetch -q origin "+refs/heads/<BRANCH>:refs/remotes/origin/<BRANCH>" && git merge-base --is-ancestor HEAD origin/<BRANCH> && git log -1 --format='%h %s' HEAD
 ```
 
-The last line must print `<sha> Daily update <TODAY>`. If it does not, the save failed: say so in step 8. If `git commit` complains about identity, add `-c user.name="Inner Board Routine" -c user.email="noreply@anthropic.com"` after `git`.
+The last line must print `<sha> Daily update <TODAY>`. If it does not, the save failed: say so in step 8. If `git commit` complains about identity, add `-c user.name="InnerBoard Routine" -c user.email="noreply@anthropic.com"` after `git`.
 
 ## 8. Report
 
 End with this message. If a `PushNotification` tool exists (load it with ToolSearch `select:PushNotification`), also send its first line, under 200 characters.
 
 ```
-Inner Board <TODAY>: <n> done · overdue <Name n, Name n | none> · added <n tasks, n posts> · reminded <names (sent|drafted) | nobody | skipped: Gmail not connected>
+InnerBoard <TODAY>: <n> done · overdue <Name n, Name n | none> · added <n tasks, n posts> · reminded <names (sent|drafted) | nobody | skipped: Gmail not connected>
 Saved: <sha> on <BRANCH> | NOT saved: <reason>
 Notes: <anything unclear or skipped, or "none">
 ```

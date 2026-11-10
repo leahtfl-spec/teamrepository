@@ -17,6 +17,7 @@ const ROUTES = [
   ["library", "Library", library],
 ];
 const VIEWS = Object.fromEntries(ROUTES.map(([id, , mod]) => [id, mod]));
+const BRAND = "InnerBoard"; // fallback until hub.brand.name loads; index.html carries the same name
 
 const $ = (s) => document.querySelector(s);
 const view = $("#view");
@@ -57,7 +58,7 @@ export function openMeMenu(anchor, align = "left") {
 }
 function renderShell() {
   const b = state.hub.brand || {};
-  document.querySelectorAll("[data-brand-name]").forEach((el) => (el.textContent = b.name || "Inner Board"));
+  document.querySelectorAll("[data-brand-name]").forEach((el) => (el.textContent = b.name || BRAND));
   document.querySelectorAll("[data-brand-tagline]").forEach((el) => (el.textContent = b.tagline || ""));
   document.querySelectorAll("[data-me-slot]").forEach((slot) => slot.replaceChildren(meButton(slot.dataset.meSlot)));
   $("#preview").hidden = !state.loaded || state.canWrite;
@@ -98,13 +99,23 @@ let current = null;
 let deferred = false;
 const editing = () => {
   const a = document.activeElement;
-  return a && a !== document.body && (a.matches("input, textarea, select, [contenteditable]") && !a.matches(".qa-input:placeholder-shown"));
+  // An empty quick-add box (cleared right after adding) doesn't hold back the re-render that shows the new item.
+  return a && a !== document.body && (a.matches("input, textarea, select, [contenteditable]") && !a.matches(".qa-input:placeholder-shown, [data-quick]:placeholder-shown"));
 };
+
+// Clicking from one inline field into another saves the first on mousedown; re-rendering right then would replace
+// the element under the pointer and swallow the click. So renders wait while a pointer is down and run just after.
+let pressedAt = 0;
+const pressed = () => pressedAt && performance.now() - pressedAt < 3000;
+const press = () => { pressedAt = performance.now(); };
+const release = () => { pressedAt = 0; setTimeout(() => { if (deferred && !editing() && !pressed()) render(); }); };
+for (const type of ["pointerdown", "mousedown"]) document.addEventListener(type, press, true);
+for (const type of ["pointerup", "mouseup", "pointercancel", "dragend"]) document.addEventListener(type, release, true);
 
 function render({ fresh = false } = {}) {
   renderShell();
   if (!state.loaded) return;
-  if (!fresh && editing()) { deferred = true; return; }
+  if (!fresh && (editing() || pressed())) { deferred = true; return; }
   deferred = false;
   const route = parseRoute();
   const mod = VIEWS[route.name];
@@ -119,7 +130,7 @@ function render({ fresh = false } = {}) {
   view.replaceChildren(node);
   if (keep && !isNew) view.querySelector(`[data-focus-key="${keep}"]`)?.focus({ preventScroll: true });
   if (isNew) {
-    document.title = `${ROUTES.find((r) => r[0] === route.name)[1]} · ${state.hub.brand?.name || "Inner Board"}`;
+    document.title = `${ROUTES.find((r) => r[0] === route.name)[1]} · ${state.hub.brand?.name || BRAND}`;
     view.classList.remove("enter");
     void view.offsetWidth;
     view.classList.add("enter");

@@ -1,6 +1,7 @@
 import { newId, report } from "../ops.js";
 import { state } from "../store.js";
-import { app, h, icon, avatar, act, editable, removeWithUndo, pageHead, section, toggle, segmented, today, plural, people, toast } from "../ui.js";
+import { app, h, icon, avatar, act, editable, removeWithUndo, pageHead, section, toggle, segmented, today, plural, people, toast, firstName } from "../ui.js";
+import { ourWeek, setWho } from "./week.js";
 
 const open = new Set();
 const save = (id, item) => act([{ op: "upsert", coll: "people", item: { id, ...item } }]);
@@ -24,6 +25,16 @@ function listEditor(items = [], onChange, { addLabel, placeholder }) {
   return h("div", { class: "list-editor" }, list, adder);
 }
 
+// The Library page that holds a person's full role (person.doc). Roles group first.
+function roleDocSelect(p) {
+  const docs = [...(state.hub.docs || [])].sort((a, b) => (b.group === "Roles") - (a.group === "Roles"));
+  const sel = h("select", { class: "select role-doc", "aria-label": `Library page with ${p.name}'s full role`, onchange: () => save(p.id, { doc: sel.value }) },
+    h("option", { value: "" }, "None yet"),
+    docs.map((d) => h("option", { value: d.slug }, d.group ? `${d.title || d.slug} · ${d.group}` : d.title || d.slug)));
+  sel.value = docs.some((d) => d.slug === p.doc) ? p.doc : "";
+  return sel;
+}
+
 function personCard(p, rep) {
   const tasks = (state.hub.tasks || []).filter((t) => t.owner === p.id && t.status !== "done");
   const late = (rep.overdueByOwner[p.id] || []).length;
@@ -43,6 +54,7 @@ function personCard(p, rep) {
       block("What they own", listEditor(p.owns, (v) => save(p.id, { owns: v }), { addLabel: "Add something they own", placeholder: "Something they own…" })),
       block("How they step up", editable({ value: p.invitation, multiline: true, label: "How they step up", placeholder: "The invitation for this role…", onSave: (v) => save(p.id, { invitation: v }) })),
       block("Stop doing", listEditor(p.stop, (v) => save(p.id, { stop: v }), { addLabel: "Add something to stop", placeholder: "Something to stop doing…" })),
+      block("Full role page", h("div", { class: "role-doc-row" }, roleDocSelect(p))),
       h("div", { class: "pblock reminders-row" },
         h("div", { class: "rem-email" }, h("span", { class: "eyebrow" }, "Email for reminders"),
           editable({ value: p.email, type: "email", label: "Email", placeholder: "Add an email…", onSave: (v) => {
@@ -52,26 +64,31 @@ function personCard(p, rep) {
         h("label", { class: "rem-toggle" }, toggle(p.remind !== false, (v) => save(p.id, { remind: v }), `Send ${p.name} reminders`), h("span", {}, "Send reminders"))),
       h("div", { class: "person-foot" },
         h("button", { type: "button", class: "link-btn danger", onclick: () => { removeWithUndo("people", p, `${p.name} removed`); } }, icon("trash", 15), "Remove from team"))),
-    h("button", { type: "button", class: "more-btn", "aria-expanded": String(expanded), onclick: () => { expanded ? open.delete(p.id) : open.add(p.id); app.render(); } },
-      expanded ? "Show less" : `More about ${p.name.split(" ")[0]}`, icon("down", 16)),
+    h("div", { class: "person-links" },
+      h("button", { type: "button", class: "more-btn", "aria-expanded": String(expanded), onclick: () => { expanded ? open.delete(p.id) : open.add(p.id); app.render(); } },
+        expanded ? "Show less" : `More about ${firstName(p.id)}`, icon("down", 16)),
+      p.doc ? h("a", { class: "role-link", href: `#/library/${encodeURIComponent(p.doc)}` }, `Read ${firstName(p.id)}'s full role`, icon("arrow", 15)) : null),
   );
 }
 
-export function render() {
+export function render({ query, fresh } = {}) {
+  if (fresh) setWho(query?.get("who") || "");
   const rep = report(state.hub, today());
   const r = state.hub.settings?.reminders || {};
   const noEmails = people().every((p) => !p.email);
   const addPerson = () => {
     const id = newId("p");
-    if (act([{ op: "upsert", coll: "people", item: { id, name: "New teammate", title: "", email: "", mission: "", number: "", owns: [], invitation: "", stop: [], remind: true } }])) {
+    if (act([{ op: "upsert", coll: "people", item: { id, name: "New teammate", title: "", email: "", mission: "", number: "", owns: [], invitation: "", stop: [], remind: true, doc: "" } }])) {
       open.add(id);
       app.render();
       requestAnimationFrame(() => document.querySelector(`#person-${id} .person-name .ed-view`)?.click());
     }
   };
-  return h("div", { class: "page" },
-    pageHead("Team", "Who owns what. Click anything to change it.", h("button", { type: "button", class: "btn btn-quiet", onclick: addPerson }, icon("plus", 16), "Add a person")),
-    h("div", { class: "people" }, people().map((p) => personCard(p, rep))),
+  return h("div", { class: "page team" },
+    pageHead("Team", "When things happen and who owns what. Click anything to change it."),
+    ourWeek(),
+    section("Who owns what", h("button", { type: "button", class: "btn btn-quiet btn-sm", onclick: addPerson }, icon("plus", 16), "Add a person"),
+      h("div", { class: "people" }, people().map((p) => personCard(p, rep)))),
     section("Reminders", null,
       h("div", { class: "card settings" },
         h("div", { class: "setting" },

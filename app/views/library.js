@@ -25,7 +25,12 @@ function toHtml(md, title) {
     }
     if (el.tagName === "A" && /^https?:/i.test(el.getAttribute("href") || "")) { el.target = "_blank"; el.rel = "noopener"; }
   });
-  root.querySelectorAll("table").forEach((t) => t.replaceWith(h("div", { class: "prose-table" }, t.cloneNode(true))));
+  // Phones stack each row into a small card, so every cell carries its column name (shown above it there).
+  root.querySelectorAll("table").forEach((t) => {
+    const heads = [...t.querySelectorAll("thead th")].map((th) => th.textContent.trim());
+    t.querySelectorAll("tbody tr").forEach((tr) => [...tr.children].forEach((td, i) => { if (heads[i]) td.dataset.label = heads[i]; }));
+    t.replaceWith(h("div", { class: "prose-table" }, t.cloneNode(true)));
+  });
   const first = root.firstElementChild;
   if (first?.tagName === "H1" && first.textContent.trim().toLowerCase() === String(title).trim().toLowerCase()) first.remove();
   return root;
@@ -52,13 +57,15 @@ function renderIndex() {
     if (!groups.has(g)) groups.set(g, []);
     groups.get(g).push(d);
   }
-  const knownGroups = [...groups.keys()];
+  // Roles first (each person's full role), then the rest in the order they were added (sort is stable).
+  const ordered = [...groups.entries()].sort(([a], [b]) => (b === "Roles") - (a === "Roles"));
+  const knownGroups = ordered.map(([g]) => g);
   const newPage = creating ? newPageForm(knownGroups) : null;
   return h("div", { class: "page" },
     pageHead("Library", "Playbooks and how we work.", h("button", { type: "button", class: "btn btn-quiet", onclick: () => { creating = true; app.render(); requestAnimationFrame(() => document.querySelector(".new-page input")?.focus()); } }, icon("plus", 16), "New page")),
     newPage,
     groups.size
-      ? h("div", { class: "groups lib-groups" }, [...groups.entries()].map(([g, list]) => h("section", { class: "group" },
+      ? h("div", { class: "groups lib-groups" }, ordered.map(([g, list]) => h("section", { class: "group" },
           h("div", { class: "group-head" }, h("h2", { class: "group-title" }, g), h("span", { class: "group-count" }, list.length)),
           h("div", { class: "card list" }, list.map((d) => h("a", { class: "row doc-row", href: `#/library/${d.slug}` },
             h("span", { class: "doc-icon" }, icon("doc", 18)),
@@ -103,15 +110,17 @@ function renderDoc(slug, { fresh, wantEdit }) {
   const isEditing = editing?.slug === slug;
   const title = meta?.title || slug;
 
-  const back = h("a", { class: "back", href: "#/library" }, icon("back", 16), "Library");
+  // A reading page: Edit sits quietly on the back-link row; removing the page is offered only while editing.
+  const top = h("div", { class: "doc-top" },
+    h("a", { class: "back", href: "#/library" }, icon("back", 16), "Library"),
+    !isEditing && h("button", { type: "button", class: "link-btn doc-edit-btn", disabled: !doc, onclick: () => { editing = { slug, draft: doc.markdown }; app.render(); requestAnimationFrame(() => document.querySelector(".doc-editor")?.focus()); } }, icon("edit", 15), "Edit"));
   const head = h("header", { class: "page-head doc-head" },
     h("div", { class: "page-head-text" },
-      back,
+      top,
       h("h1", { class: "page-title", tabindex: "-1" }, meta ? editable({ value: meta.title, label: "Page title", placeholder: "Untitled page", onSave: (v) => (v ? saveMeta(slug, { title: v }) : (toast("A page needs a title."), app.render())) }) : title),
       meta && h("p", { class: "page-sub" }, editable({ value: meta.group, label: "Group", placeholder: "Add a group…", onSave: (v) => saveMeta(slug, { group: v || "Other" }) }))),
-    h("div", { class: "page-actions" },
-      !isEditing && h("button", { type: "button", class: "btn btn-quiet", disabled: !doc, onclick: () => { editing = { slug, draft: doc.markdown }; app.render(); requestAnimationFrame(() => document.querySelector(".doc-editor")?.focus()); } }, icon("edit", 16), "Edit"),
-      !isEditing && meta && h("button", { type: "button", class: "icon-btn", "aria-label": "Remove page from Library", title: "Remove from Library", onclick: () => { removeWithUndo("docs", meta, `“${meta.title}” removed from the Library`); location.hash = "#/library"; } }, icon("trash", 18))));
+    isEditing && meta && h("div", { class: "page-actions" },
+      h("button", { type: "button", class: "icon-btn", "aria-label": "Remove page from Library", title: "Remove from Library", onclick: () => { if (editing.draft !== doc.markdown && !confirm("Discard your changes and remove this page from the Library?")) return; editing = null; removeWithUndo("docs", meta, `“${meta.title}” removed from the Library`); location.hash = "#/library"; } }, icon("trash", 18))));
 
   let bodyEl;
   if (!doc) bodyEl = h("div", { class: "loading" }, h("span", { class: "spinner" }), "Opening page…");

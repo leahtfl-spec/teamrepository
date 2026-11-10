@@ -2,7 +2,9 @@
 
 **What it is:** a free Facebook group where people get one small practice rep a day, do it, and comment "done" with a short reflection. It is the daily habit and the front door to the app.
 
-**Owner:** Michelle (community). **Content:** Clint. **Voice:** Founder.
+**Owner:** Michelle (community). **Content:** Clint. **Voice:** Leah.
+
+> **Open question:** Michelle's role puts community in the Practice app and the Labs, and Skool is retiring. Decide whether this lives on Facebook or in the app.
 
 > **Decision: free.** The group is where people try the practice; the app is where they go deeper. Paid members get the full library, masterclasses, workbooks and audio drops.
 
@@ -36,14 +38,14 @@ Every day at about 6am, a scheduled post goes up:
 | Reply to comments, welcome new members, moderate | Michelle | Daily, 2 × 15 min |
 | Approve new members (entry questions, including email) | Michelle | Daily |
 | Spotlight a member | Michelle | Fridays |
-| Report group size and avg. comments to [Numbers](#/numbers) | Michelle | Fridays |
-| Invite to the masterclass or the app (no more than 1 post in 7) | Abra (offer), Clint (post) | Weekly |
+| Community participation to [Numbers](#/numbers) | Michelle | Fridays |
+| Invite to the Masterclass or the app (no more than 1 post in 7) | Michelle (invites), Clint (post) | Weekly |
 
 ## Entry questions
 
 These build the email list, the audience we own.
 
-1. What brought you to Inner Board?
+1. What brought you to InnerBoard?
 2. What do you want to become this year?
 3. What's your email? We'll send you our free guide and the 30-Day Rep Challenge. (Optional, and say exactly what you'll send.)
 
@@ -57,4 +59,4 @@ These build the email list, the audience we own.
 ## Streaks and recognition
 
 - Shout-outs at 7, 30 and 100 reps. Tracked by hand at first: members comment "Day 30."
-- A 100-rep streak earns an Inner Board sweatshirt. See [Gift the Practice](#/library/gift-the-practice).
+- A 100-rep streak earns an InnerBoard sweatshirt. See [Gift the Practice](#/library/gift-the-practice).

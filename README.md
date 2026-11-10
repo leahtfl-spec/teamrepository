@@ -1,10 +1,12 @@
-# Inner Board Command Center
+# InnerBoard Command Center
 
-One calm place for the Inner Board team to run the road to **1,000 paying members**: today's work, every task, the content calendar, the weekly numbers, the team, and our playbooks. Everything is editable in the browser, and every change is saved back to this repository.
+One calm place for the InnerBoard team to run the road to **1,000 people practicing each week by November 9, 2027**: today's work, every task, the content calendar, the weekly numbers, the team, and our playbooks. Everything is editable in the browser, and every change is saved back to this repository.
 
 ## For the team
 
 Open the site and pick who you are from the **I am…** menu. **Today** shows your work first. Tap a task to mark it done, click any text to change it, and use the Library for how we work.
+
+**Team** holds everyone's role, and **Our week** there is the team's daily and weekly calendar. A full role doc, when someone has one, lives in the Library under **Roles**.
 
 ## Deploy on Vercel
 

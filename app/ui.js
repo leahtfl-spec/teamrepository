@@ -48,6 +48,8 @@ const P = {
   sparkle: '<path d="M12 4.5c.6 3.7 1.8 4.9 5.5 5.5-3.7.6-4.9 1.8-5.5 5.5-.6-3.7-1.8-4.9-5.5-5.5 3.7-.6 4.9-1.8 5.5-5.5z"/>',
   mail: '<rect x="3.75" y="5.75" width="16.5" height="12.5" rx="2.5"/><path d="m4.5 7 7.5 6 7.5-6"/>',
   doc: '<path d="M7 3.75h6.5l4.25 4.25v10.5A1.75 1.75 0 0 1 16 20.25H7a1.75 1.75 0 0 1-1.75-1.75V5.5A1.75 1.75 0 0 1 7 3.75z"/><path d="M13.25 3.75V8.5h4.5"/>',
+  dots: '<circle cx="6.5" cy="12" r=".9" fill="currentColor"/><circle cx="12" cy="12" r=".9" fill="currentColor"/><circle cx="17.5" cy="12" r=".9" fill="currentColor"/>',
+  arrow: '<path d="M5.5 12h13M13 6.5l5.5 5.5-5.5 5.5"/>',
 };
 export function icon(name, size = 20) {
   const t = document.createElement("template");
@@ -88,7 +90,11 @@ export function initials(name = "") {
   if (!parts.length) return "·";
   return (parts[0][0] + (parts.length > 1 ? parts.at(-1)[0] : "")).toUpperCase();
 }
-const tint = (id = "") => [...id].reduce((a, c) => (a * 31 + c.charCodeAt(0)) >>> 0, 7) % 5;
+// Teammates get distinct tints by their place on the team (Leah and Logan both read "L"); others fall back to a hash.
+const tint = (id = "") => {
+  const i = people().findIndex((p) => p.id === id);
+  return i >= 0 ? i % 5 : [...id].reduce((a, c) => (a * 31 + c.charCodeAt(0)) >>> 0, 7) % 5;
+};
 export function avatar(id, size = "") {
   const p = person(id);
   if (!p) return h("span", { class: `avatar avatar-none ${size}`, title: "Unassigned", "aria-hidden": "true" });
@@ -98,6 +104,9 @@ export function avatar(id, size = "") {
 // ---- status ----
 export const TASK_LABEL = { todo: "To do", doing: "Doing", done: "Done" };
 export const CONTENT_LABEL = { idea: "Idea", planned: "Planned", "in-edit": "In edit", scheduled: "Scheduled", posted: "Posted" };
+// Rhythm groups, in calendar order: "Every day", the weekdays, then the ones with no fixed day yet.
+export const RHYTHM_LABEL = { daily: "Every day", mon: "Monday", tue: "Tuesday", wed: "Wednesday", thu: "Thursday", fri: "Friday", sat: "Saturday", sun: "Sunday", weekly: "Each week", monthly: "Each month" };
+export const RHYTHM_SHORT = { daily: "Every day", mon: "Mon", tue: "Tue", wed: "Wed", thu: "Thu", fri: "Fri", sat: "Sat", sun: "Sun", weekly: "Each week", monthly: "Each month" };
 export const status = (kind, label) => h("span", { class: `status s-${kind}` }, h("span", { class: "dot" }), label);
 
 // ---- inline editing: click text -> input; Enter/blur saves; Esc cancels ----
@@ -207,25 +216,41 @@ const setInert = (on) => { const root = document.getElementById("app"); if (root
 export const sheetIsOpen = () => !!openSheetState;
 export const refreshSheet = () => openSheetState?.refresh();
 
-// ---- popover menu ----
-export function menu(anchor, items, { align = "left" } = {}) {
+// ---- popovers ----
+// popover(anchor, content) floats `content` next to `anchor`; closes on outside click or Esc. Returns close().
+// Opening it again from the same anchor just closes it (a toggle).
+export function popover(anchor, content, { align = "left", className = "", label, role = "dialog" } = {}) {
   const layer = document.getElementById("layer");
-  document.querySelector(".menu")?.remove();
+  const prev = document.querySelector(".menu");
+  if (prev) {
+    prev.dispatchEvent(new Event("close"));
+    if (prev.anchor === anchor) return () => {};
+  }
   const r = anchor.getBoundingClientRect();
-  const el = h("div", { class: "menu", role: "menu" }, items.map((it) =>
-    it === "-" ? h("div", { class: "menu-sep" }) :
-      h("button", { type: "button", role: "menuitem", class: `menu-item${it.active ? " is-active" : ""}`, onclick: () => { done(); it.onClick(); } },
-        it.icon, h("span", { class: "menu-label" }, it.label), it.active && icon("check", 16))));
+  const el = h("div", { class: `menu ${className}`.trim(), role, "aria-label": label }, content);
+  el.anchor = anchor;
   layer.append(el);
   const mw = el.offsetWidth, mh = el.offsetHeight;
   const below = r.bottom + 6 + mh < innerHeight;
   el.style.top = `${below ? r.bottom + 6 : Math.max(8, r.top - mh - 6)}px`;
   el.style.left = `${Math.min(innerWidth - mw - 8, Math.max(8, align === "right" ? r.right - mw : r.left))}px`;
-  const onDoc = (e) => { if (!el.contains(e.target) && e.target !== anchor) done(); };
-  const onKey = (e) => { if (e.key === "Escape") { e.stopPropagation(); done(); anchor.focus(); } };
+  const onDoc = (e) => { if (!el.contains(e.target) && !anchor.contains(e.target)) done(); };
+  const onKey = (e) => { if (e.key === "Escape") { e.stopPropagation(); e.preventDefault(); done(); anchor.focus(); } };
   function done() { el.remove(); document.removeEventListener("pointerdown", onDoc, true); document.removeEventListener("keydown", onKey, true); }
+  el.addEventListener("close", done);
   setTimeout(() => { document.addEventListener("pointerdown", onDoc, true); document.addEventListener("keydown", onKey, true); });
-  el.querySelector("button")?.focus();
+  (el.querySelector("[aria-checked='true'], [aria-pressed='true']") || el.querySelector("button, input, select"))?.focus();
+  return done;
+}
+
+export function menu(anchor, items, opts = {}) {
+  let close = () => {};
+  const list = items.map((it) =>
+    it === "-" ? h("div", { class: "menu-sep" }) :
+      h("button", { type: "button", role: "menuitem", class: `menu-item${it.active ? " is-active" : ""}${it.danger ? " is-danger" : ""}`, onclick: () => { close(); it.onClick(); } },
+        it.icon, h("span", { class: "menu-label" }, it.label), it.active && icon("check", 16)));
+  close = popover(anchor, list, { role: "menu", ...opts });
+  return close;
 }
 
 // ---- small building blocks ----

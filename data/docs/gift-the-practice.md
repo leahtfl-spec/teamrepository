@@ -4,14 +4,14 @@ Our gear does three jobs:
 
 1. **A reason to commit now:** a free hat with an annual plan.
 2. **Recognition:** the team wears it on camera, and members wear it in their photos.
-3. **Belonging:** a member in an Inner Board hat is a walking invitation.
+3. **Belonging:** a member in an InnerBoard hat is a walking invitation.
 
 **Offer:** Abra. **Design:** Clint. **Fulfillment:** Michelle. **Gift codes and annual flag:** Logan.
 
 ## The three programs
 
 **1. Founding 1,000: join annually, get a free hat**
-- Anyone who buys or upgrades to an **annual** plan gets an Inner Board hat.
+- Anyone who buys or upgrades to an **annual** plan gets an InnerBoard hat.
 - Framed as **Founding Member**, limited to the first 1,000 annual members.
 - Fine print to settle: one per member, shipping region (US only?), ship time, while supplies last.
 
@@ -20,7 +20,7 @@ Our gear does three jobs:
 - Needs gift codes in the app or payment system. Logan confirms this in Phase 0.
 
 **3. Streak rewards**
-- 100 Rep of the Day reps earns an Inner Board sweatshirt.
+- 100 Rep of the Day reps earns an InnerBoard sweatshirt.
 - Tracked by hand at first (members post "Day 100").
 
 ## The team wears it
@@ -55,5 +55,5 @@ Our gear does three jobs:
 1. Logan flags new annual and gift sign-ups each week.
 2. Michelle sends a short address form.
 3. Hats ship in one weekly batch.
-4. Hats owed and hats shipped go on [Numbers](#/numbers).
+4. Hats owed and hats shipped are counted in the weekly shipping task on [Tasks](#/tasks).
 5. Members post a photo in the hat, and Clint reposts it.

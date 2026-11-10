@@ -1,7 +1,7 @@
 {
   "version": 1,
   "updatedAt": "2026-11-08T12:00:00.000Z",
-  "brand": { "name": "Inner Board", "tagline": "The practice of becoming you." },
+  "brand": { "name": "InnerBoard", "tagline": "The practice of becoming you." },
   "goal": { "label": "Paying members", "target": 1000, "current": 120, "deadline": "2027-11-30" },
   "people": [
     { "id": "founder", "name": "Founder", "title": "Founder", "email": "", "mission": "", "number": "", "owns": [], "invitation": "", "stop": [], "remind": false },
@@ -35,7 +35,7 @@
     { "id": "b-2026-11-08", "date": "2026-11-08", "summary": "Quiet Sunday.", "done": ["t-done-reported"], "overdue": ["t-overdue"], "added": [], "reminded": [] }
   ],
   "settings": {
-    "reminders": { "enabled": true, "mode": "draft", "minDaysBetween": 2, "signature": "With care,\nThe Inner Board Hub" },
+    "reminders": { "enabled": true, "mode": "draft", "minDaysBetween": 2, "signature": "With care,\nThe InnerBoard Hub" },
     "dataBranch": "main"
   }
 }

@@ -28,7 +28,7 @@
 | Founder solo teaching | Twice a month | Founder |
 | Guest conversation | Once a month | Founder + a guest booked by Abra |
 | **Member Spotlight:** a member's story of becoming | Once a month | Michelle hosts or co-hosts |
-| Behind Inner Board: the team, the gear, how we build | Quarterly | Founder + team |
+| Behind InnerBoard: the team, the gear, how we build | Quarterly | Founder + team |
 
 ## Growth (Abra)
 

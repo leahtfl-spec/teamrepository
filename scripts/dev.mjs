@@ -52,5 +52,5 @@ createServer(async (req, res) => {
     res.end();
   }
 }).listen(port, () => {
-  console.log(`Inner Board hub on http://localhost:${port}  (data: ${process.env.GITHUB_REPO ? `github ${process.env.GITHUB_REPO}` : process.env.HUB_DATA_DIR})`);
+  console.log(`InnerBoard hub on http://localhost:${port}  (data: ${process.env.GITHUB_REPO ? `github ${process.env.GITHUB_REPO}` : process.env.HUB_DATA_DIR})`);
 });

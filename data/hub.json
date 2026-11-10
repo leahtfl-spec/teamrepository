@@ -1,21 +1,39 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-10T01:58:11.937Z",
+  "updatedAt": "2026-11-10T02:47:25.678Z",
   "brand": {
-    "name": "Inner Board",
+    "name": "InnerBoard",
     "tagline": "The practice of becoming you."
   },
   "goal": {
-    "label": "Paying members",
+    "label": "People practicing each week",
     "target": 1000,
     "current": 0,
-    "deadline": "2027-11-30"
+    "deadline": "2027-11-09",
+    "milestones": [
+      {
+        "date": "2027-03-31",
+        "target": 250
+      },
+      {
+        "date": "2027-06-30",
+        "target": 500
+      },
+      {
+        "date": "2027-09-30",
+        "target": 750
+      },
+      {
+        "date": "2027-11-09",
+        "target": 1000
+      }
+    ]
   },
   "people": [
     {
       "id": "founder",
       "name": "Leah",
-      "title": "Founder & Voice of Inner Board",
+      "title": "Founder & Voice of InnerBoard",
       "email": "",
       "mission": "Teach. Be the voice. Everything else is someone else's job.",
       "number": "Hours recorded per week (protected)",
@@ -23,7 +41,8 @@
         "The teaching: the practice, the masterclasses and the podcast's point of view",
         "One weekly Recording Block (about half a day, directed by Clint): 1–2 Becoming You episodes, 7 Rep of the Day videos (30–60 sec each), and any promo or offer videos",
         "One monthly masterclass",
-        "One short live session a week in the community group (optional but powerful)"
+        "One short live session a week in the community group (optional but powerful)",
+        "The monthly theme, shaped with Abra at the first-Monday theme talk"
       ],
       "invitation": "Protect the teaching. Give the team one focused Recording Block a week, and trust them with everything that happens after it.",
       "stop": [
@@ -33,27 +52,31 @@
         "Answering logistics questions",
         "Approving routine content"
       ],
+      "doc": "",
       "remind": false
     },
     {
       "id": "abra",
       "name": "Abra",
-      "title": "Chief of Staff & Head of Growth",
+      "title": "Brand and Mission Director",
       "email": "abra@innerboardsuite.com",
-      "mission": "Own the number. Get Inner Board to 1,000 members and protect the founder's time while doing it.",
-      "number": "New paid members per week",
+      "mission": "Holds the InnerBoard standard and carries it into every room she walks into.",
+      "number": "Room invitations accepted",
       "owns": [
-        "The scorecard: updates it every Friday and runs the Monday leadership meeting from it",
-        "Offers and promotions: Founding 1,000 (annual + free hat), Gift the Practice and referrals. Sets the terms, budget and dates",
-        "Podcast growth: books Becoming You guests and pitches the founder to other podcasts (our biggest reach lever)",
-        "The email list: we don't own a Facebook group's audience, but we own our email list",
-        "Partnerships: collaborations, affiliates, and anyone who can bring the practice to a group at once",
-        "The founder's calendar: guards the Recording Block"
+        "The standard: the Baseline, the Constitution and the shared words. Every name, line and offer traces back to her",
+        "Teaching the standard so it travels, and bringing her eye to what is new",
+        "Boiling every offer, page and program down to its simplest, most potent form before it ships",
+        "The doctrine: everything conceptual in the curriculum, and INQ as Certification Director",
+        "The monthly theme, shaped with Leah at the first-Monday theme talk",
+        "The signature talk: what InnerBoard is, why it matters, and the invitation into the Practice",
+        "Stepping into rooms: groups, organizations, conferences, coaches, schools and communities. She travels and speaks",
+        "Programs built on top of the offer for the people in those rooms",
+        "Chief of staff: the team's go-to for direction, connection and support",
+        "IOS Certification and INQ office hours, and relationships with members, clients and partners"
       ],
-      "invitation": "Run the business of Inner Board so the founder can stay focused on teaching. Be the public face for partners and podcast hosts. The job moves from checking that people are on task to owning the growth number.",
-      "stop": [
-        "General check-ins. The scorecard shows who's on track."
-      ],
+      "invitation": "The TED talk is the big, hairy dream: to become so good at what she says, and so brave about how she says it, that she steps onto that stage and gives it everything. Every talk before it is practice for that one.",
+      "stop": [],
+      "doc": "abra-role",
       "remind": true
     },
     {
@@ -61,22 +84,23 @@
       "name": "Michelle",
       "title": "COO & Head of Member Experience",
       "email": "penton.michellejoy@gmail.com",
-      "mission": "Everyone who joins gets everything they paid for, builds a daily rep habit, and stays.",
-      "number": "30-day active rate",
+      "mission": "Owns the member, client and student experience from start to finish, so Practice becomes the place people never want to miss.",
+      "number": "People practicing each week",
       "owns": [
-        "Masterclass production: runs the pipeline and gets the recording and every asset to Logan",
-        "Membership assets: replay, workbook, audio drops and slides, complete and live in the app",
-        "Onboarding: a new member's first 7 days (welcome, first rep, how to use the app, an invitation to the group)",
-        "The community: the Rep of the Day group. Welcomes, keeps the conversation going, moderates, spotlights members",
-        "Merch fulfillment: collects addresses, ships the hats, handles issues",
-        "Member support: questions about access, billing or content",
-        "Logan: sets his priorities and checks his work"
+        "The member journey: first welcome, onboarding, the welcome-back message, and every touchpoint that brings people back",
+        "Member experience on the Practice app and GHL, with the website as the front door. Skool retires in January 2027",
+        "The monthly drop with Logan: the recording, workbook, audio note and surprise drop reaching members clearly",
+        "Community: the Practice app and the Labs, alive and personal",
+        "Monthly social content for the Practice socials, for now, until Clint is ready to take it on",
+        "Operations rhythm: newsletters, Masterclass invites and the daily calendar that keeps it all moving",
+        "Supporting Abra's personal social account, so her connections find InnerBoard and Practice"
       ],
-      "invitation": "Become the member-facing voice next to the founder. Host the monthly New Member Welcome call and a monthly Member Spotlight on the podcast. Be the person members know by name. Mentor Clint rather than approving his work.",
+      "invitation": "Grow into a lead: build and mentor a team of her own, starting with the person who takes over the tasks she does today. Stretch into YouTube, posting her own reps, and reading the member numbers with Clint.",
       "stop": [
         "Approving routine posts",
         "Writing status reports. The scorecard replaces both."
       ],
+      "doc": "michelle-win-sheet",
       "remind": true
     },
     {
@@ -84,7 +108,7 @@
       "name": "Clint",
       "title": "Creative Director",
       "email": "clintreianne@gmail.com",
-      "mission": "Make Inner Board look and sound unmistakable everywhere, and turn the founder's weekly recording into a week of content.",
+      "mission": "Make InnerBoard look and sound unmistakable everywhere, and turn the founder's weekly recording into a week of content.",
       "number": "Content shipped per week → group joins",
       "owns": [
         "Brand guidelines: one page on colors, fonts, logo use, caption style and voice. Once it exists, routine content goes out without approval",
@@ -94,10 +118,11 @@
         "Social: clips, carousels, posting and engagement on our pages",
         "Merch: designs the hat and sweatshirt, runs photo and video shoots in the gear"
       ],
-      "invitation": "Own the creative calls: what gets clipped, how it looks, what we try next. Host a short behind-the-scenes series (\"how we make Inner Board\"). A director, not an editor.",
+      "invitation": "Own the creative calls: what gets clipped, how it looks, what we try next. Host a short behind-the-scenes series (\"how we make InnerBoard\"). A director, not an editor.",
       "stop": [
         "Waiting for approval on routine posts"
       ],
+      "doc": "",
       "remind": true
     },
     {
@@ -111,10 +136,13 @@
         "Uploads of replays, audio drops, workbooks and Rep of the Day videos",
         "App onboarding screens and the first-7-days flow, built with Michelle",
         "Gift codes and annual plans: the app can sell a gifted year and flags annual sign-ups for the free hat",
-        "App numbers for the scorecard each week: active members, sign-ups, annual vs. monthly"
+        "App numbers for the scorecard each week: active members, sign-ups, annual vs. monthly",
+        "The monthly drop with Michelle",
+        "Member data: what the app can report"
       ],
       "invitation": "Be the person who knows the app inside out, so every asset is live and checked on phone and desktop before anyone has to ask.",
       "stop": [],
+      "doc": "",
       "remind": true
     }
   ],
@@ -137,12 +165,12 @@
       "title": "Set the target date for 1,000 members",
       "owner": "founder",
       "due": "2026-11-12",
-      "status": "todo",
+      "status": "done",
       "phase": "Phase 0 · Decide",
-      "notes": "With Abra. The plan assumes 12 months (Nov 30, 2027): about 84 new members a month, or 20 a week. A shorter deadline means a bigger weekly number.",
+      "notes": "With Abra. The plan assumes 12 months (Nov 30, 2027): about 84 new members a month, or 20 a week. A shorter deadline means a bigger weekly number.\nSet: 1,000 people practicing by Nov 9, 2027, with milestones (from Michelle's win sheet).",
       "createdAt": "2026-11-09T09:00:00.000Z",
       "createdBy": "routine",
-      "doneAt": null,
+      "doneAt": "2026-11-10T02:00:00.000Z",
       "lastRemindedAt": null
     },
     {
@@ -152,7 +180,7 @@
       "due": "2026-11-12",
       "status": "todo",
       "phase": "Phase 0 · Decide",
-      "notes": "With Abra. Recommendation: free. The group is the front door; the app is where people go deeper.",
+      "notes": "With Abra. Recommendation: free. The group is the front door; the app is where people go deeper.\nOpen question: Michelle's role puts community in the Practice app and the Labs, and Skool is retiring. Decide whether this lives on Facebook or in the app.",
       "createdAt": "2026-11-09T09:00:00.000Z",
       "createdBy": "routine",
       "doneAt": null,
@@ -161,11 +189,11 @@
     {
       "id": "t-p0-04",
       "title": "Record our baseline numbers in the scorecard",
-      "owner": "abra",
+      "owner": "michelle",
       "due": "2026-11-13",
       "status": "todo",
       "phase": "Phase 0 · Decide",
-      "notes": "With Logan. Paid members, annual vs. monthly, email list size, podcast downloads per episode, social followers.",
+      "notes": "With Logan. Michelle owns the member numbers now; pull baselines for the new scorecard.",
       "createdAt": "2026-11-09T09:00:00.000Z",
       "createdBy": "routine",
       "doneAt": null,
@@ -243,7 +271,7 @@
       "due": "2026-11-19",
       "status": "todo",
       "phase": "Phase 1 · Foundation",
-      "notes": "Rules, entry questions (including email) and a welcome post. See Rep of the Day in the Library.",
+      "notes": "Rules, entry questions (including email) and a welcome post. See Rep of the Day in the Library.\nOpen question: Michelle's role puts community in the Practice app and the Labs, and Skool is retiring. Decide whether this lives on Facebook or in the app.",
       "createdAt": "2026-11-09T09:00:00.000Z",
       "createdBy": "routine",
       "doneAt": null,
@@ -295,7 +323,7 @@
       "due": "2026-11-23",
       "status": "todo",
       "phase": "Phase 1 · Foundation",
-      "notes": "With Clint.",
+      "notes": "With Clint.\nOpen question: Michelle's role puts community in the Practice app and the Labs, and Skool is retiring. Decide whether this lives on Facebook or in the app.",
       "createdAt": "2026-11-09T09:00:00.000Z",
       "createdBy": "routine",
       "doneAt": null,
@@ -386,7 +414,7 @@
       "due": "2026-12-03",
       "status": "todo",
       "phase": "Phase 2 · Gift the Practice",
-      "notes": "Every Thursday through December. Update hats owed and shipped on Numbers.",
+      "notes": "Every Thursday through December. Keep the count of hats owed and shipped in these notes.",
       "createdAt": "2026-11-09T09:00:00.000Z",
       "createdBy": "routine",
       "doneAt": null,
@@ -438,7 +466,7 @@
       "due": "2027-01-01",
       "status": "todo",
       "phase": "Phase 3 · Founding 1,000",
-      "notes": "With Clint (daily content). The big front-door push for the year.",
+      "notes": "With Clint (daily content). The big front-door push for the year.\nOpen question: Michelle's role puts community in the Practice app and the Labs, and Skool is retiring. Decide whether this lives on Facebook or in the app.",
       "createdAt": "2026-11-09T09:00:00.000Z",
       "createdBy": "routine",
       "doneAt": null,
@@ -447,11 +475,11 @@
     {
       "id": "t-p3-03",
       "title": "Invite everyone in the challenge to the January masterclass",
-      "owner": "abra",
+      "owner": "michelle",
       "due": "2027-01-08",
       "status": "todo",
       "phase": "Phase 3 · Founding 1,000",
-      "notes": "With Michelle.",
+      "notes": "Michelle owns Masterclass invites.",
       "createdAt": "2026-11-09T09:00:00.000Z",
       "createdBy": "routine",
       "doneAt": null,
@@ -555,8 +583,281 @@
       "due": "2027-03-31",
       "status": "todo",
       "phase": "Phase 4 · Scale",
-      "notes": "Compare the scorecard with the 20-a-week pace and adjust the plan.",
+      "notes": "Compare the scorecard with the first milestone (250 people practicing by Mar 31) and adjust the plan.",
       "createdAt": "2026-11-09T09:00:00.000Z",
+      "createdBy": "routine",
+      "doneAt": null,
+      "lastRemindedAt": null
+    },
+    {
+      "id": "t-mw-01",
+      "title": "Social handoff: tell Abra what you need to run her personal social account",
+      "owner": "michelle",
+      "due": "2026-11-10",
+      "status": "todo",
+      "phase": "Michelle · Wins",
+      "notes": "So her connections find their way to InnerBoard and Practice.",
+      "createdAt": "2026-11-10T02:00:00.000Z",
+      "createdBy": "routine",
+      "doneAt": null,
+      "lastRemindedAt": null
+    },
+    {
+      "id": "t-mw-02",
+      "title": "Turn my responsibilities into a daily and weekly calendar",
+      "owner": "michelle",
+      "due": "2026-11-13",
+      "status": "todo",
+      "phase": "Michelle · Wins",
+      "notes": "A first draft is on the Team page under Our week. Adjust it until it fits.",
+      "createdAt": "2026-11-10T02:00:00.000Z",
+      "createdBy": "routine",
+      "doneAt": null,
+      "lastRemindedAt": null
+    },
+    {
+      "id": "t-mw-03",
+      "title": "Bring a shortlist of daily return ideas to the team meeting",
+      "owner": "michelle",
+      "due": "2026-11-16",
+      "status": "todo",
+      "phase": "Michelle · Wins",
+      "notes": "Ideas that make Practice the place people open every day, with a plan to test the top ones.",
+      "createdAt": "2026-11-10T02:00:00.000Z",
+      "createdBy": "routine",
+      "doneAt": null,
+      "lastRemindedAt": null
+    },
+    {
+      "id": "t-mw-04",
+      "title": "Welcome-back message, first version live",
+      "owner": "michelle",
+      "due": "2026-11-30",
+      "status": "todo",
+      "phase": "Michelle · Wins",
+      "notes": "Picks people up right where they are. Live in the app and sent through GHL, triggered when someone goes quiet. Needs the welcome-back brief first.",
+      "createdAt": "2026-11-10T02:00:00.000Z",
+      "createdBy": "routine",
+      "doneAt": null,
+      "lastRemindedAt": null
+    },
+    {
+      "id": "t-mw-05",
+      "title": "December social content plan written and approved",
+      "owner": "michelle",
+      "due": "2026-11-30",
+      "status": "todo",
+      "phase": "Michelle · Wins",
+      "notes": "Written, planned and approved ahead of time. Then a clear handoff process for Clint when he's ready.",
+      "createdAt": "2026-11-10T02:00:00.000Z",
+      "createdBy": "routine",
+      "doneAt": null,
+      "lastRemindedAt": null
+    },
+    {
+      "id": "t-mw-06",
+      "title": "December monthly drop reaches members",
+      "owner": "michelle",
+      "due": "2026-12-31",
+      "status": "todo",
+      "phase": "Michelle · Wins",
+      "notes": "Recording, workbook, audio note and surprise drop, with Logan. Build it as the repeatable checklist in Library → Monthly drop.",
+      "createdAt": "2026-11-10T02:00:00.000Z",
+      "createdBy": "routine",
+      "doneAt": null,
+      "lastRemindedAt": null
+    },
+    {
+      "id": "t-mw-07",
+      "title": "Move every member off Skool",
+      "owner": "michelle",
+      "due": "2026-12-31",
+      "status": "todo",
+      "phase": "Michelle · Wins",
+      "notes": "To the Practice app, website and GHL, with clear next steps and no one left behind. Skool closes in January 2027.",
+      "createdAt": "2026-11-10T02:00:00.000Z",
+      "createdBy": "routine",
+      "doneAt": null,
+      "lastRemindedAt": null
+    },
+    {
+      "id": "t-ms-01",
+      "title": "Write the role for the first person who joins my team",
+      "owner": "michelle",
+      "due": "",
+      "status": "todo",
+      "phase": "Michelle · Stretch",
+      "notes": "Then help hire them and mentor them into the tasks I hold today.",
+      "createdAt": "2026-11-10T02:00:00.000Z",
+      "createdBy": "routine",
+      "doneAt": null,
+      "lastRemindedAt": null
+    },
+    {
+      "id": "t-ms-02",
+      "title": "YouTube optimization alongside Clint's refresh",
+      "owner": "michelle",
+      "due": "",
+      "status": "todo",
+      "phase": "Michelle · Stretch",
+      "notes": "Guide: the social media optimization offer Leah received on Loom.\n- Channel look and feel that matches the brand\n- Thumbnails on new and existing videos\n- Captions, titles and descriptions that get found and clicked\n- Shorts from the podcast, each linked to its full episode",
+      "createdAt": "2026-11-10T02:00:00.000Z",
+      "createdBy": "routine",
+      "doneAt": null,
+      "lastRemindedAt": null
+    },
+    {
+      "id": "t-ms-03",
+      "title": "Post my Practice reps publicly",
+      "owner": "michelle",
+      "due": "",
+      "status": "todo",
+      "phase": "Michelle · Stretch",
+      "notes": "Share my reps on social, not just behind the scenes for clients.",
+      "createdAt": "2026-11-10T02:00:00.000Z",
+      "createdBy": "routine",
+      "doneAt": null,
+      "lastRemindedAt": null
+    },
+    {
+      "id": "t-ms-04",
+      "title": "Learn to read the member numbers with Clint",
+      "owner": "michelle",
+      "due": "",
+      "status": "todo",
+      "phase": "Michelle · Stretch",
+      "notes": "Track who comes back and who drifts away, and decide from the data instead of gut feel.",
+      "createdAt": "2026-11-10T02:00:00.000Z",
+      "createdBy": "routine",
+      "doneAt": null,
+      "lastRemindedAt": null
+    },
+    {
+      "id": "t-ms-05",
+      "title": "Map the full member journey, first click to daily habit",
+      "owner": "michelle",
+      "due": "",
+      "status": "todo",
+      "phase": "Michelle · Stretch",
+      "notes": "Find where people fall off before they tell us.",
+      "createdAt": "2026-11-10T02:00:00.000Z",
+      "createdBy": "routine",
+      "doneAt": null,
+      "lastRemindedAt": null
+    },
+    {
+      "id": "t-sp-01",
+      "title": "Give Michelle access to Facebook, Instagram and TikTok",
+      "owner": "abra",
+      "due": "2026-11-13",
+      "status": "todo",
+      "phase": "Support for Michelle",
+      "notes": "Dates are starting suggestions.",
+      "createdAt": "2026-11-10T02:00:00.000Z",
+      "createdBy": "routine",
+      "doneAt": null,
+      "lastRemindedAt": null
+    },
+    {
+      "id": "t-sp-02",
+      "title": "Build Michelle's support plan together",
+      "owner": "abra",
+      "due": "2026-11-20",
+      "status": "todo",
+      "phase": "Support for Michelle",
+      "notes": "With Michelle. Dates are starting suggestions.",
+      "createdAt": "2026-11-10T02:00:00.000Z",
+      "createdBy": "routine",
+      "doneAt": null,
+      "lastRemindedAt": null
+    },
+    {
+      "id": "t-sp-03",
+      "title": "Write the welcome-back message brief",
+      "owner": "abra",
+      "due": "2026-11-17",
+      "status": "todo",
+      "phase": "Support for Michelle",
+      "notes": "Owner is a best guess; reassign if Leah writes it. Michelle needs it for the first version by end of November. Dates are starting suggestions.",
+      "createdAt": "2026-11-10T02:00:00.000Z",
+      "createdBy": "routine",
+      "doneAt": null,
+      "lastRemindedAt": null
+    },
+    {
+      "id": "t-sp-04",
+      "title": "Tell Michelle which member numbers the app, website and GHL can report today",
+      "owner": "logan",
+      "due": "2026-11-17",
+      "status": "todo",
+      "phase": "Support for Michelle",
+      "notes": "And which ones need your help to track. Dates are starting suggestions.",
+      "createdAt": "2026-11-10T02:00:00.000Z",
+      "createdBy": "routine",
+      "doneAt": null,
+      "lastRemindedAt": null
+    },
+    {
+      "id": "t-sp-05",
+      "title": "Skool move: plan and timeline",
+      "owner": "abra",
+      "due": "2026-11-20",
+      "status": "todo",
+      "phase": "Support for Michelle",
+      "notes": "With Michelle and Logan. Owner is a best guess as chief of staff; reassign if needed. Dates are starting suggestions.",
+      "createdAt": "2026-11-10T02:00:00.000Z",
+      "createdBy": "routine",
+      "doneAt": null,
+      "lastRemindedAt": null
+    },
+    {
+      "id": "t-ab-01",
+      "title": "Draft the signature talk",
+      "owner": "abra",
+      "due": "",
+      "status": "todo",
+      "phase": "Abra · Brand & Mission",
+      "notes": "What InnerBoard is, why it matters, and the invitation into the Practice.",
+      "createdAt": "2026-11-10T02:00:00.000Z",
+      "createdBy": "routine",
+      "doneAt": null,
+      "lastRemindedAt": null
+    },
+    {
+      "id": "t-ab-02",
+      "title": "List the rooms to step into this quarter",
+      "owner": "abra",
+      "due": "",
+      "status": "todo",
+      "phase": "Abra · Brand & Mission",
+      "notes": "Groups, organizations, conferences, coaches, schools and communities.",
+      "createdAt": "2026-11-10T02:00:00.000Z",
+      "createdBy": "routine",
+      "doneAt": null,
+      "lastRemindedAt": null
+    },
+    {
+      "id": "t-ab-03",
+      "title": "Put the Baseline, Constitution and shared words in the Library",
+      "owner": "abra",
+      "due": "",
+      "status": "todo",
+      "phase": "Abra · Brand & Mission",
+      "notes": "So the team can apply the standard with confidence.",
+      "createdAt": "2026-11-10T02:00:00.000Z",
+      "createdBy": "routine",
+      "doneAt": null,
+      "lastRemindedAt": null
+    },
+    {
+      "id": "t-ab-04",
+      "title": "Set INQ and IOS Certification office hours on the team calendar",
+      "owner": "abra",
+      "due": "",
+      "status": "todo",
+      "phase": "Abra · Brand & Mission",
+      "notes": "Then set their days on Team → Our week.",
+      "createdAt": "2026-11-10T02:00:00.000Z",
       "createdBy": "routine",
       "doneAt": null,
       "lastRemindedAt": null
@@ -639,68 +940,180 @@
       "owner": "clint",
       "status": "planned",
       "link": ""
+    },
+    {
+      "id": "c-008",
+      "date": "2026-12-01",
+      "channel": "Newsletter (GHL)",
+      "pillar": "",
+      "format": "Email",
+      "title": "December Masterclass invite",
+      "owner": "michelle",
+      "status": "idea",
+      "link": ""
+    },
+    {
+      "id": "c-009",
+      "date": "2026-11-18",
+      "channel": "Newsletter (GHL)",
+      "pillar": "",
+      "format": "Email",
+      "title": "Weekly newsletter",
+      "owner": "michelle",
+      "status": "idea",
+      "link": ""
     }
   ],
   "metrics": [
     {
-      "key": "paidMembers",
-      "label": "Paid members",
-      "owner": "logan",
-      "target": null
+      "key": "practicingWeekly",
+      "label": "People practicing each week",
+      "owner": "michelle",
+      "unit": "",
+      "target": null,
+      "targetNote": "Milestones above",
+      "why": "The direct line to 1,000",
+      "baseline": "To pull"
     },
     {
-      "key": "newPaid",
-      "label": "New paid members",
+      "key": "welcomeBackReturn",
+      "label": "Back within 7 days of the welcome-back message",
+      "owner": "michelle",
+      "unit": "%",
+      "target": 20,
+      "targetNote": "",
+      "why": "Shows whether we pick people up where they are",
+      "baseline": "Starts at launch"
+    },
+    {
+      "key": "day30Retention",
+      "label": "Still practicing at day 30",
+      "owner": "michelle",
+      "unit": "%",
+      "target": 40,
+      "targetNote": "50% by mid-2027",
+      "why": "Shows whether Practice is a place people don't want to miss",
+      "baseline": "To pull"
+    },
+    {
+      "key": "dropOpened",
+      "label": "Monthly drop opened in its first week",
+      "owner": "michelle",
+      "unit": "%",
+      "target": 60,
+      "targetNote": "Fill in monthly",
+      "why": "Shows the drop reaches members clearly",
+      "baseline": "To pull"
+    },
+    {
+      "key": "communityParticipation",
+      "label": "Community and Coaching Lab participation",
+      "owner": "michelle",
+      "unit": "%",
+      "target": 30,
+      "targetNote": "Fill in monthly",
+      "why": "Shows the community feels alive",
+      "baseline": "To pull"
+    },
+    {
+      "key": "youtubeViews",
+      "label": "YouTube views",
+      "owner": "michelle",
+      "unit": "",
+      "target": null,
+      "targetNote": "Monthly growth · set with Clint",
+      "why": "Are more people finding us?",
+      "baseline": "To pull from YouTube Studio"
+    },
+    {
+      "key": "youtubeSubscribers",
+      "label": "YouTube subscribers",
+      "owner": "michelle",
+      "unit": "",
+      "target": null,
+      "targetNote": "Monthly growth · set with Clint",
+      "why": "Are they coming back for more?",
+      "baseline": "To pull from YouTube Studio"
+    },
+    {
+      "key": "youtubeCtr",
+      "label": "YouTube click-through rate",
+      "owner": "michelle",
+      "unit": "%",
+      "target": null,
+      "targetNote": "Monthly growth · set with Clint",
+      "why": "Do our thumbnails earn the click?",
+      "baseline": "To pull from YouTube Studio"
+    },
+    {
+      "key": "podcastShorts",
+      "label": "Episodes with a linked Short",
+      "owner": "michelle",
+      "unit": "%",
+      "target": 100,
+      "targetNote": "",
+      "why": "Shows the podcast is reaching new people",
+      "baseline": "To pull"
+    },
+    {
+      "key": "emailList",
+      "label": "Email list (GHL)",
+      "owner": "michelle",
+      "unit": "",
+      "target": null,
+      "targetNote": "",
+      "why": "The audience we own",
+      "baseline": "To pull"
+    },
+    {
+      "key": "paidMembers",
+      "label": "Premium members",
       "owner": "logan",
-      "target": 20
+      "unit": "",
+      "target": null,
+      "targetNote": "",
+      "why": "Members on the premium features of the Practice app",
+      "baseline": "To pull"
     },
     {
       "key": "annualSignups",
       "label": "Annual sign-ups",
       "owner": "logan",
-      "target": null
-    },
-    {
-      "key": "groupMembers",
-      "label": "Free group members",
-      "owner": "michelle",
-      "target": null
-    },
-    {
-      "key": "newGroupMembers",
-      "label": "New group members",
-      "owner": "michelle",
-      "target": 250
-    },
-    {
-      "key": "avgRepComments",
-      "label": "Avg. Rep of the Day comments",
-      "owner": "michelle",
-      "target": null
+      "unit": "",
+      "target": null,
+      "targetNote": "",
+      "why": "Commitment, cash, and hats owed",
+      "baseline": "To pull"
     },
     {
       "key": "podcastDownloads",
-      "label": "Podcast downloads (last episode)",
+      "label": "Podcast downloads (latest episode)",
       "owner": "clint",
-      "target": null
+      "unit": "",
+      "target": null,
+      "targetNote": "",
+      "why": "How many people the podcast reaches",
+      "baseline": "To pull"
     },
     {
-      "key": "emailList",
-      "label": "Email list",
+      "key": "roomsEntered",
+      "label": "Rooms stepped into",
       "owner": "abra",
-      "target": null
+      "unit": "",
+      "target": null,
+      "targetNote": "Set with Abra",
+      "why": "Every room is a new way into the Practice",
+      "baseline": "Starts now"
     },
     {
-      "key": "hatsOwed",
-      "label": "Hats owed",
-      "owner": "michelle",
-      "target": null
-    },
-    {
-      "key": "hatsShipped",
-      "label": "Hats shipped",
-      "owner": "michelle",
-      "target": null
+      "key": "roomInvitations",
+      "label": "Room invitations accepted",
+      "owner": "abra",
+      "unit": "",
+      "target": null,
+      "targetNote": "Set with Abra",
+      "why": "Every room ends with an invitation into the Practice, INQ, or InnerBoard OS",
+      "baseline": "Starts now"
     }
   ],
   "scorecard": [
@@ -708,16 +1121,21 @@
       "id": "2026-11-09",
       "week": "2026-11-09",
       "values": {
-        "paidMembers": null,
-        "newPaid": null,
-        "annualSignups": null,
-        "groupMembers": null,
-        "newGroupMembers": null,
-        "avgRepComments": null,
-        "podcastDownloads": null,
+        "practicingWeekly": null,
+        "welcomeBackReturn": null,
+        "day30Retention": null,
+        "dropOpened": null,
+        "communityParticipation": null,
+        "youtubeViews": null,
+        "youtubeSubscribers": null,
+        "youtubeCtr": null,
+        "podcastShorts": null,
         "emailList": null,
-        "hatsOwed": null,
-        "hatsShipped": null
+        "paidMembers": null,
+        "annualSignups": null,
+        "podcastDownloads": null,
+        "roomsEntered": null,
+        "roomInvitations": null
       },
       "note": "Baseline week: fill in where we are today"
     },
@@ -725,16 +1143,21 @@
       "id": "2026-11-16",
       "week": "2026-11-16",
       "values": {
-        "paidMembers": null,
-        "newPaid": null,
-        "annualSignups": null,
-        "groupMembers": null,
-        "newGroupMembers": null,
-        "avgRepComments": null,
-        "podcastDownloads": null,
+        "practicingWeekly": null,
+        "welcomeBackReturn": null,
+        "day30Retention": null,
+        "dropOpened": null,
+        "communityParticipation": null,
+        "youtubeViews": null,
+        "youtubeSubscribers": null,
+        "youtubeCtr": null,
+        "podcastShorts": null,
         "emailList": null,
-        "hatsOwed": null,
-        "hatsShipped": null
+        "paidMembers": null,
+        "annualSignups": null,
+        "podcastDownloads": null,
+        "roomsEntered": null,
+        "roomInvitations": null
       },
       "note": ""
     },
@@ -742,16 +1165,21 @@
       "id": "2026-11-23",
       "week": "2026-11-23",
       "values": {
-        "paidMembers": null,
-        "newPaid": null,
-        "annualSignups": null,
-        "groupMembers": null,
-        "newGroupMembers": null,
-        "avgRepComments": null,
-        "podcastDownloads": null,
+        "practicingWeekly": null,
+        "welcomeBackReturn": null,
+        "day30Retention": null,
+        "dropOpened": null,
+        "communityParticipation": null,
+        "youtubeViews": null,
+        "youtubeSubscribers": null,
+        "youtubeCtr": null,
+        "podcastShorts": null,
         "emailList": null,
-        "hatsOwed": null,
-        "hatsShipped": null
+        "paidMembers": null,
+        "annualSignups": null,
+        "podcastDownloads": null,
+        "roomsEntered": null,
+        "roomInvitations": null
       },
       "note": ""
     },
@@ -759,16 +1187,21 @@
       "id": "2026-11-30",
       "week": "2026-11-30",
       "values": {
-        "paidMembers": null,
-        "newPaid": null,
-        "annualSignups": null,
-        "groupMembers": null,
-        "newGroupMembers": null,
-        "avgRepComments": null,
-        "podcastDownloads": null,
+        "practicingWeekly": null,
+        "welcomeBackReturn": null,
+        "day30Retention": null,
+        "dropOpened": null,
+        "communityParticipation": null,
+        "youtubeViews": null,
+        "youtubeSubscribers": null,
+        "youtubeCtr": null,
+        "podcastShorts": null,
         "emailList": null,
-        "hatsOwed": null,
-        "hatsShipped": null
+        "paidMembers": null,
+        "annualSignups": null,
+        "podcastDownloads": null,
+        "roomsEntered": null,
+        "roomInvitations": null
       },
       "note": ""
     }
@@ -815,6 +1248,11 @@
       "group": "Delivery"
     },
     {
+      "slug": "monthly-drop",
+      "title": "Monthly drop",
+      "group": "Delivery"
+    },
+    {
       "slug": "what-to-post",
       "title": "What to post",
       "group": "Content"
@@ -823,17 +1261,176 @@
       "slug": "how-to-engage",
       "title": "How to engage",
       "group": "Content"
+    },
+    {
+      "slug": "abra-role",
+      "title": "Abra · Brand and Mission Director",
+      "group": "Roles"
+    },
+    {
+      "slug": "michelle-win-sheet",
+      "title": "Michelle · Win Sheet",
+      "group": "Roles"
     }
   ],
   "briefings": [
     {
       "id": "b-2026-11-09",
       "date": "2026-11-09",
-      "summary": "Welcome to the Inner Board command center: one place for our tasks, content, numbers and playbooks, and everything here can be edited. This week is Phase 0 · Decide. We confirm roles, set the target date for 1,000, decide the Rep of the Day group is free, record our baseline numbers, confirm the annual price and gift codes, and order hat samples. Pick who you are and start with your tasks.",
+      "summary": "Welcome to the InnerBoard command center: one place for our tasks, content, numbers and playbooks, and everything here can be edited. This week is Phase 0 · Decide. We confirm roles, set the target date for 1,000, decide the Rep of the Day group is free, record our baseline numbers, confirm the annual price and gift codes, and order hat samples. Pick who you are and start with your tasks.",
       "done": [],
       "overdue": [],
       "added": [],
       "reminded": []
+    }
+  ],
+  "rhythm": [
+    {
+      "id": "r-01",
+      "owner": "michelle",
+      "when": "daily",
+      "title": "Open Practice and post my reps",
+      "note": ""
+    },
+    {
+      "id": "r-02",
+      "owner": "michelle",
+      "when": "daily",
+      "title": "Practice app and Labs: reply, welcome, keep it personal",
+      "note": ""
+    },
+    {
+      "id": "r-03",
+      "owner": "michelle",
+      "when": "daily",
+      "title": "Member messages and issues (send app issues to Logan)",
+      "note": ""
+    },
+    {
+      "id": "r-04",
+      "owner": "michelle",
+      "when": "fri",
+      "title": "Update my numbers on the scorecard",
+      "note": ""
+    },
+    {
+      "id": "r-05",
+      "owner": "michelle",
+      "when": "weekly",
+      "title": "Newsletter",
+      "note": ""
+    },
+    {
+      "id": "r-06",
+      "owner": "michelle",
+      "when": "weekly",
+      "title": "Coaching Lab",
+      "note": ""
+    },
+    {
+      "id": "r-07",
+      "owner": "michelle",
+      "when": "weekly",
+      "title": "YouTube: thumbnails, captions and a Short for the new episode",
+      "note": ""
+    },
+    {
+      "id": "r-08",
+      "owner": "michelle",
+      "when": "monthly",
+      "title": "Masterclass invites",
+      "note": ""
+    },
+    {
+      "id": "r-09",
+      "owner": "michelle",
+      "when": "monthly",
+      "title": "Attend the Masterclass",
+      "note": ""
+    },
+    {
+      "id": "r-10",
+      "owner": "michelle",
+      "when": "monthly",
+      "title": "Monthly drop with Logan",
+      "note": "Recording, workbook, audio note, surprise drop"
+    },
+    {
+      "id": "r-11",
+      "owner": "michelle",
+      "when": "monthly",
+      "title": "Next month's social content plan approved",
+      "note": "By month end"
+    },
+    {
+      "id": "r-12",
+      "owner": "abra",
+      "when": "mon",
+      "title": "Team meeting",
+      "note": "Chief of staff: direction, connection, support"
+    },
+    {
+      "id": "r-13",
+      "owner": "abra",
+      "when": "monthly",
+      "title": "Monthly theme talk with Leah",
+      "note": "First Monday"
+    },
+    {
+      "id": "r-14",
+      "owner": "abra",
+      "when": "weekly",
+      "title": "IOS Certification office hours",
+      "note": ""
+    },
+    {
+      "id": "r-15",
+      "owner": "abra",
+      "when": "weekly",
+      "title": "INQ office hours",
+      "note": ""
+    },
+    {
+      "id": "r-16",
+      "owner": "abra",
+      "when": "weekly",
+      "title": "Signature talk rep",
+      "note": ""
+    },
+    {
+      "id": "r-17",
+      "owner": "founder",
+      "when": "tue",
+      "title": "Recording Block",
+      "note": "About half a day; Clint directs"
+    },
+    {
+      "id": "r-18",
+      "owner": "clint",
+      "when": "thu",
+      "title": "Schedule Rep of the Day two weeks out",
+      "note": ""
+    },
+    {
+      "id": "r-19",
+      "owner": "logan",
+      "when": "fri",
+      "title": "Weekly app check",
+      "note": ""
+    },
+    {
+      "id": "r-20",
+      "owner": "michelle",
+      "when": "monthly",
+      "title": "Monthly review: on pace for the next milestone?",
+      "note": "Last Friday"
+    },
+    {
+      "id": "r-21",
+      "owner": "clint",
+      "when": "daily",
+      "title": "Rep of the Day goes out",
+      "note": "6am"
     }
   ],
   "settings": {
@@ -841,7 +1438,7 @@
       "enabled": true,
       "mode": "draft",
       "minDaysBetween": 2,
-      "signature": "With care,\nThe Inner Board Hub"
+      "signature": "With care,\nThe InnerBoard Hub"
     },
     "dataBranch": "claude/relaxed-maxwell-uy6zn5"
   }

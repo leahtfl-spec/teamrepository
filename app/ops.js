@@ -1,12 +1,16 @@
-// Shared state operations for the Inner Board hub.
+// Shared state operations for the InnerBoard hub.
 // Pure and dependency-free: imported by the browser app, the API functions and the CLI.
 // Every change to data/hub.json is a list of ops passed through applyOps().
 
-export const COLLECTIONS = Object.freeze(["people", "tasks", "content", "metrics", "scorecard", "docs", "briefings"]);
+export const COLLECTIONS = Object.freeze(["people", "tasks", "content", "metrics", "scorecard", "docs", "briefings", "rhythm"]);
 export const SET_ROOTS = Object.freeze(["brand", "goal", "settings"]);
 export const TASK_STATUSES = Object.freeze(["todo", "doing", "done"]);
 export const CONTENT_STATUSES = Object.freeze(["idea", "planned", "in-edit", "scheduled", "posted"]);
 export const SLUG_RE = /^[a-z0-9-]{1,60}$/;
+// When a rhythm item happens: every day, on one weekday, or weekly / monthly with no fixed day yet.
+export const RHYTHM_WHEN = Object.freeze(["daily", "mon", "tue", "wed", "thu", "fri", "sat", "sun", "weekly", "monthly"]);
+export const METRIC_UNITS = Object.freeze(["", "%"]);
+const WEEKDAYS = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"]; // index = Date#getUTCDay()
 
 const DATE_RE = /^\d{4}-\d{2}-\d{2}$/;
 const BAD_KEYS = new Set(["__proto__", "constructor", "prototype"]);
@@ -18,6 +22,7 @@ export const keyOf = (coll) => (coll === "docs" ? "slug" : coll === "metrics" ? 
 const DEFAULTS = {
   tasks: () => ({ title: "", owner: "", due: "", status: "todo", phase: "", notes: "", doneAt: null, lastRemindedAt: null }),
   content: () => ({ date: "", channel: "", pillar: "", format: "", title: "", owner: "", status: "idea", link: "" }),
+  rhythm: () => ({ owner: "", when: "weekly", title: "", note: "" }),
 };
 
 const isPlain = (v) => v !== null && typeof v === "object" && !Array.isArray(v);
@@ -28,7 +33,7 @@ const fail = (msg) => {
 export function emptyHub() {
   return {
     version: 1, updatedAt: null, brand: {}, goal: {},
-    people: [], tasks: [], content: [], metrics: [], scorecard: [], docs: [], briefings: [],
+    people: [], tasks: [], content: [], metrics: [], scorecard: [], docs: [], briefings: [], rhythm: [],
     settings: {},
   };
 }
@@ -85,7 +90,7 @@ function upsert(hub, { coll, item }, now, at) {
 
   const patch = structuredClone(item);
   const idx = items.findIndex((x) => x && x[key] === id);
-  const el = idx === -1 ? { ...(DEFAULTS[coll]?.() ?? {}), ...patch } : merge(items[idx], patch);
+  const el = idx === -1 ? { [key]: id, ...(DEFAULTS[coll]?.() ?? {}), ...patch } : merge(items[idx], patch);
   if (coll === "tasks") {
     if (idx === -1 && !el.createdAt) el.createdAt = now;
     if (el.status === "done") {
@@ -111,6 +116,8 @@ function setPath(hub, { path, value }, at) {
   if (parts.some((p) => !p || BAD_KEYS.has(p))) fail(`${at}: invalid path ${JSON.stringify(path)}`);
   if (value === undefined) fail(`${at}: set needs a value`);
   if (value !== null && typeof value === "object") assertSafe(value, at);
+  if (parts[0] === "goal" && (parts.length === 1 ? isPlain(value) && "milestones" in value : parts[1] === "milestones"))
+    validateMilestones(parts.length === 1 ? value.milestones : parts.length === 2 ? value : null, at);
   if (parts.length === 1) {
     if (!isPlain(value)) fail(`${at}: ${path} must be an object`);
     hub[path] = structuredClone(value);
@@ -140,6 +147,16 @@ function assertSafe(value, at) {
   }
 }
 
+// goal.milestones: [{ date: "YYYY-MM-DD", target: number }, ...]. Other keys on a milestone are kept as-is.
+function validateMilestones(list, at) {
+  if (!Array.isArray(list)) fail(`${at}: goal.milestones must be a list of { date, target }`);
+  list.forEach((m, i) => {
+    if (!isPlain(m)) fail(`${at}: goal.milestones[${i}] must be an object`);
+    if (typeof m.date !== "string" || !DATE_RE.test(m.date)) fail(`${at}: goal.milestones[${i}].date must be YYYY-MM-DD`);
+    if (typeof m.target !== "number" || !Number.isFinite(m.target)) fail(`${at}: goal.milestones[${i}].target must be a number`);
+  });
+}
+
 function validateFields(coll, item, at) {
   const dateOrBlank = (field) => {
     if (field in item && item[field] !== "" && !(typeof item[field] === "string" && DATE_RE.test(item[field])))
@@ -163,6 +180,12 @@ function validateFields(coll, item, at) {
     }
   } else if (coll === "briefings") {
     dateOrBlank("date");
+  } else if (coll === "metrics") {
+    oneOf("unit", METRIC_UNITS);
+  } else if (coll === "rhythm") {
+    oneOf("when", RHYTHM_WHEN);
+    for (const f of ["owner", "title", "note"])
+      if (f in item && typeof item[f] !== "string") fail(`${at}: rhythm.${f} must be text`);
   }
 }
 
@@ -200,6 +223,21 @@ export function weekStart(ymd) {
   return addDays(ymd, dow === 0 ? -6 : 1 - dow);
 }
 
+// "mon".."sun" for a YYYY-MM-DD date (the rhythm `when` code of that weekday).
+export function weekdayOf(ymd) {
+  const [y, m, d] = ymd.split("-").map(Number);
+  return WEEKDAYS[new Date(Date.UTC(y, m - 1, d)).getUTCDay()];
+}
+
+// The first goal milestone dated on or after `today` -> { date, target }, or null when none is left.
+export function nextMilestone(goal, today = localDate()) {
+  const list = Array.isArray(goal?.milestones) ? goal.milestones : [];
+  const next = list
+    .filter((m) => isPlain(m) && typeof m.date === "string" && DATE_RE.test(m.date) && m.date >= today && Number.isFinite(m.target))
+    .sort((a, b) => a.date.localeCompare(b.date))[0];
+  return next ? { date: next.date, target: next.target } : null;
+}
+
 /**
  * report(hub, today?) -> what the daily routine (and Today screen) needs to know.
  * today defaults to the local date. Returned tasks are copies.
@@ -230,8 +268,14 @@ export function report(hub, today = localDate()) {
   const scorecardWeek = weekStart(today);
   const missingScorecardWeek = !(hub?.scorecard ?? []).some((r) => isPlain(r) && (r.week === scorecardWeek || r.id === scorecardWeek));
 
-  const dated = new Set((hub?.content ?? []).filter(isPlain).map((c) => c.date));
+  // Days with no social post yet. A newsletter goes out by email, so it doesn't fill a day on the social calendar.
+  const dated = new Set((hub?.content ?? []).filter((c) => isPlain(c) && !/newsletter|email/i.test(String(c.channel ?? ""))).map((c) => c.date));
   const contentGapsNext14 = Array.from({ length: 14 }, (_, i) => addDays(today, i)).filter((d) => !dated.has(d));
+
+  // Everyone's recurring commitments for today: every-day items first, then today's weekday.
+  const rhythm = (hub?.rhythm ?? []).filter(isPlain);
+  const dow = weekdayOf(today);
+  const rhythmToday = [...rhythm.filter((r) => r.when === "daily"), ...rhythm.filter((r) => r.when === dow)];
 
   return structuredClone({
     today,
@@ -243,5 +287,7 @@ export function report(hub, today = localDate()) {
     overdueByOwner,
     missingScorecardWeek,
     contentGapsNext14,
+    rhythmToday,
+    nextMilestone: nextMilestone(hub?.goal, today),
   });
 }

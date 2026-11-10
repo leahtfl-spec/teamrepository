@@ -3,7 +3,7 @@
 The first version of our team hub was tidy and mostly beside the point. Here is what was wrong with it, and what we changed.
 
 **1. It had no goal.** It said who does what, but never why or how much. There was no 1,000, no scorecard and no definition of a good week.
-*Now:* the [Road to 1,000](#/library/road-to-1000) and weekly [Numbers](#/numbers). Abra owns the number.
+*Now:* the [Road to 1,000](#/library/road-to-1000) and weekly [Numbers](#/numbers). Michelle owns the member numbers.
 
 **2. The founder wasn't in it.** The scarcest thing in the business is the founder's voice and camera time, and everything waits on it.
 *Now:* the founder has one weekly Recording Block, and everyone else's week is built around it. See the [Weekly rhythm](#/library/weekly-rhythm).
@@ -21,7 +21,7 @@ The first version of our team hub was tidy and mostly beside the point. Here is 
 *Now:* Clint publishes routine posts on his own, within the brand guidelines. Only offers, pricing and promotions need sign-off.
 
 **7. Michelle was overloaded, and no one noticed.** The masterclass, Logan, training Clint, the calendar, every approval and status reports.
-*Now:* approvals are gone and growth moved to Abra. Michelle's job is delivery and retention.
+*Now:* approvals are gone. Michelle owns the member experience from start to finish, and Abra, as Brand and Mission Director and chief of staff, carries the work into the world.
 
 **8. The tools didn't fit the team.** Tracking work in a developer tool that nobody opened every day was wishful thinking.
 *Now:* this command center. One simple site where everyone sees their tasks and updates them in a tap, with a gentle reminder when something slips.

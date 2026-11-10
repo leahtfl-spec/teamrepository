@@ -53,7 +53,7 @@ test("GET /api/data reads the local store", async () => {
   assert.equal(r.json.canWrite, true);
   assert.equal(r.json.needsPasscode, false);
   assert.match(r.json.sha, /^[0-9a-f]{40}$/);
-  assert.equal(r.json.hub.brand.name, "Inner Board");
+  assert.equal(r.json.hub.brand.name, "InnerBoard");
 });
 
 test("POST /api/data applies ops and writes the file", async () => {
@@ -78,6 +78,30 @@ test("POST /api/data 400s", async () => {
   const r = await call("POST", "/api/data", { ops: [{ op: "set", path: "tasks", value: [] }] });
   assert.equal(r.json.error, "bad-op");
   assert.match(r.json.message, /brand, goal, settings/);
+});
+
+test("POST /api/data saves rhythm items and goal milestones; bad ones 400", async () => {
+  const milestones = [{ date: "2027-03-31", target: 250 }, { date: "2027-11-09", target: 1000 }];
+  const r = await call("POST", "/api/data", { ops: [
+    { op: "upsert", coll: "rhythm", item: { id: "r-news", owner: "abra", when: "fri", title: "Newsletter" } },
+    { op: "set", path: "goal.milestones", value: milestones },
+    { op: "upsert", coll: "metrics", item: { key: "newPaid", unit: "%", why: "Direct line to the goal" } },
+  ] });
+  assert.equal(r.status, 200);
+  const saved = JSON.parse(await readFile(path.join(dir, "hub.json"), "utf8"));
+  assert.deepEqual(saved.rhythm, [{ id: "r-news", owner: "abra", when: "fri", title: "Newsletter", note: "" }]);
+  assert.deepEqual(saved.goal.milestones, milestones);
+  assert.equal(saved.metrics.find((m) => m.key === "newPaid").unit, "%");
+  for (const op of [
+    { op: "upsert", coll: "rhythm", item: { id: "r-news", when: "friday" } },
+    { op: "set", path: "goal.milestones", value: [{ date: "soon", target: 1 }] },
+    { op: "upsert", coll: "metrics", item: { key: "newPaid", unit: "people" } },
+  ]) {
+    const bad = await call("POST", "/api/data", { ops: [op] });
+    assert.equal(bad.status, 400, JSON.stringify(op));
+    assert.equal(bad.json.error, "bad-op");
+  }
+  assert.deepEqual(JSON.parse(await readFile(path.join(dir, "hub.json"), "utf8")), saved);
 });
 
 test("passcode is required for writes when TEAM_PASSCODE is set", async () => {

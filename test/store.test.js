@@ -27,7 +27,7 @@ test("local: read, write with sha, conflict", async () => {
   try {
     const store = localStore(dir);
     const { hub, sha } = await store.readHub();
-    assert.equal(hub.brand.name, "Inner Board");
+    assert.equal(hub.brand.name, "InnerBoard");
     assert.equal(sha, gitSha(await readFile(path.join(dir, "hub.json"), "utf8")));
 
     hub.goal.current = 150;

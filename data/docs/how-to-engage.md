@@ -2,8 +2,8 @@
 
 How we talk with the people who find us.
 
-- **Social accounts** (Instagram, TikTok, YouTube): **Clint**.
-- **The Rep of the Day group and members:** **Michelle**. See [Rep of the Day](#/library/rep-of-the-day).
+- **Social accounts** (Instagram, TikTok, YouTube): **Clint**. Michelle writes the monthly social content plan for now.
+- **Members, the Practice app community and the Labs:** **Michelle**. See [Rep of the Day](#/library/rep-of-the-day).
 
 ## How fast we reply
 
