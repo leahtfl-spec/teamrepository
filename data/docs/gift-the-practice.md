@@ -25,7 +25,7 @@ Our gear does three jobs:
 
 ## The team wears it
 
-- Founder: in every video, podcast recording and live session.
+- Leah: in every video, podcast recording and live session.
 - Abra, Michelle and Clint: in their own on-camera moments and team content.
 - Clint runs one team shoot in the gear. That content feeds December and January.
 

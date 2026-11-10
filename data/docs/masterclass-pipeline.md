@@ -10,7 +10,7 @@ Day 0 is the day of the masterclass.
 
 | When | Step | Owner | Hands off to |
 |------|------|-------|-----------|
-| Day −7 | Confirm date, topic, title and promo plan | Michelle | Founder + Abra (approve), Clint |
+| Day −7 | Confirm date, topic, title and promo plan | Michelle | Leah + Abra (approve), Clint |
 | Day −7 | Draft the workbook outline | Michelle | — |
 | Day −7 to −1 | Masterclass invites by email (GHL) and in the Practice app | Michelle | — |
 | Day −5 to −1 | Promo posts go out: announcement, reminder, "tomorrow," "today" | Clint | — |

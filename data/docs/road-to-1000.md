@@ -25,7 +25,7 @@
 
 | Step | What it is | Where |
 |------|------------|-------|
-| 1. Attention | The *Becoming You* podcast, the founder on other podcasts, Abra's talks and rooms, clips, the team in the gear | Podcast, social, rooms |
+| 1. Attention | The *Becoming You* podcast, Leah on other podcasts, Abra's talks and rooms, clips, the team in the gear | Podcast, social, rooms |
 | 2. Front door | Learn about Practice and start for free, with email captured through GHL | Website, GHL |
 | 3. Daily habit | One rep a day in the app; a welcome-back message when someone goes quiet | Practice app, GHL |
 | 4. Go deeper | Premium features, the annual plan with a free hat, the monthly Masterclass and the monthly drop | Practice app |
@@ -51,7 +51,7 @@ This math was built for the old goal, **paid sign-ups** (about 84 new paid membe
 **What the math tells us:** the real constraint is **new people coming in the front door**, about 1,000 a month. They come from:
 
 - **The podcast**, with one call to action every episode.
-- **The founder on other podcasts**: 2–4 guest spots a month is the highest-leverage reach for a lean team.
+- **Leah on other podcasts**: 2–4 guest spots a month is the highest-leverage reach for a lean team.
 - **Abra's rooms**: every talk ends with an invitation into the Practice.
 - **Clips** that send people to Practice, not just likes.
 - **Members inviting people**: gift a year, and "bring a friend to the 30-Day Rep Challenge."
@@ -64,9 +64,9 @@ This math was built for the old goal, **paid sign-ups** (about 84 new paid membe
 |---|------|-------|
 | 1 | A target date and a weekly scorecard | Done: the date is set. Michelle keeps the scorecard |
 | 2 | A free front door and a daily habit: the Practice app, and [Rep of the Day](#/library/rep-of-the-day) (Facebook or the app: open question) | Michelle (community), Clint (content) |
-| 3 | A protected weekly founder Recording Block | Founder + Clint |
+| 3 | A protected weekly Recording Block for Leah | Leah + Clint |
 | 4 | The [podcast](#/library/podcast) as the top of the funnel, with one call to action per episode | Clint (production), Abra (guests and calls to action) |
-| 5 | Guest spots for the founder on other podcasts | Abra |
+| 5 | Guest spots for Leah on other podcasts | Abra |
 | 6 | Email capture through GHL, plus a free lead magnet | Abra (lead magnet), Michelle (GHL) |
 | 7 | An annual offer with a reason to commit now: the Founding 1,000 hat | Abra |
 | 8 | Onboarding and the welcome-back message | Michelle + Logan |
@@ -83,7 +83,7 @@ The plan is built around the calendar we are in: **gift season (December) and Ne
 |-------|------|-------|
 | 0 · Decide | Week of Nov 9 | Roles, target date, baseline numbers, free group, annual price, gift codes, hat samples |
 | 1 · Foundation | Nov 16–30 | First Recording Block, brand guidelines, launch the group, onboarding, bulk hat order, podcast call to action, guest pitches |
-| 2 · Gift the Practice | Dec 1–24 | Gift a Year, weekly founder live session, team in the gear, December masterclass and monthly drop, weekly hat shipping |
+| 2 · Gift the Practice | Dec 1–24 | Gift a Year, Leah's weekly live session, team in the gear, December masterclass and monthly drop, weekly hat shipping |
 | 3 · Founding 1,000 | Dec 26 – Jan 31 | Founding 1,000 offer, 30-Day Rep Challenge from Jan 1, January masterclass, guest appearances begin, Skool closes |
 | 4 · Scale | February on | Masterclass engine runs itself, referrals, streak rewards, Member Spotlight, retention check, quarterly review |
 

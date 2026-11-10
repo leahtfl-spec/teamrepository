@@ -28,7 +28,7 @@ The percentages are starting assumptions. Adjust them to what performs.
 - Captions on every video
 - On-brand fonts, colors and logo
 - **One** clear call to action, usually "join the free Rep of the Day group"
-- The founder and team in the gear where possible
+- Leah and team in the gear where possible
 - Caption and hashtags written
 - On the [Content](#/content) calendar
 - Offer or pricing posts only: Abra has signed off

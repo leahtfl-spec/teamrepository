@@ -140,7 +140,7 @@ All responses `Cache-Control: no-store`, JSON.
 
 ## Vercel
 `vercel.json`: `buildCommand: npm run build`, `outputDirectory: dist`,
-`ignoreCommand: git diff --quiet HEAD^ HEAD -- . ':(exclude)data'` (data-only commits from the app/routine don't trigger rebuilds — the app reads live data through the API).
+`ignoreCommand: [ -n "$GITHUB_TOKEN" ] && git diff --quiet HEAD^ HEAD -- . ':(exclude)data'`: once `GITHUB_TOKEN` is set, data-only commits from the app or the routine skip the rebuild, because the app reads live data through the API. Without the token every commit rebuilds, so the bundled snapshot never goes stale.
 Env vars: `GITHUB_TOKEN` (fine-grained, Contents read/write on this repo), `GITHUB_REPO`, `GITHUB_BRANCH` (optional), `TEAM_PASSCODE` (optional).
 
 ## Front-end behavior

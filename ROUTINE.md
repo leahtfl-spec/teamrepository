@@ -127,7 +127,7 @@ Read `lastBriefing.summary` so today's briefing continues the story instead of r
 
    If nothing is clearly missing, add nothing. That is the normal case.
 
-**Fit the role.** Every task you add must fit its owner's role on the Team page and their role doc in the Library (the slug in `people[].doc`, when there is one). Clint's role is still pending, so don't invent new responsibilities for him: give him only work the docs already name as his. Don't create a task that duplicates a rhythm item (`rhythm` in `hub.json`, shown on Team → Our week); the 5 weekly tasks in `autoOps` are the only exception.
+**Fit the role.** Every task you add must fit its owner's role on the Team page and their role doc in the Library (the slug in `people[].doc`, when there is one). Clint's role is in (Library → Clint · Win Sheet); like everyone else, give him only work his role names. Don't create a task that duplicates a rhythm item (`rhythm` in `hub.json`, shown on Team → Our week); the 5 weekly tasks in `autoOps` are the only exception.
 
 ## 5. Kind reminders
 

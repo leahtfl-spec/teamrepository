@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-10T02:47:25.678Z",
+  "updatedAt": "2026-11-10T04:00:00.000Z",
   "brand": {
     "name": "InnerBoard",
     "tagline": "The practice of becoming you."
@@ -108,21 +108,21 @@
       "name": "Clint",
       "title": "Creative Director",
       "email": "clintreianne@gmail.com",
-      "mission": "Make InnerBoard look and sound unmistakable everywhere, and turn the founder's weekly recording into a week of content.",
-      "number": "Content shipped per week → group joins",
+      "mission": "Turns InnerBoard's and Leah's ideas, expertise and existing content into material that reaches more people, builds awareness, and brings the right audience into Practice.",
+      "number": "Reach, engagement and link clicks toward Practice",
       "owns": [
-        "Brand guidelines: one page on colors, fonts, logo use, caption style and voice. Once it exists, routine content goes out without approval",
-        "The Recording Block: plans the shot list, sets up, and directs the founder",
-        "Podcast production: edits, publishes, cuts 3–5 clips per episode, uploads to YouTube",
-        "Rep of the Day: produces and schedules the daily posts 2 weeks ahead",
-        "Social: clips, carousels, posting and engagement on our pages",
-        "Merch: designs the hat and sweatshirt, runs photo and video shoots in the gear"
+        "Social media management: content, graphics, Reels, carousels, captions, scheduling and publishing across the LR and IB platforms",
+        "Social media optimization: profiles, bios, branding, presentation, captions, keywords and platform-specific strategies",
+        "YouTube growth: channel optimization, thumbnails, titles, descriptions and SEO",
+        "Content repurposing: podcasts, masterclasses and long-form recordings into short-form videos and YouTube Shorts",
+        "Abra's personal social media: planning, graphics, editing, publishing and consistency",
+        "Performance tracking: views, reach, engagement and audience growth, reported weekly"
       ],
-      "invitation": "Own the creative calls: what gets clipped, how it looks, what we try next. Host a short behind-the-scenes series (\"how we make InnerBoard\"). A director, not an editor.",
+      "invitation": "Stretch: platform-specific strategies, organic discovery (SEO, keywords, YouTube search), building Abra's personal brand, reading audience behavior, and learning how social content leads people into Practice.",
       "stop": [
         "Waiting for approval on routine posts"
       ],
-      "doc": "",
+      "doc": "clint-win-sheet",
       "remind": true
     },
     {
@@ -180,7 +180,7 @@
       "due": "2026-11-12",
       "status": "todo",
       "phase": "Phase 0 · Decide",
-      "notes": "With Abra. Recommendation: free. The group is the front door; the app is where people go deeper.\nOpen question: Michelle's role puts community in the Practice app and the Labs, and Skool is retiring. Decide whether this lives on Facebook or in the app.",
+      "notes": "With Abra. Recommendation: free. The group is the front door; the app is where people go deeper.\nDecided Nov 10: yes, Leah wants the Rep of the Day Facebook group. It's the free, public front door: each daily rep links into the Practice app, where streaks, the Labs and premium live.",
       "createdAt": "2026-11-09T09:00:00.000Z",
       "createdBy": "routine",
       "doneAt": null,
@@ -271,7 +271,7 @@
       "due": "2026-11-19",
       "status": "todo",
       "phase": "Phase 1 · Foundation",
-      "notes": "Rules, entry questions (including email) and a welcome post. See Rep of the Day in the Library.\nOpen question: Michelle's role puts community in the Practice app and the Labs, and Skool is retiring. Decide whether this lives on Facebook or in the app.",
+      "notes": "Rules, entry questions (including email) and a welcome post. See Rep of the Day in the Library.\nDecided Nov 10: yes, Leah wants the Rep of the Day Facebook group. It's the free, public front door: each daily rep links into the Practice app, where streaks, the Labs and premium live.",
       "createdAt": "2026-11-09T09:00:00.000Z",
       "createdBy": "routine",
       "doneAt": null,
@@ -280,11 +280,11 @@
     {
       "id": "t-p1-03",
       "title": "Write the one-page brand guidelines",
-      "owner": "clint",
+      "owner": "abra",
       "due": "2026-11-20",
       "status": "todo",
       "phase": "Phase 1 · Foundation",
-      "notes": "Colors, fonts, logo use, caption style and voice. Once it exists, routine posts go out without approval.",
+      "notes": "Colors, fonts, logo use, caption style and voice. Once it exists, routine posts go out without approval.\nMoved to Abra on Nov 10: Clint asks for brand guidelines, templates and approved messaging for LR, IB, Practice and Abra's account. Abra writes the words; Clint builds the visual templates.",
       "createdAt": "2026-11-09T09:00:00.000Z",
       "createdBy": "routine",
       "doneAt": null,
@@ -323,7 +323,7 @@
       "due": "2026-11-23",
       "status": "todo",
       "phase": "Phase 1 · Foundation",
-      "notes": "With Clint.\nOpen question: Michelle's role puts community in the Practice app and the Labs, and Skool is retiring. Decide whether this lives on Facebook or in the app.",
+      "notes": "With Clint.\nDecided Nov 10: yes, Leah wants the Rep of the Day Facebook group. It's the free, public front door: each daily rep links into the Practice app, where streaks, the Labs and premium live.",
       "createdAt": "2026-11-09T09:00:00.000Z",
       "createdBy": "routine",
       "doneAt": null,
@@ -331,7 +331,7 @@
     },
     {
       "id": "t-p1-07",
-      "title": "Pitch the founder to 10 podcasts for January and February",
+      "title": "Pitch Leah to 10 podcasts for January and February",
       "owner": "abra",
       "due": "2026-11-24",
       "status": "todo",
@@ -422,7 +422,7 @@
     },
     {
       "id": "t-p2-04",
-      "title": "Start the weekly founder live session in the group (15–20 min)",
+      "title": "Start Leah's weekly live session in the Rep of the Day group (15–20 min)",
       "owner": "founder",
       "due": "2026-12-04",
       "status": "todo",
@@ -466,7 +466,7 @@
       "due": "2027-01-01",
       "status": "todo",
       "phase": "Phase 3 · Founding 1,000",
-      "notes": "With Clint (daily content). The big front-door push for the year.\nOpen question: Michelle's role puts community in the Practice app and the Labs, and Skool is retiring. Decide whether this lives on Facebook or in the app.",
+      "notes": "With Clint (daily content). The big front-door push for the year.\nDecided Nov 10: yes, Leah wants the Rep of the Day Facebook group. It's the free, public front door: each daily rep links into the Practice app, where streaks, the Labs and premium live.",
       "createdAt": "2026-11-09T09:00:00.000Z",
       "createdBy": "routine",
       "doneAt": null,
@@ -487,7 +487,7 @@
     },
     {
       "id": "t-p3-04",
-      "title": "Founder guest podcast appearances begin",
+      "title": "Leah's guest podcast appearances begin",
       "owner": "abra",
       "due": "2027-01-11",
       "status": "todo",
@@ -596,7 +596,7 @@
       "due": "2026-11-10",
       "status": "todo",
       "phase": "Michelle · Wins",
-      "notes": "So her connections find their way to InnerBoard and Practice.",
+      "notes": "So her connections find their way to InnerBoard and Practice.\nClint's sheet also takes on Abra's personal account. Agree who does what with Clint and Abra.",
       "createdAt": "2026-11-10T02:00:00.000Z",
       "createdBy": "routine",
       "doneAt": null,
@@ -861,6 +861,266 @@
       "createdBy": "routine",
       "doneAt": null,
       "lastRemindedAt": null
+    },
+    {
+      "id": "t-cw-01",
+      "title": "Agree a weekly content plan and publishing schedule",
+      "owner": "clint",
+      "due": "2026-11-16",
+      "status": "todo",
+      "phase": "Clint · Wins",
+      "notes": "With Michelle: content direction, campaigns and monthly priorities. Dates are starting suggestions.",
+      "doneAt": null,
+      "lastRemindedAt": null,
+      "createdAt": "2026-11-10T04:00:00.000Z",
+      "createdBy": "routine"
+    },
+    {
+      "id": "t-cw-02",
+      "title": "First weekly performance report",
+      "owner": "clint",
+      "due": "2026-11-20",
+      "status": "todo",
+      "phase": "Clint · Wins",
+      "notes": "Top posts, topics, hooks and formats, compared by platform. Then every Friday. Dates are starting suggestions.",
+      "doneAt": null,
+      "lastRemindedAt": null,
+      "createdAt": "2026-11-10T04:00:00.000Z",
+      "createdBy": "routine"
+    },
+    {
+      "id": "t-cw-03",
+      "title": "Start a steady podcast Shorts schedule",
+      "owner": "clint",
+      "due": "2026-11-23",
+      "status": "todo",
+      "phase": "Clint · Wins",
+      "notes": "Repurpose existing episodes and link each Short to its full episode. Dates are starting suggestions.",
+      "doneAt": null,
+      "lastRemindedAt": null,
+      "createdAt": "2026-11-10T04:00:00.000Z",
+      "createdBy": "routine"
+    },
+    {
+      "id": "t-cw-04",
+      "title": "Abra's personal account: content plan and first batch of posts",
+      "owner": "clint",
+      "due": "2026-11-30",
+      "status": "todo",
+      "phase": "Clint · Wins",
+      "notes": "With Abra: her ideas, preferences and a sustainable posting rhythm. Dates are starting suggestions.",
+      "doneAt": null,
+      "lastRemindedAt": null,
+      "createdAt": "2026-11-10T04:00:00.000Z",
+      "createdBy": "routine"
+    },
+    {
+      "id": "t-cw-05",
+      "title": "Audit and update the LR and IB social profiles",
+      "owner": "clint",
+      "due": "2026-12-09",
+      "status": "todo",
+      "phase": "Clint · Wins",
+      "notes": "Profiles, bios, branding and keywords, consistent and optimized for each audience. Target: within the first month. Dates are starting suggestions.",
+      "doneAt": null,
+      "lastRemindedAt": null,
+      "createdAt": "2026-11-10T04:00:00.000Z",
+      "createdBy": "routine"
+    },
+    {
+      "id": "t-cw-06",
+      "title": "YouTube channel refresh",
+      "owner": "clint",
+      "due": "2026-12-09",
+      "status": "todo",
+      "phase": "Clint · Wins",
+      "notes": "Branding, thumbnails, titles, descriptions and organization. Michelle partners (her YouTube stretch win). Target: within the first month. Dates are starting suggestions.",
+      "doneAt": null,
+      "lastRemindedAt": null,
+      "createdAt": "2026-11-10T04:00:00.000Z",
+      "createdBy": "routine"
+    },
+    {
+      "id": "t-cs-01",
+      "title": "Platform-specific strategies",
+      "owner": "clint",
+      "due": "",
+      "status": "todo",
+      "phase": "Clint · Stretch",
+      "notes": "Adapt content for Instagram, Facebook, TikTok, LinkedIn and YouTube instead of posting the same thing everywhere.",
+      "doneAt": null,
+      "lastRemindedAt": null,
+      "createdAt": "2026-11-10T04:00:00.000Z",
+      "createdBy": "routine"
+    },
+    {
+      "id": "t-cs-02",
+      "title": "Improve organic discovery",
+      "owner": "clint",
+      "due": "",
+      "status": "todo",
+      "phase": "Clint · Stretch",
+      "notes": "Content SEO, keyword research and YouTube search optimization.",
+      "doneAt": null,
+      "lastRemindedAt": null,
+      "createdAt": "2026-11-10T04:00:00.000Z",
+      "createdBy": "routine"
+    },
+    {
+      "id": "t-cs-03",
+      "title": "Build Abra's personal brand direction",
+      "owner": "clint",
+      "due": "",
+      "status": "todo",
+      "phase": "Clint · Stretch",
+      "notes": "A recognizable direction that reflects her expertise and connects her audience to InnerBoard.",
+      "doneAt": null,
+      "lastRemindedAt": null,
+      "createdAt": "2026-11-10T04:00:00.000Z",
+      "createdBy": "routine"
+    },
+    {
+      "id": "t-cs-04",
+      "title": "Read audience behavior",
+      "owner": "clint",
+      "due": "",
+      "status": "todo",
+      "phase": "Clint · Stretch",
+      "notes": "Which topics, formats, hooks and posting times work best.",
+      "doneAt": null,
+      "lastRemindedAt": null,
+      "createdAt": "2026-11-10T04:00:00.000Z",
+      "createdBy": "routine"
+    },
+    {
+      "id": "t-cs-05",
+      "title": "Learn how social content leads people into Practice",
+      "owner": "clint",
+      "due": "",
+      "status": "todo",
+      "phase": "Clint · Stretch",
+      "notes": "From a post to the Practice app, website, masterclasses and other offers.",
+      "doneAt": null,
+      "lastRemindedAt": null,
+      "createdAt": "2026-11-10T04:00:00.000Z",
+      "createdBy": "routine"
+    },
+    {
+      "id": "t-sc-01",
+      "title": "Give Clint access to the social accounts, YouTube Studio and analytics",
+      "owner": "abra",
+      "due": "2026-11-13",
+      "status": "todo",
+      "phase": "Support for Clint",
+      "notes": "LR accounts may need Leah. Dates are starting suggestions.",
+      "doneAt": null,
+      "lastRemindedAt": null,
+      "createdAt": "2026-11-10T04:00:00.000Z",
+      "createdBy": "routine"
+    },
+    {
+      "id": "t-sc-02",
+      "title": "Share the podcast, masterclass and long-form recordings with Clint",
+      "owner": "michelle",
+      "due": "2026-11-17",
+      "status": "todo",
+      "phase": "Support for Clint",
+      "notes": "With Logan. Dates are starting suggestions.",
+      "doneAt": null,
+      "lastRemindedAt": null,
+      "createdAt": "2026-11-10T04:00:00.000Z",
+      "createdBy": "routine"
+    },
+    {
+      "id": "t-sc-03",
+      "title": "Agree Clint's deliverables, publishing frequency and priorities",
+      "owner": "founder",
+      "due": "2026-11-16",
+      "status": "todo",
+      "phase": "Support for Clint",
+      "notes": "With Michelle and Abra. Includes who does what on YouTube, Shorts and Abra's account: both Clint's and Michelle's sheets list them. Dates are starting suggestions.",
+      "doneAt": null,
+      "lastRemindedAt": null,
+      "createdAt": "2026-11-10T04:00:00.000Z",
+      "createdBy": "routine"
+    },
+    {
+      "id": "t-gtm-01",
+      "title": "Decide who owns new people starting Practice each week",
+      "owner": "founder",
+      "due": "2026-11-16",
+      "status": "todo",
+      "phase": "Go-to-market",
+      "notes": "About 65 a week to reach 1,000 weekly practicers. See Library → Go-to-market gaps.",
+      "doneAt": null,
+      "lastRemindedAt": null,
+      "createdAt": "2026-11-10T04:00:00.000Z",
+      "createdBy": "routine"
+    },
+    {
+      "id": "t-gtm-02",
+      "title": "Decide who directs the Recording Block and produces the podcast and Rep of the Day",
+      "owner": "founder",
+      "due": "2026-11-16",
+      "status": "todo",
+      "phase": "Go-to-market",
+      "notes": "In the plan with Clint, but not in his win sheet.",
+      "doneAt": null,
+      "lastRemindedAt": null,
+      "createdAt": "2026-11-10T04:00:00.000Z",
+      "createdBy": "routine"
+    },
+    {
+      "id": "t-gtm-03",
+      "title": "Name owners for the website and the podcast's growth",
+      "owner": "founder",
+      "due": "2026-11-16",
+      "status": "todo",
+      "phase": "Go-to-market",
+      "notes": "The website's one job: \"Start Practice free\".",
+      "doneAt": null,
+      "lastRemindedAt": null,
+      "createdAt": "2026-11-10T04:00:00.000Z",
+      "createdBy": "routine"
+    },
+    {
+      "id": "t-gtm-04",
+      "title": "One-page brand map and offer ladder",
+      "owner": "abra",
+      "due": "2026-11-30",
+      "status": "todo",
+      "phase": "Go-to-market",
+      "notes": "One name per thing. Include the account map: LR, IB, Practice and Abra, who each is for and where it sends people. With Clint.",
+      "doneAt": null,
+      "lastRemindedAt": null,
+      "createdAt": "2026-11-10T04:00:00.000Z",
+      "createdBy": "routine"
+    },
+    {
+      "id": "t-gtm-05",
+      "title": "Build the room kit",
+      "owner": "abra",
+      "due": "2026-11-30",
+      "status": "todo",
+      "phase": "Go-to-market",
+      "notes": "Short link or QR to a Start Practice page, a GHL tag per room, a 3-message follow-up. With Michelle.",
+      "doneAt": null,
+      "lastRemindedAt": null,
+      "createdAt": "2026-11-10T04:00:00.000Z",
+      "createdBy": "routine"
+    },
+    {
+      "id": "t-gtm-06",
+      "title": "Track where new people come from",
+      "owner": "logan",
+      "due": "2026-11-30",
+      "status": "todo",
+      "phase": "Go-to-market",
+      "notes": "GHL source tags plus \"How did you hear about Practice?\" at sign-up. With Michelle.",
+      "doneAt": null,
+      "lastRemindedAt": null,
+      "createdAt": "2026-11-10T04:00:00.000Z",
+      "createdBy": "routine"
     }
   ],
   "content": [
@@ -1018,7 +1278,7 @@
     {
       "key": "youtubeViews",
       "label": "YouTube views",
-      "owner": "michelle",
+      "owner": "clint",
       "unit": "",
       "target": null,
       "targetNote": "Monthly growth · set with Clint",
@@ -1028,7 +1288,7 @@
     {
       "key": "youtubeSubscribers",
       "label": "YouTube subscribers",
-      "owner": "michelle",
+      "owner": "clint",
       "unit": "",
       "target": null,
       "targetNote": "Monthly growth · set with Clint",
@@ -1038,7 +1298,7 @@
     {
       "key": "youtubeCtr",
       "label": "YouTube click-through rate",
-      "owner": "michelle",
+      "owner": "clint",
       "unit": "%",
       "target": null,
       "targetNote": "Monthly growth · set with Clint",
@@ -1048,7 +1308,7 @@
     {
       "key": "podcastShorts",
       "label": "Episodes with a linked Short",
-      "owner": "michelle",
+      "owner": "clint",
       "unit": "%",
       "target": 100,
       "targetNote": "",
@@ -1114,6 +1374,76 @@
       "targetNote": "Set with Abra",
       "why": "Every room ends with an invitation into the Practice, INQ, or InnerBoard OS",
       "baseline": "Starts now"
+    },
+    {
+      "key": "socialReach",
+      "unit": "",
+      "target": null,
+      "targetNote": "Baseline first; targets set with the team",
+      "why": "How many people our content reaches",
+      "baseline": "To establish",
+      "label": "Social media reach",
+      "owner": "clint"
+    },
+    {
+      "key": "engagementRate",
+      "unit": "%",
+      "target": null,
+      "targetNote": "Baseline first; improve over time",
+      "why": "Likes, comments, shares and saves",
+      "baseline": "To establish",
+      "label": "Engagement rate",
+      "owner": "clint"
+    },
+    {
+      "key": "linkClicks",
+      "unit": "",
+      "target": null,
+      "targetNote": "",
+      "why": "Whether content sends people to InnerBoard, Leah, Abra or Practice",
+      "baseline": "To establish",
+      "label": "Profile visits and link clicks",
+      "owner": "clint"
+    },
+    {
+      "key": "youtubeWatchTime",
+      "unit": "",
+      "target": null,
+      "targetNote": "",
+      "why": "Longer-term channel growth",
+      "baseline": "From YouTube Studio",
+      "label": "YouTube watch time (hours)",
+      "owner": "clint"
+    },
+    {
+      "key": "publishingConsistency",
+      "unit": "%",
+      "target": 100,
+      "targetNote": "",
+      "why": "A reliable, sustainable schedule",
+      "baseline": "Starts with the weekly plan",
+      "label": "Posts published vs. plan",
+      "owner": "clint"
+    },
+    {
+      "key": "groupMembers",
+      "unit": "",
+      "target": null,
+      "targetNote": "",
+      "why": "The free, public front door into Practice",
+      "baseline": "Starts at launch",
+      "label": "Rep of the Day group members",
+      "owner": "michelle"
+    },
+    {
+      "key": "newStarters",
+      "unit": "",
+      "target": 65,
+      "targetNote": "About 65 a week (assumption) · owner to be decided",
+      "why": "1,000 weekly practicers needs about 3,000 people to start this year",
+      "baseline": "To establish",
+      "label": "New people starting Practice each week",
+      "owner": "founder"
     }
   ],
   "scorecard": [
@@ -1135,7 +1465,14 @@
         "annualSignups": null,
         "podcastDownloads": null,
         "roomsEntered": null,
-        "roomInvitations": null
+        "roomInvitations": null,
+        "socialReach": null,
+        "engagementRate": null,
+        "linkClicks": null,
+        "youtubeWatchTime": null,
+        "publishingConsistency": null,
+        "groupMembers": null,
+        "newStarters": null
       },
       "note": "Baseline week: fill in where we are today"
     },
@@ -1157,7 +1494,14 @@
         "annualSignups": null,
         "podcastDownloads": null,
         "roomsEntered": null,
-        "roomInvitations": null
+        "roomInvitations": null,
+        "socialReach": null,
+        "engagementRate": null,
+        "linkClicks": null,
+        "youtubeWatchTime": null,
+        "publishingConsistency": null,
+        "groupMembers": null,
+        "newStarters": null
       },
       "note": ""
     },
@@ -1179,7 +1523,14 @@
         "annualSignups": null,
         "podcastDownloads": null,
         "roomsEntered": null,
-        "roomInvitations": null
+        "roomInvitations": null,
+        "socialReach": null,
+        "engagementRate": null,
+        "linkClicks": null,
+        "youtubeWatchTime": null,
+        "publishingConsistency": null,
+        "groupMembers": null,
+        "newStarters": null
       },
       "note": ""
     },
@@ -1201,7 +1552,14 @@
         "annualSignups": null,
         "podcastDownloads": null,
         "roomsEntered": null,
-        "roomInvitations": null
+        "roomInvitations": null,
+        "socialReach": null,
+        "engagementRate": null,
+        "linkClicks": null,
+        "youtubeWatchTime": null,
+        "publishingConsistency": null,
+        "groupMembers": null,
+        "newStarters": null
       },
       "note": ""
     }
@@ -1271,6 +1629,16 @@
       "slug": "michelle-win-sheet",
       "title": "Michelle · Win Sheet",
       "group": "Roles"
+    },
+    {
+      "slug": "clint-win-sheet",
+      "title": "Clint · Win Sheet",
+      "group": "Roles"
+    },
+    {
+      "slug": "go-to-market-gaps",
+      "title": "Go-to-market gaps",
+      "group": "Strategy"
     }
   ],
   "briefings": [
@@ -1329,10 +1697,10 @@
     },
     {
       "id": "r-07",
-      "owner": "michelle",
+      "owner": "clint",
       "when": "weekly",
-      "title": "YouTube: thumbnails, captions and a Short for the new episode",
-      "note": ""
+      "title": "Podcast Shorts and YouTube: thumbnail, title and description for each new episode",
+      "note": "Michelle partners (her YouTube stretch)"
     },
     {
       "id": "r-08",
@@ -1431,6 +1799,48 @@
       "when": "daily",
       "title": "Rep of the Day goes out",
       "note": "6am"
+    },
+    {
+      "id": "r-22",
+      "owner": "michelle",
+      "when": "daily",
+      "title": "Rep of the Day group: welcome new people, reply, keep it fun",
+      "note": "Starts when the group launches"
+    },
+    {
+      "id": "r-23",
+      "owner": "founder",
+      "when": "fri",
+      "title": "Live session in the Rep of the Day group",
+      "note": "15–20 min · starts Dec 4"
+    },
+    {
+      "id": "r-24",
+      "owner": "clint",
+      "when": "daily",
+      "title": "Create, schedule and publish LR and IB content",
+      "note": ""
+    },
+    {
+      "id": "r-25",
+      "owner": "clint",
+      "when": "weekly",
+      "title": "Weekly content plan and publishing schedule",
+      "note": "With Michelle"
+    },
+    {
+      "id": "r-26",
+      "owner": "clint",
+      "when": "fri",
+      "title": "Weekly performance update",
+      "note": "Top posts, trends, opportunities → Michelle, Abra, Leah"
+    },
+    {
+      "id": "r-27",
+      "owner": "clint",
+      "when": "weekly",
+      "title": "Abra's personal account: posts",
+      "note": "With Abra"
     }
   ],
   "settings": {

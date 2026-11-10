@@ -5,8 +5,8 @@ The first version of our team hub was tidy and mostly beside the point. Here is 
 **1. It had no goal.** It said who does what, but never why or how much. There was no 1,000, no scorecard and no definition of a good week.
 *Now:* the [Road to 1,000](#/library/road-to-1000) and weekly [Numbers](#/numbers). Michelle owns the member numbers.
 
-**2. The founder wasn't in it.** The scarcest thing in the business is the founder's voice and camera time, and everything waits on it.
-*Now:* the founder has one weekly Recording Block, and everyone else's week is built around it. See the [Weekly rhythm](#/library/weekly-rhythm).
+**2. Leah wasn't in it.** The scarcest thing in the business is Leah's voice and camera time, and everything waits on it.
+*Now:* Leah has one weekly Recording Block, and everyone else's week is built around it. See the [Weekly rhythm](#/library/weekly-rhythm).
 
 **3. It was an assembly line for one masterclass a month.** No podcast, no community, no daily touchpoint. A monthly masterclass and seven posts a week won't reach 1,000.
 *Now:* the [podcast](#/library/podcast) is the front door, the free [Rep of the Day](#/library/rep-of-the-day) group is the daily habit, and the masterclass is the monthly peak.
