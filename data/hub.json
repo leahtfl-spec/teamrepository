@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-10T04:37:00.837Z",
+  "updatedAt": "2026-11-10T12:46:27.382Z",
   "brand": {
     "name": "InnerBoard",
     "tagline": "The practice of becoming you."
@@ -1326,6 +1326,83 @@
       "owner": "michelle",
       "status": "idea",
       "link": ""
+    },
+    {
+      "id": "c-r-2026-11-16",
+      "date": "2026-11-16",
+      "channel": "Instagram",
+      "pillar": "Education",
+      "format": "Carousel",
+      "title": "One rep a day: why small practice beats big resolutions",
+      "owner": "clint",
+      "status": "idea",
+      "link": ""
+    },
+    {
+      "id": "c-r-2026-11-17",
+      "date": "2026-11-17",
+      "channel": "Instagram/TikTok",
+      "pillar": "Behind the scenes",
+      "format": "Reel",
+      "title": "Inside our first Recording Block with Leah",
+      "owner": "clint",
+      "status": "idea",
+      "link": ""
+    },
+    {
+      "id": "c-r-2026-11-18",
+      "date": "2026-11-18",
+      "channel": "Instagram/TikTok",
+      "pillar": "Masterclass clips",
+      "format": "Reel",
+      "title": "Leah's best 30 seconds from the last masterclass",
+      "owner": "clint",
+      "status": "idea",
+      "link": ""
+    },
+    {
+      "id": "c-r-2026-11-19",
+      "date": "2026-11-19",
+      "channel": "Instagram/TikTok",
+      "pillar": "Masterclass clips",
+      "format": "Reel",
+      "title": "One masterclass \"aha\" you can practice today",
+      "owner": "clint",
+      "status": "idea",
+      "link": ""
+    },
+    {
+      "id": "c-r-2026-11-20",
+      "date": "2026-11-20",
+      "channel": "Instagram",
+      "pillar": "Community & wins",
+      "format": "Graphic",
+      "title": "Member win of the week: one rep, one real change",
+      "owner": "clint",
+      "status": "idea",
+      "link": ""
+    },
+    {
+      "id": "c-r-2026-11-21",
+      "date": "2026-11-21",
+      "channel": "Instagram",
+      "pillar": "Education",
+      "format": "Carousel",
+      "title": "3 signs you're ready to start practicing (and where to begin)",
+      "owner": "clint",
+      "status": "idea",
+      "link": ""
+    },
+    {
+      "id": "c-r-2026-11-22",
+      "date": "2026-11-22",
+      "channel": "Instagram",
+      "pillar": "Promo & offers",
+      "format": "Story",
+      "title": "Join the free Rep of the Day group (link in bio)",
+      "owner": "clint",
+      "status": "idea",
+      "link": ""
     }
   ],
   "metrics": [
@@ -1772,6 +1849,25 @@
       "done": [],
       "overdue": [],
       "added": [],
+      "reminded": []
+    },
+    {
+      "id": "b-2026-11-10",
+      "date": "2026-11-10",
+      "summary": "Day two: Leah set the goal of 1,000 people practicing each week by Nov 9, 2027, and Abra's, Michelle's and Clint's roles are now on the Team page. Nothing is overdue yet. Due this week: Michelle's social handoff today, Leah's two Phase 0 decisions on Thursday, then Friday's batch (Abra's annual price and hat check, Logan's gift-code check, Clint's hat samples and Michelle's baseline numbers). I added 7 post ideas for Nov 16 to 22, and no reminders were needed.",
+      "done": [
+        "t-p0-02"
+      ],
+      "overdue": [],
+      "added": [
+        "c-r-2026-11-16",
+        "c-r-2026-11-17",
+        "c-r-2026-11-18",
+        "c-r-2026-11-19",
+        "c-r-2026-11-20",
+        "c-r-2026-11-21",
+        "c-r-2026-11-22"
+      ],
       "reminded": []
     }
   ],
