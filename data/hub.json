@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-09T09:00:00.000Z",
+  "updatedAt": "2026-11-10T01:58:11.937Z",
   "brand": {
     "name": "Inner Board",
     "tagline": "The practice of becoming you."
@@ -14,7 +14,7 @@
   "people": [
     {
       "id": "founder",
-      "name": "Founder",
+      "name": "Leah",
       "title": "Founder & Voice of Inner Board",
       "email": "",
       "mission": "Teach. Be the voice. Everything else is someone else's job.",
@@ -39,7 +39,7 @@
       "id": "abra",
       "name": "Abra",
       "title": "Chief of Staff & Head of Growth",
-      "email": "",
+      "email": "abra@innerboardsuite.com",
       "mission": "Own the number. Get Inner Board to 1,000 members and protect the founder's time while doing it.",
       "number": "New paid members per week",
       "owns": [
@@ -60,7 +60,7 @@
       "id": "michelle",
       "name": "Michelle",
       "title": "COO & Head of Member Experience",
-      "email": "",
+      "email": "penton.michellejoy@gmail.com",
       "mission": "Everyone who joins gets everything they paid for, builds a daily rep habit, and stays.",
       "number": "30-day active rate",
       "owns": [
@@ -83,7 +83,7 @@
       "id": "clint",
       "name": "Clint",
       "title": "Creative Director",
-      "email": "",
+      "email": "clintreianne@gmail.com",
       "mission": "Make Inner Board look and sound unmistakable everywhere, and turn the founder's weekly recording into a week of content.",
       "number": "Content shipped per week → group joins",
       "owns": [
@@ -104,7 +104,7 @@
       "id": "logan",
       "name": "Logan",
       "title": "App Lead",
-      "email": "",
+      "email": "newmanlogan13@gmail.com",
       "mission": "The app is where the practice lives. It works, and everything is in it on time.",
       "number": "Assets live on time; app issues open",
       "owns": [
