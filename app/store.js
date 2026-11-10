@@ -1,8 +1,10 @@
 // App state + sync. Every edit is a list of ops: applied locally at once, queued, then POSTed
-// (debounced). In preview mode (no storage behind the API) edits live in localStorage instead.
+// (debounced). In preview mode (no storage behind the API) the ops are kept in localStorage and
+// re-applied on top of the latest deployed data on every load, so new deployments still show up.
 import { applyOps, emptyHub } from "./ops.js";
 
-const KEY = { hub: "ib.hub.local", docs: "ib.docs.local", me: "ib.me", pass: "ib.passcode" };
+const KEY = { ops: "ib.ops.local", oldHub: "ib.hub.local", docs: "ib.docs.local", me: "ib.me", pass: "ib.passcode" };
+const MAX_LOCAL_OPS = 2000;
 export const ls = {
   get(k) { try { return localStorage.getItem(k); } catch { return null; } },
   set(k, v) { try { localStorage.setItem(k, v); } catch {} },
@@ -36,11 +38,27 @@ async function getJson(url) {
   return res.json();
 }
 
+// Preview-mode edits: a log of {op, at}. Replaying it on the latest hub keeps this device's edits
+// without freezing the data (an older version stored a whole hub snapshot here, which hid every
+// later deployment; that snapshot is dropped).
+const localOps = () => { const v = ls.json(KEY.ops); return Array.isArray(v) ? v : []; };
+const keepLocal = (ops) => {
+  const at = new Date().toISOString();
+  ls.set(KEY.ops, JSON.stringify([...localOps(), ...ops.map((op) => ({ op, at }))].slice(-MAX_LOCAL_OPS)));
+};
+function overlay(hub) {
+  let out = hub;
+  for (const e of localOps()) {
+    try { out = applyOps(out, [e.op], e.at); } catch { /* the item no longer exists or changed shape: skip */ }
+  }
+  return out;
+}
+
 function enterPreview(hub) {
   state.canWrite = false;
   state.source = state.source || "bundle";
-  const local = ls.json(KEY.hub);
-  state.hub = local && typeof local === "object" ? local : hub;
+  try { localStorage.removeItem(KEY.oldHub); } catch {}
+  state.hub = overlay(hub);
 }
 
 export async function load() {
@@ -67,7 +85,7 @@ export function dispatch(ops) {
   if (!ops.length) return;
   state.hub = applyOps(state.hub, ops); // throws on a bad op; callers rely on validation here
   if (!state.canWrite) {
-    ls.set(KEY.hub, JSON.stringify(state.hub));
+    keepLocal(ops);
     emit("local");
     return;
   }
@@ -106,10 +124,10 @@ async function flush() {
   }
   if (res.status === 503) {
     // Storage isn't set up: keep working on this device.
+    keepLocal(inflight.concat(pending));
     inflight = null;
     pending = [];
     state.canWrite = false;
-    ls.set(KEY.hub, JSON.stringify(state.hub));
     setSync("idle");
     emit("mode");
     return;
