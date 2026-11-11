@@ -54,6 +54,27 @@ function overlay(hub) {
   return out;
 }
 
+// Going live: edits made on this device in preview mode are sent to the team's data once.
+// They are patches with fixed ids, so sending them again (say, after a reload mid-save) is safe.
+// The log is cleared only after the server accepts them.
+let promoting = false;
+function promoteLocal() {
+  const entries = localOps();
+  if (!entries.length) return;
+  const ops = [];
+  let hub = state.hub;
+  for (const e of entries) {
+    try { hub = applyOps(hub, [e.op], e.at); ops.push(e.op); } catch { /* no longer applies: skip */ }
+  }
+  if (!ops.length) { try { localStorage.removeItem(KEY.ops); } catch {} return; }
+  state.hub = hub;
+  promoting = true;
+  pending.push(...ops);
+  setSync("pending");
+  schedule(0);
+  hooks.toast(`Saving ${ops.length} change${ops.length === 1 ? "" : "s"} you made on this device to the team.`);
+}
+
 function enterPreview(hub) {
   state.canWrite = false;
   state.source = state.source || "bundle";
@@ -68,7 +89,7 @@ export async function load() {
     state.source = data.source;
     state.needsPasscode = !!data.needsPasscode;
     state.canWrite = !!data.canWrite;
-    if (state.canWrite) state.hub = data.hub;
+    if (state.canWrite) { state.hub = data.hub; promoteLocal(); }
     else enterPreview(data.hub);
   } catch {
     // No API (e.g. a plain static host): fall back to the shipped snapshot, preview mode.
@@ -134,6 +155,7 @@ async function flush() {
   }
   if (res.status === 400) {
     inflight = null;
+    if (promoting) { promoting = false; try { localStorage.removeItem(KEY.ops); } catch {} }
     hooks.toast("One change couldn't be saved, so it was undone.");
     await refresh(true);
     return;
@@ -145,6 +167,7 @@ async function flush() {
   state.sha = body.sha;
   try { state.hub = pending.length ? applyOps(body.hub, pending) : body.hub; } catch { pending = []; state.hub = body.hub; }
   setSync(pending.length ? "pending" : "saved");
+  if (promoting && !pending.length) { promoting = false; try { localStorage.removeItem(KEY.ops); } catch {} }
   emit("server");
   if (pending.length) schedule(700);
 }

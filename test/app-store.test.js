@@ -57,3 +57,35 @@ test("a local edit to an item that no longer exists is skipped, not fatal", asyn
   await store.load();
   assert.equal(store.state.hub.tasks[0].due, "");
 });
+
+test("going live: this device's preview edits are saved to the team once, then cleared", async () => {
+  const posted = [];
+  served = hubWith("Leah");
+  localStorage.setItem("ib.ops.local", JSON.stringify([
+    { op: { op: "upsert", coll: "tasks", item: { id: "t-1", status: "done" } }, at: "2026-11-11T09:00:00.000Z" },
+    { op: { op: "upsert", coll: "tasks", item: { id: "t-gone", due: "bad" } }, at: "2026-11-11T09:01:00.000Z" },
+  ]));
+  const prevFetch = globalThis.fetch;
+  globalThis.fetch = async (url, opts = {}) => {
+    if (String(url).startsWith("/api/data") && opts.method === "POST") {
+      const { ops } = JSON.parse(opts.body);
+      posted.push(...ops);
+      const { applyOps } = await import("../app/ops.js");
+      return { ok: true, status: 200, json: async () => ({ hub: applyOps(served, ops), sha: "s2" }) };
+    }
+    if (String(url).startsWith("/api/data")) return { ok: true, status: 200, json: async () => ({ hub: served, sha: "s1", source: "github", canWrite: true }) };
+    return { ok: false, status: 404, json: async () => ({}) };
+  };
+  try {
+    await store.load();
+    assert.equal(store.state.canWrite, true);
+    assert.equal(store.state.hub.tasks[0].status, "done", "shown at once");
+    await new Promise((r) => setTimeout(r, 30));
+    assert.equal(posted.length, 1, "only the edit that still applies is sent");
+    assert.equal(posted[0].item.id, "t-1");
+    assert.equal(localStorage.getItem("ib.ops.local"), null, "log cleared after the save");
+    assert.equal(store.state.hub.tasks[0].status, "done");
+  } finally {
+    globalThis.fetch = prevFetch;
+  }
+});
