@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-10T12:46:27.382Z",
+  "updatedAt": "2026-11-11T12:46:33.638Z",
   "brand": {
     "name": "InnerBoard",
     "tagline": "The practice of becoming you."
@@ -600,7 +600,7 @@
       "createdAt": "2026-11-10T02:00:00.000Z",
       "createdBy": "routine",
       "doneAt": null,
-      "lastRemindedAt": null
+      "lastRemindedAt": "2026-11-11"
     },
     {
       "id": "t-mw-02",
@@ -1403,6 +1403,28 @@
       "owner": "clint",
       "status": "idea",
       "link": ""
+    },
+    {
+      "id": "c-r-2026-11-23",
+      "date": "2026-11-23",
+      "channel": "Instagram",
+      "pillar": "Education",
+      "format": "Carousel",
+      "title": "5 tiny reps you can do before your coffee gets cold",
+      "owner": "clint",
+      "status": "idea",
+      "link": ""
+    },
+    {
+      "id": "c-r-2026-11-24",
+      "date": "2026-11-24",
+      "channel": "Instagram/TikTok",
+      "pillar": "Behind the scenes",
+      "format": "Reel",
+      "title": "Behind the scenes: building the Rep of the Day group",
+      "owner": "clint",
+      "status": "idea",
+      "link": ""
     }
   ],
   "metrics": [
@@ -1869,6 +1891,22 @@
         "c-r-2026-11-22"
       ],
       "reminded": []
+    },
+    {
+      "id": "b-2026-11-11",
+      "date": "2026-11-11",
+      "summary": "Quiet day on the board: nothing new was marked done since yesterday. Michelle's social handoff (due Nov 10) is the one overdue item, and a gentle check-in to her is waiting in Leah's Gmail drafts for review. Tomorrow Leah has two Phase 0 decisions (announcing the new roles, and free or members-only for the Rep of the Day group), and Friday brings Abra's annual price and hat check, Logan's gift-code check, Clint's hat samples and Michelle's baseline numbers. I added 2 post ideas for Nov 23 and 24.",
+      "done": [],
+      "overdue": [
+        "t-mw-01"
+      ],
+      "added": [
+        "c-r-2026-11-23",
+        "c-r-2026-11-24"
+      ],
+      "reminded": [
+        "michelle"
+      ]
     }
   ],
   "rhythm": [
