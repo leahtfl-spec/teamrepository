@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-12T12:45:37.783Z",
+  "updatedAt": "2026-11-12T12:46:48.673Z",
   "brand": {
     "name": "InnerBoard",
     "tagline": "The practice of becoming you."
@@ -1438,6 +1438,17 @@
       "owner": "clint",
       "status": "idea",
       "link": ""
+    },
+    {
+      "id": "c-r-2026-11-25",
+      "date": "2026-11-25",
+      "channel": "Instagram/TikTok",
+      "pillar": "Masterclass clips",
+      "format": "Reel",
+      "title": "Leah on the one rep that changes your whole day",
+      "owner": "clint",
+      "status": "idea",
+      "link": ""
     }
   ],
   "metrics": [
@@ -1925,6 +1936,21 @@
       "reminded": [
         "michelle"
       ]
+    },
+    {
+      "id": "b-2026-11-12",
+      "date": "2026-11-12",
+      "summary": "Leah decided the Rep of the Day group will be free, and her win sheet is now in the Library next to Abra's, Michelle's and Clint's. Michelle's social handoff (due Nov 10) is still the one overdue item; her gentle check-in from yesterday is waiting in Leah's drafts, so there's no new reminder today. Friday is a big day: Abra's annual price and hat check and account access, Logan's gift-code check, Clint's hat samples, Michelle's baselines and calendar, and Leah's live-mode setup, after which check-offs made on people's own devices will sync. I added 1 post idea for Nov 25.",
+      "done": [
+        "t-p0-03"
+      ],
+      "overdue": [
+        "t-mw-01"
+      ],
+      "added": [
+        "c-r-2026-11-25"
+      ],
+      "reminded": []
     }
   ],
   "rhythm": [
