@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-11T12:46:33.638Z",
+  "updatedAt": "2026-11-12T12:39:41.954Z",
   "brand": {
     "name": "InnerBoard",
     "tagline": "The practice of becoming you."
@@ -52,7 +52,7 @@
         "Answering logistics questions",
         "Approving routine content"
       ],
-      "doc": "",
+      "doc": "leah-win-sheet",
       "remind": false
     },
     {
@@ -1225,6 +1225,19 @@
       "lastRemindedAt": null,
       "createdAt": "2026-11-10T04:30:00.000Z",
       "createdBy": "routine"
+    },
+    {
+      "id": "t-ld-01",
+      "title": "Turn on live mode: add the GitHub key in Vercel and redeploy",
+      "owner": "founder",
+      "due": "2026-11-13",
+      "status": "todo",
+      "phase": "Leah · Wins",
+      "notes": "Steps in the README. Until this is done, everyone's edits stay on their own device and the morning check-in can't see them. Michelle's earlier checkmarks upload automatically once it's live.",
+      "doneAt": null,
+      "lastRemindedAt": null,
+      "createdAt": "2026-11-12T12:45:00.000Z",
+      "createdBy": "routine"
     }
   ],
   "content": [
@@ -1861,6 +1874,11 @@
       "slug": "going-big",
       "title": "What it takes to go big",
       "group": "Strategy"
+    },
+    {
+      "slug": "leah-win-sheet",
+      "title": "Leah · Win Sheet",
+      "group": "Roles"
     }
   ],
   "briefings": [
