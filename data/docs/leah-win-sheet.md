@@ -26,7 +26,7 @@ My part of the mission is to give the team one focused Recording Block a week an
 | Win | What done looks like | Target |
 |-----|----------------------|--------|
 | Roles announced | Everyone's title and role is on the [Team](#/team) page, announced to the team, and each person has pushed back on anything that feels wrong. | Thu Nov 12 |
-| Rep of the Day group decided | The group is a go. Free or members-only is settled (the recommendation is free). | Thu Nov 12 |
+| Rep of the Day group decided | The group is a go, and it's free: the front door to Practice. | Done Nov 12 |
 | The command center goes live | The GitHub key is added in Vercel and the site redeployed, so everyone sees the same tasks and the morning check-in sees what's done. | Fri Nov 13 |
 | A protected Recording Block | A half-day every Tuesday, on the calendar, guarded by Abra and directed by Clint. | Booked by Sat Nov 14 |
 | Clear decisions on Monday | At the Nov 16 team meeting, in one sitting: who owns new people starting Practice; who directs the Recording Block and produces the podcast and Rep of the Day; Clint's deliverables and the YouTube split; owners for the website and the podcast's growth; Michelle's first teammate; where Abra's chief-of-staff work ends and Michelle's COO work begins; and the Skool cutover date. Then confirm Michelle's definition of "practicing". | Mon Nov 16 |

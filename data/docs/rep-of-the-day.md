@@ -6,7 +6,7 @@
 
 > **Decided Nov 10: we're doing it.** The Facebook group is the free, public, fun front door. Each daily rep links into the **Practice app**, where streaks, the Labs and premium live. The group brings people in, and the app keeps them.
 
-> **Free or members-only? Recommendation: free (Leah to confirm).** The group is where people try the practice; the app is where they go deeper. Paid members get the full library, masterclasses, workbooks and audio drops.
+> **Decided Nov 12: free.** The group is where people try the practice; the app is where they go deeper. Paid members get the full library, masterclasses, workbooks and audio drops.
 
 ## The daily post
 

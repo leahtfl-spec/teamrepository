@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-12T12:39:41.954Z",
+  "updatedAt": "2026-11-12T12:45:37.783Z",
   "brand": {
     "name": "InnerBoard",
     "tagline": "The practice of becoming you."
@@ -106,7 +106,7 @@
     {
       "id": "clint",
       "name": "Clint",
-      "title": "Creative Director",
+      "title": "Content & Social Media Director",
       "email": "clintreianne@gmail.com",
       "mission": "Turns InnerBoard's and Leah's ideas, expertise and existing content into material that reaches more people, builds awareness, and brings the right audience into Practice.",
       "number": "Reach, engagement and link clicks toward Practice",
@@ -178,12 +178,12 @@
       "title": "Decide: is the Rep of the Day group free or members-only?",
       "owner": "founder",
       "due": "2026-11-12",
-      "status": "todo",
+      "status": "done",
       "phase": "Phase 0 · Decide",
-      "notes": "With Abra. Recommendation: free. The group is the front door; the app is where people go deeper.\nDecided Nov 10: yes, Leah wants the Rep of the Day Facebook group. It's the free, public front door: each daily rep links into the Practice app, where streaks, the Labs and premium live.",
+      "notes": "With Abra. Recommendation: free. The group is the front door; the app is where people go deeper.\nDecided Nov 10: yes, Leah wants the Rep of the Day Facebook group. It's the free, public front door: each daily rep links into the Practice app, where streaks, the Labs and premium live.\nDecided Nov 12 by Leah: the Rep of the Day group is free.",
       "createdAt": "2026-11-09T09:00:00.000Z",
       "createdBy": "routine",
-      "doneAt": null,
+      "doneAt": "2026-11-12T12:45:37.783Z",
       "lastRemindedAt": null
     },
     {
