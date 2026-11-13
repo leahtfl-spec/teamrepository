@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-12T12:53:18.132Z",
+  "updatedAt": "2026-11-13T12:46:25.797Z",
   "brand": {
     "name": "InnerBoard",
     "tagline": "The practice of becoming you."
@@ -1449,6 +1449,17 @@
       "owner": "clint",
       "status": "idea",
       "link": ""
+    },
+    {
+      "id": "c-r-2026-11-26",
+      "date": "2026-11-26",
+      "channel": "Instagram/TikTok",
+      "pillar": "Masterclass clips",
+      "format": "Reel",
+      "title": "A Thanksgiving gratitude rep from Leah's last masterclass",
+      "owner": "clint",
+      "status": "idea",
+      "link": ""
     }
   ],
   "metrics": [
@@ -1949,6 +1960,20 @@
       ],
       "added": [
         "c-r-2026-11-25"
+      ],
+      "reminded": []
+    },
+    {
+      "id": "b-2026-11-13",
+      "date": "2026-11-13",
+      "summary": "Nothing new was marked done in the command center since yesterday, though some check-offs may only be on people's own devices until live mode is on. Overdue: Michelle's social handoff (Nov 10) and Leah's roles announcement (Nov 12); if the announcement went out, tick it. Today is the big Phase 0 Friday: Abra's annual price, hat check and account access for Clint and Michelle, Logan's gift-code check, Clint's hat samples, Michelle's baselines, practicing definition and calendar, and Leah's live-mode setup. Tuesday's check-in to Michelle is still unsent in Leah's drafts, so no second one was written; I added 1 post idea for Nov 26 (Thanksgiving).",
+      "done": [],
+      "overdue": [
+        "t-mw-01",
+        "t-p0-01"
+      ],
+      "added": [
+        "c-r-2026-11-26"
       ],
       "reminded": []
     }
