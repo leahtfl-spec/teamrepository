@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-13T12:46:25.797Z",
+  "updatedAt": "2026-11-14T12:47:05.046Z",
   "brand": {
     "name": "InnerBoard",
     "tagline": "The practice of becoming you."
@@ -197,7 +197,7 @@
       "createdAt": "2026-11-09T09:00:00.000Z",
       "createdBy": "routine",
       "doneAt": null,
-      "lastRemindedAt": null
+      "lastRemindedAt": "2026-11-14"
     },
     {
       "id": "t-p0-05",
@@ -210,7 +210,7 @@
       "createdAt": "2026-11-09T09:00:00.000Z",
       "createdBy": "routine",
       "doneAt": null,
-      "lastRemindedAt": null
+      "lastRemindedAt": "2026-11-14"
     },
     {
       "id": "t-p0-06",
@@ -223,7 +223,7 @@
       "createdAt": "2026-11-09T09:00:00.000Z",
       "createdBy": "routine",
       "doneAt": null,
-      "lastRemindedAt": null
+      "lastRemindedAt": "2026-11-14"
     },
     {
       "id": "t-p0-07",
@@ -236,7 +236,7 @@
       "createdAt": "2026-11-09T09:00:00.000Z",
       "createdBy": "routine",
       "doneAt": null,
-      "lastRemindedAt": null
+      "lastRemindedAt": "2026-11-14"
     },
     {
       "id": "t-p0-08",
@@ -600,7 +600,7 @@
       "createdAt": "2026-11-10T02:00:00.000Z",
       "createdBy": "routine",
       "doneAt": null,
-      "lastRemindedAt": "2026-11-11"
+      "lastRemindedAt": "2026-11-14"
     },
     {
       "id": "t-mw-02",
@@ -613,7 +613,7 @@
       "createdAt": "2026-11-10T02:00:00.000Z",
       "createdBy": "routine",
       "doneAt": null,
-      "lastRemindedAt": null
+      "lastRemindedAt": "2026-11-14"
     },
     {
       "id": "t-mw-03",
@@ -756,7 +756,7 @@
       "createdAt": "2026-11-10T02:00:00.000Z",
       "createdBy": "routine",
       "doneAt": null,
-      "lastRemindedAt": null
+      "lastRemindedAt": "2026-11-14"
     },
     {
       "id": "t-sp-02",
@@ -1014,7 +1014,7 @@
       "phase": "Support for Clint",
       "notes": "LR accounts may need Leah. Dates are starting suggestions.",
       "doneAt": null,
-      "lastRemindedAt": null,
+      "lastRemindedAt": "2026-11-14",
       "createdAt": "2026-11-10T04:00:00.000Z",
       "createdBy": "routine"
     },
@@ -1170,7 +1170,7 @@
       "phase": "Going big",
       "notes": "With Logan, for Leah to confirm Nov 16. Example: at least one rep in the Practice app that week. Also: does practice through INQ coaches and InnerBoard OS organizations count toward the 1,000? From Library → What it takes to go big.",
       "doneAt": null,
-      "lastRemindedAt": null,
+      "lastRemindedAt": "2026-11-14",
       "createdAt": "2026-11-10T04:30:00.000Z",
       "createdBy": "routine"
     },
@@ -1457,6 +1457,17 @@
       "pillar": "Masterclass clips",
       "format": "Reel",
       "title": "A Thanksgiving gratitude rep from Leah's last masterclass",
+      "owner": "clint",
+      "status": "idea",
+      "link": ""
+    },
+    {
+      "id": "c-r-2026-11-27",
+      "date": "2026-11-27",
+      "channel": "Instagram",
+      "pillar": "Community & wins",
+      "format": "Graphic",
+      "title": "Grateful for you: a shout-out to our first Rep of the Day members",
       "owner": "clint",
       "status": "idea",
       "link": ""
@@ -1976,6 +1987,34 @@
         "c-r-2026-11-26"
       ],
       "reminded": []
+    },
+    {
+      "id": "b-2026-11-14",
+      "date": "2026-11-14",
+      "summary": "Nothing new was marked done in the command center since yesterday, so Friday's Phase 0 batch is now overdue: Abra 3 (price and hat check, account access for Clint and Michelle), Michelle 4 (social handoff, practicing definition, baselines, calendar), Clint 1 (hat samples), Logan 1 (gift codes) and Leah 2 (roles announcement, live mode). Some of these may already be done on people's own devices or in the Friday Finisher sheet, so gentle check-ins for Abra, Michelle, Clint and Logan are waiting in Leah's drafts to review before sending. Leah's Recording Block booking is due today, and Monday's team meeting carries her seven decisions. I added 1 post idea for Nov 27.",
+      "done": [],
+      "overdue": [
+        "t-mw-01",
+        "t-gb-04",
+        "t-p0-04",
+        "t-mw-02",
+        "t-p0-05",
+        "t-sc-01",
+        "t-sp-01",
+        "t-p0-07",
+        "t-p0-06",
+        "t-p0-01",
+        "t-ld-01"
+      ],
+      "added": [
+        "c-r-2026-11-27"
+      ],
+      "reminded": [
+        "abra",
+        "michelle",
+        "clint",
+        "logan"
+      ]
     }
   ],
   "rhythm": [
