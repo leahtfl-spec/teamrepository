@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-14T12:47:05.046Z",
+  "updatedAt": "2026-11-15T12:46:19.080Z",
   "brand": {
     "name": "InnerBoard",
     "tagline": "The practice of becoming you."
@@ -1471,6 +1471,17 @@
       "owner": "clint",
       "status": "idea",
       "link": ""
+    },
+    {
+      "id": "c-r-2026-11-28",
+      "date": "2026-11-28",
+      "channel": "Instagram",
+      "pillar": "Education",
+      "format": "Carousel",
+      "title": "Holiday-proof your practice: 3 reps for a busy week",
+      "owner": "clint",
+      "status": "idea",
+      "link": ""
     }
   ],
   "metrics": [
@@ -2015,6 +2026,30 @@
         "clint",
         "logan"
       ]
+    },
+    {
+      "id": "b-2026-11-15",
+      "date": "2026-11-15",
+      "summary": "A quiet Sunday: nothing new was marked done in the command center, and no one has replied to the check-ins yet (they're still in Leah's drafts unless she sent them). Still overdue: Abra 3, Michelle 4, Clint 1, Logan 1, and Leah 3 (roles announcement, live mode, booking the Recording Block). Tomorrow is the Monday team meeting with Leah's seven decisions, plus Clint's weekly content plan and Michelle's daily return ideas, and Tuesday is the first Recording Block. I added 1 post idea for Nov 28.",
+      "done": [],
+      "overdue": [
+        "t-mw-01",
+        "t-gb-04",
+        "t-p0-04",
+        "t-mw-02",
+        "t-p0-05",
+        "t-sc-01",
+        "t-sp-01",
+        "t-p0-07",
+        "t-p0-06",
+        "t-p0-01",
+        "t-ld-01",
+        "t-p0-08"
+      ],
+      "added": [
+        "c-r-2026-11-28"
+      ],
+      "reminded": []
     }
   ],
   "rhythm": [
