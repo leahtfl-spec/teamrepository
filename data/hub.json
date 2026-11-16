@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-15T12:46:19.080Z",
+  "updatedAt": "2026-11-16T12:46:40.448Z",
   "brand": {
     "name": "InnerBoard",
     "tagline": "The practice of becoming you."
@@ -1238,6 +1238,71 @@
       "lastRemindedAt": null,
       "createdAt": "2026-11-12T12:45:00.000Z",
       "createdBy": "routine"
+    },
+    {
+      "id": "t-wk-2026-11-16-record",
+      "title": "Recording Block: podcast, 7 Reps, promo videos",
+      "owner": "founder",
+      "due": "2026-11-17",
+      "status": "todo",
+      "phase": "Weekly",
+      "notes": "About half a day. Clint directs and shoots.",
+      "doneAt": null,
+      "lastRemindedAt": null,
+      "createdBy": "routine",
+      "createdAt": "2026-11-16T12:46:40.448Z"
+    },
+    {
+      "id": "t-wk-2026-11-16-reps",
+      "title": "Schedule Rep of the Day 2 weeks out",
+      "owner": "clint",
+      "due": "2026-11-19",
+      "status": "todo",
+      "phase": "Weekly",
+      "notes": "",
+      "doneAt": null,
+      "lastRemindedAt": null,
+      "createdBy": "routine",
+      "createdAt": "2026-11-16T12:46:40.448Z"
+    },
+    {
+      "id": "t-wk-2026-11-16-scorecard",
+      "title": "Update the numbers on the scorecard",
+      "owner": "michelle",
+      "due": "2026-11-20",
+      "status": "todo",
+      "phase": "Weekly",
+      "notes": "Fill this week's row on Numbers before Monday's team meeting.",
+      "doneAt": null,
+      "lastRemindedAt": null,
+      "createdBy": "routine",
+      "createdAt": "2026-11-16T12:46:40.448Z"
+    },
+    {
+      "id": "t-wk-2026-11-16-community",
+      "title": "Practice app and Labs check-in + member spotlight",
+      "owner": "michelle",
+      "due": "2026-11-20",
+      "status": "todo",
+      "phase": "Weekly",
+      "notes": "Spotlight one member in the app or the Labs.",
+      "doneAt": null,
+      "lastRemindedAt": null,
+      "createdBy": "routine",
+      "createdAt": "2026-11-16T12:46:40.448Z"
+    },
+    {
+      "id": "t-wk-2026-11-16-app",
+      "title": "Weekly app check",
+      "owner": "logan",
+      "due": "2026-11-20",
+      "status": "todo",
+      "phase": "Weekly",
+      "notes": "Upload new Reps and audio, fix open issues, send app numbers to Michelle.",
+      "doneAt": null,
+      "lastRemindedAt": null,
+      "createdBy": "routine",
+      "createdAt": "2026-11-16T12:46:40.448Z"
     }
   ],
   "content": [
@@ -1479,6 +1544,17 @@
       "pillar": "Education",
       "format": "Carousel",
       "title": "Holiday-proof your practice: 3 reps for a busy week",
+      "owner": "clint",
+      "status": "idea",
+      "link": ""
+    },
+    {
+      "id": "c-r-2026-11-29",
+      "date": "2026-11-29",
+      "channel": "Instagram",
+      "pillar": "Promo & offers",
+      "format": "Story",
+      "title": "One rep a day, together: join the free Rep of the Day group",
       "owner": "clint",
       "status": "idea",
       "link": ""
@@ -2048,6 +2124,35 @@
       ],
       "added": [
         "c-r-2026-11-28"
+      ],
+      "reminded": []
+    },
+    {
+      "id": "b-2026-11-16",
+      "date": "2026-11-16",
+      "summary": "New week, and Phase 1 begins: I added this week's 5 recurring tasks (Leah's Recording Block Tuesday, Clint's Rep of the Day scheduling Thursday, and Friday's scorecard update, Practice app and Labs check-in, and app check). Nothing new was marked done in the command center; still overdue are Abra 3, Michelle 4, Clint 1, Logan 1 and Leah 3, and Saturday's four check-ins are still unsent in Leah's drafts, so no new ones were written. Today is the team meeting with Leah's seven decisions, plus Clint's weekly content plan and Michelle's daily return ideas. I added 1 post idea for Nov 29.",
+      "done": [],
+      "overdue": [
+        "t-mw-01",
+        "t-gb-04",
+        "t-p0-04",
+        "t-mw-02",
+        "t-p0-05",
+        "t-sc-01",
+        "t-sp-01",
+        "t-p0-07",
+        "t-p0-06",
+        "t-p0-01",
+        "t-ld-01",
+        "t-p0-08"
+      ],
+      "added": [
+        "t-wk-2026-11-16-record",
+        "t-wk-2026-11-16-reps",
+        "t-wk-2026-11-16-scorecard",
+        "t-wk-2026-11-16-community",
+        "t-wk-2026-11-16-app",
+        "c-r-2026-11-29"
       ],
       "reminded": []
     }
