@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-17T12:47:12.367Z",
+  "updatedAt": "2026-11-18T12:47:06.060Z",
   "brand": {
     "name": "InnerBoard",
     "tagline": "The practice of becoming you."
@@ -197,7 +197,7 @@
       "createdAt": "2026-11-09T09:00:00.000Z",
       "createdBy": "routine",
       "doneAt": null,
-      "lastRemindedAt": "2026-11-17"
+      "lastRemindedAt": "2026-11-18"
     },
     {
       "id": "t-p0-05",
@@ -210,7 +210,7 @@
       "createdAt": "2026-11-09T09:00:00.000Z",
       "createdBy": "routine",
       "doneAt": null,
-      "lastRemindedAt": "2026-11-17"
+      "lastRemindedAt": "2026-11-18"
     },
     {
       "id": "t-p0-06",
@@ -223,7 +223,7 @@
       "createdAt": "2026-11-09T09:00:00.000Z",
       "createdBy": "routine",
       "doneAt": null,
-      "lastRemindedAt": "2026-11-17"
+      "lastRemindedAt": "2026-11-18"
     },
     {
       "id": "t-p0-07",
@@ -600,7 +600,7 @@
       "createdAt": "2026-11-10T02:00:00.000Z",
       "createdBy": "routine",
       "doneAt": null,
-      "lastRemindedAt": "2026-11-17"
+      "lastRemindedAt": "2026-11-18"
     },
     {
       "id": "t-mw-02",
@@ -613,7 +613,7 @@
       "createdAt": "2026-11-10T02:00:00.000Z",
       "createdBy": "routine",
       "doneAt": null,
-      "lastRemindedAt": "2026-11-17"
+      "lastRemindedAt": "2026-11-18"
     },
     {
       "id": "t-mw-03",
@@ -626,7 +626,7 @@
       "createdAt": "2026-11-10T02:00:00.000Z",
       "createdBy": "routine",
       "doneAt": null,
-      "lastRemindedAt": "2026-11-17"
+      "lastRemindedAt": "2026-11-18"
     },
     {
       "id": "t-mw-04",
@@ -756,7 +756,7 @@
       "createdAt": "2026-11-10T02:00:00.000Z",
       "createdBy": "routine",
       "doneAt": null,
-      "lastRemindedAt": "2026-11-17"
+      "lastRemindedAt": "2026-11-18"
     },
     {
       "id": "t-sp-02",
@@ -782,7 +782,7 @@
       "createdAt": "2026-11-10T02:00:00.000Z",
       "createdBy": "routine",
       "doneAt": null,
-      "lastRemindedAt": null
+      "lastRemindedAt": "2026-11-18"
     },
     {
       "id": "t-sp-04",
@@ -795,7 +795,7 @@
       "createdAt": "2026-11-10T02:00:00.000Z",
       "createdBy": "routine",
       "doneAt": null,
-      "lastRemindedAt": null
+      "lastRemindedAt": "2026-11-18"
     },
     {
       "id": "t-sp-05",
@@ -1014,7 +1014,7 @@
       "phase": "Support for Clint",
       "notes": "LR accounts may need Leah. Dates are starting suggestions.",
       "doneAt": null,
-      "lastRemindedAt": "2026-11-17",
+      "lastRemindedAt": "2026-11-18",
       "createdAt": "2026-11-10T04:00:00.000Z",
       "createdBy": "routine"
     },
@@ -1027,7 +1027,7 @@
       "phase": "Support for Clint",
       "notes": "With Logan. Dates are starting suggestions.",
       "doneAt": null,
-      "lastRemindedAt": null,
+      "lastRemindedAt": "2026-11-18",
       "createdAt": "2026-11-10T04:00:00.000Z",
       "createdBy": "routine"
     },
@@ -1170,7 +1170,7 @@
       "phase": "Going big",
       "notes": "With Logan, for Leah to confirm Nov 16. Example: at least one rep in the Practice app that week. Also: does practice through INQ coaches and InnerBoard OS organizations count toward the 1,000? From Library → What it takes to go big.",
       "doneAt": null,
-      "lastRemindedAt": "2026-11-17",
+      "lastRemindedAt": "2026-11-18",
       "createdAt": "2026-11-10T04:30:00.000Z",
       "createdBy": "routine"
     },
@@ -1566,6 +1566,17 @@
       "pillar": "Education",
       "format": "Carousel",
       "title": "Start December grounded: a 5-minute daily rep you can keep",
+      "owner": "clint",
+      "status": "idea",
+      "link": ""
+    },
+    {
+      "id": "c-r-2026-12-01",
+      "date": "2026-12-01",
+      "channel": "Instagram/TikTok",
+      "pillar": "Behind the scenes",
+      "format": "Reel",
+      "title": "Behind the scenes: why we made the practice giftable",
       "owner": "clint",
       "status": "idea",
       "link": ""
@@ -2202,6 +2213,48 @@
         "abra",
         "michelle",
         "clint",
+        "logan"
+      ]
+    },
+    {
+      "id": "b-2026-11-18",
+      "date": "2026-11-18",
+      "summary": "Nothing has been ticked done in the command center since Leah's decisions on Nov 10 and 12, which most likely means the team is tracking on their own devices or in the Friday Finisher sheet until live mode is on. Overdue on the board: Leah 12, Michelle 6, Abra 4, Logan 2, Clint 2; the check-ins waiting in Leah's drafts now include yesterday's items for Abra, Michelle and Logan. Tomorrow Michelle launches the Rep of the Day group and Clint schedules the Reps; Friday brings the bulk hat order, Abra's brand guidelines and the weekly numbers. I added 1 post idea for Dec 1, the first day of Gift the Practice.",
+      "done": [],
+      "overdue": [
+        "t-mw-01",
+        "t-gb-04",
+        "t-p0-04",
+        "t-mw-02",
+        "t-mw-03",
+        "t-sc-02",
+        "t-p0-01",
+        "t-ld-01",
+        "t-p0-08",
+        "t-sc-03",
+        "t-gb-01",
+        "t-gb-03",
+        "t-gtm-02",
+        "t-gtm-01",
+        "t-gtm-03",
+        "t-gb-02",
+        "t-p1-01",
+        "t-wk-2026-11-16-record",
+        "t-p0-05",
+        "t-sc-01",
+        "t-sp-01",
+        "t-sp-03",
+        "t-p0-06",
+        "t-sp-04",
+        "t-p0-07",
+        "t-cw-01"
+      ],
+      "added": [
+        "c-r-2026-12-01"
+      ],
+      "reminded": [
+        "abra",
+        "michelle",
         "logan"
       ]
     }
