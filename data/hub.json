@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-18T12:47:06.060Z",
+  "updatedAt": "2026-11-19T12:46:33.310Z",
   "brand": {
     "name": "InnerBoard",
     "tagline": "The practice of becoming you."
@@ -1580,6 +1580,17 @@
       "owner": "clint",
       "status": "idea",
       "link": ""
+    },
+    {
+      "id": "c-r-2026-12-02",
+      "date": "2026-12-02",
+      "channel": "Instagram/TikTok",
+      "pillar": "Masterclass clips",
+      "format": "Reel",
+      "title": "Leah's masterclass moment: the gift of one small rep",
+      "owner": "clint",
+      "status": "idea",
+      "link": ""
     }
   ],
   "metrics": [
@@ -2257,6 +2268,44 @@
         "michelle",
         "logan"
       ]
+    },
+    {
+      "id": "b-2026-11-19",
+      "date": "2026-11-19",
+      "summary": "No replies and nothing new ticked in the command center; the four check-ins are still unsent in Leah's drafts and already cover everything overdue (Leah 12, Michelle 6, Abra 4, Logan 2, Clint 2), so I left them as they are. Today Michelle launches the Rep of the Day group and Clint schedules the Reps two weeks out. Tomorrow is a big Friday: the bulk hat order (it still needs Abra's price and hat check), Abra's brand guidelines and Skool plan, the podcast call to action, Clint's first performance report, and the weekly numbers. I added 1 post idea for Dec 2.",
+      "done": [],
+      "overdue": [
+        "t-mw-01",
+        "t-gb-04",
+        "t-p0-04",
+        "t-mw-02",
+        "t-mw-03",
+        "t-sc-02",
+        "t-p0-01",
+        "t-ld-01",
+        "t-p0-08",
+        "t-sc-03",
+        "t-gb-01",
+        "t-gb-03",
+        "t-gtm-02",
+        "t-gtm-01",
+        "t-gtm-03",
+        "t-gb-02",
+        "t-p1-01",
+        "t-wk-2026-11-16-record",
+        "t-p0-05",
+        "t-sc-01",
+        "t-sp-01",
+        "t-sp-03",
+        "t-p0-06",
+        "t-sp-04",
+        "t-p0-07",
+        "t-cw-01"
+      ],
+      "added": [
+        "c-r-2026-12-02"
+      ],
+      "reminded": []
     }
   ],
   "rhythm": [
