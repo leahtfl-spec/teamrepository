@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-22T12:46:07.539Z",
+  "updatedAt": "2026-11-23T12:47:01.935Z",
   "brand": {
     "name": "InnerBoard",
     "tagline": "The practice of becoming you."
@@ -197,7 +197,7 @@
       "createdAt": "2026-11-09T09:00:00.000Z",
       "createdBy": "routine",
       "doneAt": null,
-      "lastRemindedAt": "2026-11-21"
+      "lastRemindedAt": "2026-11-23"
     },
     {
       "id": "t-p0-05",
@@ -210,7 +210,7 @@
       "createdAt": "2026-11-09T09:00:00.000Z",
       "createdBy": "routine",
       "doneAt": null,
-      "lastRemindedAt": "2026-11-21"
+      "lastRemindedAt": "2026-11-23"
     },
     {
       "id": "t-p0-06",
@@ -223,7 +223,7 @@
       "createdAt": "2026-11-09T09:00:00.000Z",
       "createdBy": "routine",
       "doneAt": null,
-      "lastRemindedAt": "2026-11-21"
+      "lastRemindedAt": "2026-11-23"
     },
     {
       "id": "t-p0-07",
@@ -236,7 +236,7 @@
       "createdAt": "2026-11-09T09:00:00.000Z",
       "createdBy": "routine",
       "doneAt": null,
-      "lastRemindedAt": "2026-11-21"
+      "lastRemindedAt": "2026-11-23"
     },
     {
       "id": "t-p0-08",
@@ -275,7 +275,7 @@
       "createdAt": "2026-11-09T09:00:00.000Z",
       "createdBy": "routine",
       "doneAt": null,
-      "lastRemindedAt": "2026-11-21"
+      "lastRemindedAt": "2026-11-23"
     },
     {
       "id": "t-p1-03",
@@ -288,7 +288,7 @@
       "createdAt": "2026-11-09T09:00:00.000Z",
       "createdBy": "routine",
       "doneAt": null,
-      "lastRemindedAt": "2026-11-21"
+      "lastRemindedAt": "2026-11-23"
     },
     {
       "id": "t-p1-04",
@@ -301,7 +301,7 @@
       "createdAt": "2026-11-09T09:00:00.000Z",
       "createdBy": "routine",
       "doneAt": null,
-      "lastRemindedAt": "2026-11-21"
+      "lastRemindedAt": "2026-11-23"
     },
     {
       "id": "t-p1-05",
@@ -314,7 +314,7 @@
       "createdAt": "2026-11-09T09:00:00.000Z",
       "createdBy": "routine",
       "doneAt": null,
-      "lastRemindedAt": "2026-11-21"
+      "lastRemindedAt": "2026-11-23"
     },
     {
       "id": "t-p1-06",
@@ -600,7 +600,7 @@
       "createdAt": "2026-11-10T02:00:00.000Z",
       "createdBy": "routine",
       "doneAt": null,
-      "lastRemindedAt": "2026-11-21"
+      "lastRemindedAt": "2026-11-23"
     },
     {
       "id": "t-mw-02",
@@ -613,7 +613,7 @@
       "createdAt": "2026-11-10T02:00:00.000Z",
       "createdBy": "routine",
       "doneAt": null,
-      "lastRemindedAt": "2026-11-21"
+      "lastRemindedAt": "2026-11-23"
     },
     {
       "id": "t-mw-03",
@@ -626,7 +626,7 @@
       "createdAt": "2026-11-10T02:00:00.000Z",
       "createdBy": "routine",
       "doneAt": null,
-      "lastRemindedAt": "2026-11-21"
+      "lastRemindedAt": "2026-11-23"
     },
     {
       "id": "t-mw-04",
@@ -756,7 +756,7 @@
       "createdAt": "2026-11-10T02:00:00.000Z",
       "createdBy": "routine",
       "doneAt": null,
-      "lastRemindedAt": "2026-11-21"
+      "lastRemindedAt": "2026-11-23"
     },
     {
       "id": "t-sp-02",
@@ -769,7 +769,7 @@
       "createdAt": "2026-11-10T02:00:00.000Z",
       "createdBy": "routine",
       "doneAt": null,
-      "lastRemindedAt": "2026-11-21"
+      "lastRemindedAt": "2026-11-23"
     },
     {
       "id": "t-sp-03",
@@ -782,7 +782,7 @@
       "createdAt": "2026-11-10T02:00:00.000Z",
       "createdBy": "routine",
       "doneAt": null,
-      "lastRemindedAt": "2026-11-21"
+      "lastRemindedAt": "2026-11-23"
     },
     {
       "id": "t-sp-04",
@@ -795,7 +795,7 @@
       "createdAt": "2026-11-10T02:00:00.000Z",
       "createdBy": "routine",
       "doneAt": null,
-      "lastRemindedAt": "2026-11-21"
+      "lastRemindedAt": "2026-11-23"
     },
     {
       "id": "t-sp-05",
@@ -808,7 +808,7 @@
       "createdAt": "2026-11-10T02:00:00.000Z",
       "createdBy": "routine",
       "doneAt": null,
-      "lastRemindedAt": "2026-11-21"
+      "lastRemindedAt": "2026-11-23"
     },
     {
       "id": "t-ab-01",
@@ -871,7 +871,7 @@
       "phase": "Clint · Wins",
       "notes": "With Michelle: content direction, campaigns and monthly priorities. Dates are starting suggestions.",
       "doneAt": null,
-      "lastRemindedAt": "2026-11-21",
+      "lastRemindedAt": "2026-11-23",
       "createdAt": "2026-11-10T04:00:00.000Z",
       "createdBy": "routine"
     },
@@ -884,7 +884,7 @@
       "phase": "Clint · Wins",
       "notes": "Top posts, topics, hooks and formats, compared by platform. Then every Friday. Dates are starting suggestions.",
       "doneAt": null,
-      "lastRemindedAt": "2026-11-21",
+      "lastRemindedAt": "2026-11-23",
       "createdAt": "2026-11-10T04:00:00.000Z",
       "createdBy": "routine"
     },
@@ -1014,7 +1014,7 @@
       "phase": "Support for Clint",
       "notes": "LR accounts may need Leah. Dates are starting suggestions.",
       "doneAt": null,
-      "lastRemindedAt": "2026-11-21",
+      "lastRemindedAt": "2026-11-23",
       "createdAt": "2026-11-10T04:00:00.000Z",
       "createdBy": "routine"
     },
@@ -1027,7 +1027,7 @@
       "phase": "Support for Clint",
       "notes": "With Logan. Dates are starting suggestions.",
       "doneAt": null,
-      "lastRemindedAt": "2026-11-21",
+      "lastRemindedAt": "2026-11-23",
       "createdAt": "2026-11-10T04:00:00.000Z",
       "createdBy": "routine"
     },
@@ -1170,7 +1170,7 @@
       "phase": "Going big",
       "notes": "With Logan, for Leah to confirm Nov 16. Example: at least one rep in the Practice app that week. Also: does practice through INQ coaches and InnerBoard OS organizations count toward the 1,000? From Library → What it takes to go big.",
       "doneAt": null,
-      "lastRemindedAt": "2026-11-21",
+      "lastRemindedAt": "2026-11-23",
       "createdAt": "2026-11-10T04:30:00.000Z",
       "createdBy": "routine"
     },
@@ -1261,7 +1261,7 @@
       "phase": "Weekly",
       "notes": "",
       "doneAt": null,
-      "lastRemindedAt": "2026-11-21",
+      "lastRemindedAt": "2026-11-23",
       "createdBy": "routine",
       "createdAt": "2026-11-16T12:46:40.448Z"
     },
@@ -1274,7 +1274,7 @@
       "phase": "Weekly",
       "notes": "Fill this week's row on Numbers before Monday's team meeting.",
       "doneAt": null,
-      "lastRemindedAt": "2026-11-21",
+      "lastRemindedAt": "2026-11-23",
       "createdBy": "routine",
       "createdAt": "2026-11-16T12:46:40.448Z"
     },
@@ -1287,7 +1287,7 @@
       "phase": "Weekly",
       "notes": "Spotlight one member in the app or the Labs.",
       "doneAt": null,
-      "lastRemindedAt": "2026-11-21",
+      "lastRemindedAt": "2026-11-23",
       "createdBy": "routine",
       "createdAt": "2026-11-16T12:46:40.448Z"
     },
@@ -1300,9 +1300,74 @@
       "phase": "Weekly",
       "notes": "Upload new Reps and audio, fix open issues, send app numbers to Michelle.",
       "doneAt": null,
-      "lastRemindedAt": "2026-11-21",
+      "lastRemindedAt": "2026-11-23",
       "createdBy": "routine",
       "createdAt": "2026-11-16T12:46:40.448Z"
+    },
+    {
+      "id": "t-wk-2026-11-23-record",
+      "title": "Recording Block: podcast, 7 Reps, promo videos",
+      "owner": "founder",
+      "due": "2026-11-24",
+      "status": "todo",
+      "phase": "Weekly",
+      "notes": "About half a day. Clint directs and shoots.",
+      "doneAt": null,
+      "lastRemindedAt": null,
+      "createdBy": "routine",
+      "createdAt": "2026-11-23T12:47:01.935Z"
+    },
+    {
+      "id": "t-wk-2026-11-23-reps",
+      "title": "Schedule Rep of the Day 2 weeks out",
+      "owner": "clint",
+      "due": "2026-11-26",
+      "status": "todo",
+      "phase": "Weekly",
+      "notes": "",
+      "doneAt": null,
+      "lastRemindedAt": null,
+      "createdBy": "routine",
+      "createdAt": "2026-11-23T12:47:01.935Z"
+    },
+    {
+      "id": "t-wk-2026-11-23-scorecard",
+      "title": "Update the numbers on the scorecard",
+      "owner": "michelle",
+      "due": "2026-11-27",
+      "status": "todo",
+      "phase": "Weekly",
+      "notes": "Fill this week's row on Numbers before Monday's team meeting.",
+      "doneAt": null,
+      "lastRemindedAt": null,
+      "createdBy": "routine",
+      "createdAt": "2026-11-23T12:47:01.935Z"
+    },
+    {
+      "id": "t-wk-2026-11-23-community",
+      "title": "Practice app and Labs check-in + member spotlight",
+      "owner": "michelle",
+      "due": "2026-11-27",
+      "status": "todo",
+      "phase": "Weekly",
+      "notes": "Spotlight one member in the app or the Labs.",
+      "doneAt": null,
+      "lastRemindedAt": null,
+      "createdBy": "routine",
+      "createdAt": "2026-11-23T12:47:01.935Z"
+    },
+    {
+      "id": "t-wk-2026-11-23-app",
+      "title": "Weekly app check",
+      "owner": "logan",
+      "due": "2026-11-27",
+      "status": "todo",
+      "phase": "Weekly",
+      "notes": "Upload new Reps and audio, fix open issues, send app numbers to Michelle.",
+      "doneAt": null,
+      "lastRemindedAt": null,
+      "createdBy": "routine",
+      "createdAt": "2026-11-23T12:47:01.935Z"
     }
   ],
   "content": [
@@ -1621,6 +1686,17 @@
       "pillar": "Education",
       "format": "Carousel",
       "title": "How to give someone a daily practice, not just a gift",
+      "owner": "clint",
+      "status": "idea",
+      "link": ""
+    },
+    {
+      "id": "c-r-2026-12-06",
+      "date": "2026-12-06",
+      "channel": "Instagram",
+      "pillar": "Promo & offers",
+      "format": "Story",
+      "title": "Gift a Year of Practice to someone you love (Abra signs off)",
       "owner": "clint",
       "status": "idea",
       "link": ""
@@ -2486,6 +2562,65 @@
         "c-r-2026-12-05"
       ],
       "reminded": []
+    },
+    {
+      "id": "b-2026-11-23",
+      "date": "2026-11-23",
+      "summary": "New week: I added this week's 5 recurring tasks (Leah's Recording Block Tuesday, Clint's Rep scheduling on Thanksgiving Thursday, which may need to move, and Friday's scorecard, community check-in and app check). Nothing new was ticked in the command center, so the board shows Leah 12, Michelle 10, Abra 7, Clint 5 and Logan 3 overdue; the four check-ins in Leah's drafts are refreshed for Monday and ready to send. Today brings the team meeting, Michelle's group soft-launch and Clint's Shorts schedule; Gift a Year launches Dec 1, so Abra's price check and Logan's gift-code answer are urgent. I added 1 post idea for Dec 6.",
+      "done": [],
+      "overdue": [
+        "t-mw-01",
+        "t-gb-04",
+        "t-p0-04",
+        "t-mw-02",
+        "t-mw-03",
+        "t-sc-02",
+        "t-p1-02",
+        "t-p1-04",
+        "t-wk-2026-11-16-community",
+        "t-wk-2026-11-16-scorecard",
+        "t-p0-01",
+        "t-ld-01",
+        "t-p0-08",
+        "t-sc-03",
+        "t-gb-01",
+        "t-gb-03",
+        "t-gtm-02",
+        "t-gtm-01",
+        "t-gtm-03",
+        "t-gb-02",
+        "t-p1-01",
+        "t-wk-2026-11-16-record",
+        "t-p0-05",
+        "t-sc-01",
+        "t-sp-01",
+        "t-sp-03",
+        "t-sp-02",
+        "t-sp-05",
+        "t-p1-03",
+        "t-p0-06",
+        "t-sp-04",
+        "t-wk-2026-11-16-app",
+        "t-p0-07",
+        "t-cw-01",
+        "t-wk-2026-11-16-reps",
+        "t-p1-05",
+        "t-cw-02"
+      ],
+      "added": [
+        "t-wk-2026-11-23-record",
+        "t-wk-2026-11-23-reps",
+        "t-wk-2026-11-23-scorecard",
+        "t-wk-2026-11-23-community",
+        "t-wk-2026-11-23-app",
+        "c-r-2026-12-06"
+      ],
+      "reminded": [
+        "abra",
+        "michelle",
+        "clint",
+        "logan"
+      ]
     }
   ],
   "rhythm": [
