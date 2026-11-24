@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-23T12:47:01.935Z",
+  "updatedAt": "2026-11-24T12:47:17.371Z",
   "brand": {
     "name": "InnerBoard",
     "tagline": "The practice of becoming you."
@@ -1700,6 +1700,17 @@
       "owner": "clint",
       "status": "idea",
       "link": ""
+    },
+    {
+      "id": "c-r-2026-12-07",
+      "date": "2026-12-07",
+      "channel": "Instagram",
+      "pillar": "Education",
+      "format": "Carousel",
+      "title": "December's theme: 3 reps to practice presence this month",
+      "owner": "clint",
+      "status": "idea",
+      "link": ""
     }
   ],
   "metrics": [
@@ -2621,6 +2632,57 @@
         "clint",
         "logan"
       ]
+    },
+    {
+      "id": "b-2026-11-24",
+      "date": "2026-11-24",
+      "summary": "Recording Block day for Leah, plus Abra's podcast pitches and lead magnet and Logan's app capabilities list. Nothing new was ticked in the command center, so the board shows Leah 12, Michelle 11, Abra 7, Clint 6 and Logan 3 overdue, with Michelle's group soft-launch and Clint's Shorts schedule added yesterday. Email check and reminders were skipped because Gmail isn't connected. I added 1 post idea for Dec 7.",
+      "done": [],
+      "overdue": [
+        "t-mw-01",
+        "t-gb-04",
+        "t-p0-04",
+        "t-mw-02",
+        "t-mw-03",
+        "t-sc-02",
+        "t-p1-02",
+        "t-p1-04",
+        "t-wk-2026-11-16-community",
+        "t-wk-2026-11-16-scorecard",
+        "t-p1-06",
+        "t-p0-01",
+        "t-ld-01",
+        "t-p0-08",
+        "t-sc-03",
+        "t-gb-01",
+        "t-gb-03",
+        "t-gtm-02",
+        "t-gtm-01",
+        "t-gtm-03",
+        "t-gb-02",
+        "t-p1-01",
+        "t-wk-2026-11-16-record",
+        "t-p0-05",
+        "t-sc-01",
+        "t-sp-01",
+        "t-sp-03",
+        "t-sp-02",
+        "t-sp-05",
+        "t-p1-03",
+        "t-p0-06",
+        "t-sp-04",
+        "t-wk-2026-11-16-app",
+        "t-p0-07",
+        "t-cw-01",
+        "t-wk-2026-11-16-reps",
+        "t-p1-05",
+        "t-cw-02",
+        "t-cw-03"
+      ],
+      "added": [
+        "c-r-2026-12-07"
+      ],
+      "reminded": []
     }
   ],
   "rhythm": [
