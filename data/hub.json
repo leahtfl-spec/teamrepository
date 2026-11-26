@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-25T12:46:40.375Z",
+  "updatedAt": "2026-11-26T12:46:18.263Z",
   "brand": {
     "name": "InnerBoard",
     "tagline": "The practice of becoming you."
@@ -1722,6 +1722,17 @@
       "owner": "clint",
       "status": "idea",
       "link": ""
+    },
+    {
+      "id": "c-r-2026-12-09",
+      "date": "2026-12-09",
+      "channel": "Instagram/TikTok",
+      "pillar": "Masterclass clips",
+      "format": "Reel",
+      "title": "Leah on why the smallest rep is the bravest one",
+      "owner": "clint",
+      "status": "idea",
+      "link": ""
     }
   ],
   "metrics": [
@@ -2747,6 +2758,63 @@
       ],
       "added": [
         "c-r-2026-12-08"
+      ],
+      "reminded": []
+    },
+    {
+      "id": "b-2026-11-26",
+      "date": "2026-11-26",
+      "summary": "Happy Thanksgiving. Email check and reminders were skipped because Gmail isn't connected; Leah needs to sign in again in the claude.ai connector settings (third day). Nothing new was ticked in the command center, so the board shows Leah 13, Michelle 12, Abra 9, Clint 7 and Logan 4 overdue. Gift a Year launches Tuesday and still waits on Abra's price check and Logan's gift codes. I added 1 post idea for Dec 9.",
+      "done": [],
+      "overdue": [
+        "t-mw-01",
+        "t-gb-04",
+        "t-p0-04",
+        "t-mw-02",
+        "t-mw-03",
+        "t-sc-02",
+        "t-p1-02",
+        "t-p1-04",
+        "t-wk-2026-11-16-community",
+        "t-wk-2026-11-16-scorecard",
+        "t-p1-06",
+        "t-ms-01",
+        "t-p0-01",
+        "t-ld-01",
+        "t-p0-08",
+        "t-sc-03",
+        "t-gb-01",
+        "t-gb-03",
+        "t-gtm-02",
+        "t-gtm-01",
+        "t-gtm-03",
+        "t-gb-02",
+        "t-p1-01",
+        "t-wk-2026-11-16-record",
+        "t-wk-2026-11-23-record",
+        "t-p0-05",
+        "t-sc-01",
+        "t-sp-01",
+        "t-sp-03",
+        "t-sp-02",
+        "t-sp-05",
+        "t-p1-03",
+        "t-p1-08",
+        "t-p1-07",
+        "t-p0-06",
+        "t-sp-04",
+        "t-wk-2026-11-16-app",
+        "t-gb-05",
+        "t-p0-07",
+        "t-cw-01",
+        "t-wk-2026-11-16-reps",
+        "t-p1-05",
+        "t-cw-02",
+        "t-cw-03",
+        "t-p1-09"
+      ],
+      "added": [
+        "c-r-2026-12-09"
       ],
       "reminded": []
     }
